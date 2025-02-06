@@ -35,7 +35,7 @@ class De_Post_Terms extends Widget_Base {
 
 		return sprintf(
 			/* translators: %s: Post type singular name (e.g. Post or Page) */
-			__( '%s Terms', 'press-elements' ),
+			__( '%s Terms', 'dethemekit-for-elementor' ),
 			$post_type_object->labels->singular_name
 		);
 	}
@@ -48,7 +48,7 @@ class De_Post_Terms extends Widget_Base {
 		return [ 'dethemekit-elements' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 
@@ -57,7 +57,7 @@ class De_Post_Terms extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Terms', 'press-elements' ),
+					__( '%s Terms', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -66,7 +66,7 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'taxonomy',
 			[
-				'label' => __( 'Taxonomy', 'press-elements' ),
+				'label' => __( 'Taxonomy', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				//'options' => get_post_taxonomies( $post->ID ),
 				'options' => get_taxonomies( array( 'public' => true ) ),
@@ -77,7 +77,7 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'separator',
 			[
-				'label' => __( 'Separator', 'press-elements' ),
+				'label' => __( 'Separator', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => ', ',
 			]
@@ -86,7 +86,7 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'html_tag',
 			[
-				'label' => __( 'HTML Tag', 'press-elements' ),
+				'label' => __( 'HTML Tag', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -106,23 +106,23 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'press-elements' ),
+				'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'press-elements' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'press-elements' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'press-elements' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'press-elements' ),
+						'title' => __( 'Justified', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -136,12 +136,12 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => __( 'Link to', 'press-elements' ),
+				'label' => __( 'Link to', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => __( 'None', 'press-elements' ),
-					'term' => __( 'Term', 'press-elements' ),
+					'none' => __( 'None', 'dethemekit-for-elementor' ),
+					'term' => __( 'Term', 'dethemekit-for-elementor' ),
 				],
 			]
 		);
@@ -153,7 +153,7 @@ class De_Post_Terms extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Terms', 'press-elements' ),
+					__( '%s Terms', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 				'tab' => Controls_Manager::TAB_STYLE,
@@ -163,7 +163,7 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'press-elements' ),
+				'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -197,7 +197,7 @@ class De_Post_Terms extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'press-elements' ),
+				'label' => __( 'Hover Animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);

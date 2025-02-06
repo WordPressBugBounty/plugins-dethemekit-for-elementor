@@ -49,10 +49,10 @@ class Grid extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		
         if ( 'dethemekit_gallery_img_name' === $field ) {
-			return __( 'Grid: Image Name', 'dethemekit-addons-for-elementor' );
+			return __( 'Grid: Image Name', 'dethemekit-for-elementor' );
 		}
         if ( 'dethemekit_gallery_img_desc' === $field ) {
-			return __( 'Grid: Image Description', 'dethemekit-addons-for-elementor' );
+			return __( 'Grid: Image Description', 'dethemekit-for-elementor' );
 		}
 
 		return '';

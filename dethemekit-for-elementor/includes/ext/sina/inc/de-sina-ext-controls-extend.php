@@ -48,7 +48,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_is_morphing_animation',
 			[
-				'label' => '<strong>'.esc_html__( 'De Mask', 'detheme-kit' ).'</strong>',
+				'label' => '<strong>'.esc_html__( 'De Mask', 'dethemekit-for-elementor' ).'</strong>',
 				'type' => Controls_Manager::SWITCHER,
 				'prefix_class' => 'sina-morphing-anim-',
 				'separator' => 'before',
@@ -57,19 +57,19 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_transform_effects',
 			[
-				'label' => '<strong>'.esc_html__( 'De Transform', 'detheme-kit' ).'</strong>',
+				'label' => '<strong>'.esc_html__( 'De Transform', 'dethemekit-for-elementor' ).'</strong>',
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'translate' => esc_html__( 'Translate', 'detheme-kit' ),
-					'scaleX' => esc_html__( 'Scale X', 'detheme-kit' ),
-					'scaleY' => esc_html__( 'Scale Y', 'detheme-kit' ),
-					'scaleZ' => esc_html__( 'Scale Z', 'detheme-kit' ),
-					'rotateX' => esc_html__( 'Rotate X', 'detheme-kit' ),
-					'rotateY' => esc_html__( 'Rotate Y', 'detheme-kit' ),
-					'rotateZ' => esc_html__( 'Rotate Z', 'detheme-kit' ),
-					'skewX' => esc_html__( 'Skew X', 'detheme-kit' ),
-					'skewY' => esc_html__( 'Skew Y', 'detheme-kit' ),
-					'none' => esc_html__( 'None', 'detheme-kit' ),
+					'translate' => esc_html__( 'Translate', 'dethemekit-for-elementor' ),
+					'scaleX' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
+					'scaleY' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
+					'scaleZ' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
+					'rotateX' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
+					'rotateY' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
+					'rotateZ' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
+					'skewX' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
+					'skewY' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
+					'none' => esc_html__( 'None', 'dethemekit-for-elementor' ),
 				],
 				'default' => 'none',
 			]
@@ -77,7 +77,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_perspective',
 			[
-				'label' => esc_html__( 'Perspective Size', 'detheme-kit' ),
+				'label' => esc_html__( 'Perspective Size', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -103,14 +103,14 @@ class De_Sina_Ext_Controls{
 		$elems->start_controls_tab(
 			'sina_transform_effects_normal',
 			[
-				'label' => esc_html__( 'Normal', 'detheme-kit' ),
+				'label' => esc_html__( 'Normal', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateX',
 			[
-				'label' => esc_html__( 'Translate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -129,7 +129,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateY',
 			[
-				'label' => esc_html__( 'Translate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -153,7 +153,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleX',
 			[
-				'label' => esc_html__( 'Scale X', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -176,7 +176,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleY',
 			[
-				'label' => esc_html__( 'Scale Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -199,7 +199,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleZ',
 			[
-				'label' => esc_html__( 'Scale Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -222,7 +222,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateX',
 			[
-				'label' => esc_html__( 'Rotate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -245,7 +245,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateY',
 			[
-				'label' => esc_html__( 'Rotate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -268,7 +268,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateZ',
 			[
-				'label' => esc_html__( 'Rotate Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -291,7 +291,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewX',
 			[
-				'label' => esc_html__( 'Skew X', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -314,7 +314,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewY',
 			[
-				'label' => esc_html__( 'Skew Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -347,14 +347,14 @@ class De_Sina_Ext_Controls{
 		$elems->start_controls_tab(
 			'sina_transform_effects_hover',
 			[
-				'label' => esc_html__( 'Hover', 'detheme-kit' ),
+				'label' => esc_html__( 'Hover', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateX_hover',
 			[
-				'label' => esc_html__( 'Translate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -373,7 +373,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateY_hover',
 			[
-				'label' => esc_html__( 'Translate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -397,7 +397,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleX_hover',
 			[
-				'label' => esc_html__( 'Scale X', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -420,7 +420,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleY_hover',
 			[
-				'label' => esc_html__( 'Scale Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -443,7 +443,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleZ_hover',
 			[
-				'label' => esc_html__( 'Scale Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -466,7 +466,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateX_hover',
 			[
-				'label' => esc_html__( 'Rotate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -489,7 +489,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateY_hover',
 			[
-				'label' => esc_html__( 'Rotate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -512,7 +512,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateZ_hover',
 			[
-				'label' => esc_html__( 'Rotate Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -535,7 +535,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewX_hover',
 			[
-				'label' => esc_html__( 'Skew X', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -558,7 +558,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewY_hover',
 			[
-				'label' => esc_html__( 'Skew Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -588,7 +588,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_transform_effects_duration',
 			[
-				'label' => esc_html__( 'Transition Duration', 'detheme-kit' ),
+				'label' => esc_html__( 'Transition Duration', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -615,7 +615,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_is_morphing_animation',
 			[
-				'label' => '<strong>'.esc_html__( 'De Mask', 'detheme-kit' ).'</strong>',
+				'label' => '<strong>'.esc_html__( 'De Mask', 'dethemekit-for-elementor' ).'</strong>',
 				'type' => Controls_Manager::SWITCHER,
 				'prefix_class' => 'sina-morphing-anim-',
 				'separator' => 'before',
@@ -624,19 +624,19 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_transform_effects',
 			[
-				'label' => '<strong>'.esc_html__( 'De Transform', 'detheme-kit' ).'</strong>',
+				'label' => '<strong>'.esc_html__( 'De Transform', 'dethemekit-for-elementor' ).'</strong>',
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'translate' => esc_html__( 'Translate', 'detheme-kit' ),
-					'scaleX' => esc_html__( 'Scale X', 'detheme-kit' ),
-					'scaleY' => esc_html__( 'Scale Y', 'detheme-kit' ),
-					'scaleZ' => esc_html__( 'Scale Z', 'detheme-kit' ),
-					'rotateX' => esc_html__( 'Rotate X', 'detheme-kit' ),
-					'rotateY' => esc_html__( 'Rotate Y', 'detheme-kit' ),
-					'rotateZ' => esc_html__( 'Rotate Z', 'detheme-kit' ),
-					'skewX' => esc_html__( 'Skew X', 'detheme-kit' ),
-					'skewY' => esc_html__( 'Skew Y', 'detheme-kit' ),
-					'none' => esc_html__( 'None', 'detheme-kit' ),
+					'translate' => esc_html__( 'Translate', 'dethemekit-for-elementor' ),
+					'scaleX' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
+					'scaleY' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
+					'scaleZ' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
+					'rotateX' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
+					'rotateY' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
+					'rotateZ' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
+					'skewX' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
+					'skewY' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
+					'none' => esc_html__( 'None', 'dethemekit-for-elementor' ),
 				],
 				'default' => 'none',
 			]
@@ -644,7 +644,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_perspective',
 			[
-				'label' => esc_html__( 'Perspective Size', 'detheme-kit' ),
+				'label' => esc_html__( 'Perspective Size', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -670,14 +670,14 @@ class De_Sina_Ext_Controls{
 		$elems->start_controls_tab(
 			'sina_transform_effects_normal',
 			[
-				'label' => esc_html__( 'Normal', 'detheme-kit' ),
+				'label' => esc_html__( 'Normal', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateX',
 			[
-				'label' => esc_html__( 'Translate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -696,7 +696,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateY',
 			[
-				'label' => esc_html__( 'Translate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -720,7 +720,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleX',
 			[
-				'label' => esc_html__( 'Scale X', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -743,7 +743,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleY',
 			[
-				'label' => esc_html__( 'Scale Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -766,7 +766,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleZ',
 			[
-				'label' => esc_html__( 'Scale Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -789,7 +789,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateX',
 			[
-				'label' => esc_html__( 'Rotate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -812,7 +812,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateY',
 			[
-				'label' => esc_html__( 'Rotate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -835,7 +835,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateZ',
 			[
-				'label' => esc_html__( 'Rotate Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -858,7 +858,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewX',
 			[
-				'label' => esc_html__( 'Skew X', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -881,7 +881,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewY',
 			[
-				'label' => esc_html__( 'Skew Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -914,14 +914,14 @@ class De_Sina_Ext_Controls{
 		$elems->start_controls_tab(
 			'sina_transform_effects_hover',
 			[
-				'label' => esc_html__( 'Hover', 'detheme-kit' ),
+				'label' => esc_html__( 'Hover', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateX_hover',
 			[
-				'label' => esc_html__( 'Translate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -940,7 +940,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_translateY_hover',
 			[
-				'label' => esc_html__( 'Translate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Translate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -964,7 +964,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleX_hover',
 			[
-				'label' => esc_html__( 'Scale X', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -987,7 +987,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleY_hover',
 			[
-				'label' => esc_html__( 'Scale Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1010,7 +1010,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_scaleZ_hover',
 			[
-				'label' => esc_html__( 'Scale Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1033,7 +1033,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateX_hover',
 			[
-				'label' => esc_html__( 'Rotate X', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1056,7 +1056,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateY_hover',
 			[
-				'label' => esc_html__( 'Rotate Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1079,7 +1079,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_rotateZ_hover',
 			[
-				'label' => esc_html__( 'Rotate Z', 'detheme-kit' ),
+				'label' => esc_html__( 'Rotate Z', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1102,7 +1102,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewX_hover',
 			[
-				'label' => esc_html__( 'Skew X', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1125,7 +1125,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_responsive_control(
 			'sina_transform_effects_skewY_hover',
 			[
-				'label' => esc_html__( 'Skew Y', 'detheme-kit' ),
+				'label' => esc_html__( 'Skew Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1155,7 +1155,7 @@ class De_Sina_Ext_Controls{
 		$elems->add_control(
 			'sina_transform_effects_duration',
 			[
-				'label' => esc_html__( 'Transition Duration', 'detheme-kit' ),
+				'label' => esc_html__( 'Transition Duration', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [

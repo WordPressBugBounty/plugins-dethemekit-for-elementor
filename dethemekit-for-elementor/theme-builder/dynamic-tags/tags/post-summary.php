@@ -15,7 +15,7 @@ class De_Post_Summary extends Tag {
 	}
 
 	public function get_title() {
-		return __( 'Post Summary', 'detheme-kit' );
+		return __( 'Post Summary', 'dethemekit-for-elementor' );
 	}
 
 	public function get_group() {
@@ -26,11 +26,11 @@ class De_Post_Summary extends Tag {
 		return [ Module::TEXT_CATEGORY ];
 	}
   
-  protected function _register_controls() {
+  protected function register_controls() {
     $this->add_control(
       'length',
       [
-         'label'   => __( 'Length', 'detheme-kit' ),
+         'label'   => __( 'Length', 'dethemekit-for-elementor' ),
          'type'    => Controls_Manager::NUMBER,
          'default' => 25,
          'min'     => 0,

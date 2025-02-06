@@ -57,7 +57,7 @@ function dtk_register_elementor_locations( $elementor_theme_manager ) {
 	$elementor_theme_manager->register_location(
 		'de_loop',
 		[
-			'label' => __( 'De Loop', 'detheme-kit' ),
+			'label' => __( 'De Loop', 'dethemekit-for-elementor' ),
 			'multiple' => true,
 			'edit_in_content' => true,
 		]
@@ -94,7 +94,7 @@ add_action( 'elementor/documents/register', 'dtk_register_documents_grid' );
 		$location_manager->register_location(
 			'de_grid',
 			[
-				'label' => __( 'De Grid', 'detheme-kit' ),
+				'label' => __( 'De Grid', 'dethemekit-for-elementor' ),
 				'multiple' => true,
 				'edit_in_content' => true,
 			]

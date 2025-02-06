@@ -25,7 +25,7 @@ function post_dethemekit_addons_rollback() {
     $da_rollback->run();
 
     wp_die(
-        '', __( 'Rollback to Previous Version', 'dethemekit-addons-for-elementor' ), [
+        '', __( 'Rollback to Previous Version', 'dethemekit-for-elementor' ), [
         'response' => 200,
         ]
     );

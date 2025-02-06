@@ -7,6 +7,6 @@
     <img src="<?php echo DETHEMEKIT_ADDONS_URL .'admin/images/dethemekit-addons-logo.png'; ?>">
 </span>
 <span class="dethemekit-template-modal-header-logo-label">
-    <?php echo __('DethemeKit Templates', 'dethemekit-addons-for-elementor'); ?>
+    <?php echo __('DethemeKit Templates', 'dethemekit-for-elementor'); ?>
 </span>
 

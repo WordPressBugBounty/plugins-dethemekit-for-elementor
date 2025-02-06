@@ -81,7 +81,7 @@ class DA_Rollback {
 			'nonce' => 'upgrade-plugin_' . $this->plugin_name,
 			'title' => '<img src="' . $logo_url . '" alt="DethemeKit Addons">' . sprintf( 
 				/* translators: 1: version. */
-				esc_html__( 'Rolling Back to Version %1$s', 'dethemekit-addons-for-elementor' ),DETHEMEKIT_ADDONS_STABLE_VERSION ),
+				esc_html__( 'Rolling Back to Version %1$s', 'dethemekit-for-elementor' ),DETHEMEKIT_ADDONS_STABLE_VERSION ),
 		];
 
 		$this->print_inline_style();

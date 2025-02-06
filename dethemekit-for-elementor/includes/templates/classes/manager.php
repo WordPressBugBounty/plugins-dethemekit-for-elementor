@@ -191,7 +191,7 @@ if ( ! class_exists( 'DethemeKit_Templates_Manager' ) ) {
 			$all_cats = array(
 				array(
 					'slug' => '',
-					'title' => __( 'All', 'dethemekit-addons-for-elementor' ),
+					'title' => __( 'All', 'dethemekit-for-elementor' ),
 				)
 			);
 

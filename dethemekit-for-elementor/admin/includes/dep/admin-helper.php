@@ -59,8 +59,8 @@ class Admin_Helper {
             $link = sprintf( 'https://dethemekitaddons.com/support/?utm_source=plugins-page&utm_medium=wp-dash&utm_campaign=get-support&utm_term=%s', $theme );
             
             $row_meta = [
-				'docs' => '<a href="' . esc_attr( $link ) . '" aria-label="' . esc_attr( __( 'View DethemeKit Addons for Elementor Documentation', 'dethemekit-addons-for-elementor' ) ) . '" target="_blank">' . __( 'Docs & FAQs', 'dethemekit-addons-for-elementor' ) . '</a>',
-				'videos' => '<a href="https://www.youtube.com/watch?v=D3INxWw_jKI&list=PLLpZVOYpMtTArB4hrlpSnDJB36D2sdoTv" aria-label="' . esc_attr( __( 'View DethemeKit Addons Video Tutorials', 'dethemekit-addons-for-elementor' ) ) . '" target="_blank">' . __( 'Video Tutorials', 'dethemekit-addons-for-elementor' ) . '</a>',
+				'docs' => '<a href="' . esc_attr( $link ) . '" aria-label="' . esc_attr( __( 'View DethemeKit Addons for Elementor Documentation', 'dethemekit-for-elementor' ) ) . '" target="_blank">' . __( 'Docs & FAQs', 'dethemekit-for-elementor' ) . '</a>',
+				'videos' => '<a href="https://www.youtube.com/watch?v=D3INxWw_jKI&list=PLLpZVOYpMtTArB4hrlpSnDJB36D2sdoTv" aria-label="' . esc_attr( __( 'View DethemeKit Addons Video Tutorials', 'dethemekit-for-elementor' ) ) . '" target="_blank">' . __( 'Video Tutorials', 'dethemekit-for-elementor' ) . '</a>',
 			];
 
 			$meta = array_merge( $meta, $row_meta );
@@ -83,6 +83,20 @@ class Admin_Helper {
      * @return array
      */
     public function dethemekit_add_duplicator_actions( $actions, $post ) {
+        if ( ! current_user_can( 'edit_posts' ) )
+            return $actions;
+
+        if ( ! current_user_can( 'edit_private_pages' ) )
+            return $actions;
+
+        if ( ! current_user_can( 'edit_private_posts' ) )
+            return $actions;
+        
+        if ( ! current_user_can( 'read_private_pages' ) )
+            return $actions;
+
+        if ( ! current_user_can( 'read_private_posts' ) )
+            return $actions;
         
         if ( current_user_can( 'edit_posts' ) && post_type_supports( $post->post_type, 'elementor' ) ) {
             
@@ -91,8 +105,8 @@ class Admin_Helper {
                 esc_url( self::get_duplicate_url( $post->ID ) ),
                 sprintf( 
                     /* translators: 1: post title. */
-                    esc_attr__( 'Duplicate - %1$s', 'dethemekit-addons-for-elementor' ), esc_attr( $post->post_title ) ),
-                __( 'Clone This', 'dethemekit-addons-for-elementor' )
+                    esc_attr__( 'Duplicate - %1$s', 'dethemekit-for-elementor' ), esc_attr( $post->post_title ) ),
+                __( 'Clone This', 'dethemekit-for-elementor' )
             );
             
         }
@@ -134,7 +148,19 @@ class Admin_Helper {
         
         if ( ! current_user_can( 'edit_posts' ) )
             return;
-        
+
+        if ( ! current_user_can( 'edit_private_pages' ) )
+            return;
+
+        if ( ! current_user_can( 'edit_private_posts' ) )
+            return;
+            
+        if ( ! current_user_can( 'read_private_pages' ) )
+            return;
+
+        if ( ! current_user_can( 'read_private_posts' ) )
+            return;
+
         // $nonce = isset( $_GET['_wpnonce'] ) ? $_GET['_wpnonce'] : '';
 
         // Verify nonce
@@ -197,7 +223,7 @@ class Admin_Helper {
             'post_author'    => $current_user->ID,
             'post_title'     => sprintf( 
                 /* translators: 1: post title, 2: post ID. */
-                __( 'Duplicated: %1$s - [#%2$d]', 'dethemekit-addons-for-elementor' ), $post->post_title,
+                __( 'Duplicated: %1$s - [#%2$d]', 'dethemekit-for-elementor' ), $post->post_title,
                 $post->ID )
         ];
         

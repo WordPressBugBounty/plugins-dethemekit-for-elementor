@@ -45,7 +45,7 @@ class De_Post_Title extends Widget_Base {
 
 	public function get_title() {
 
-		return __( 'De Page/Post Title', 'detheme-kit' );
+		return __( 'De Page/Post Title', 'dethemekit-for-elementor' );
 
 	}
 
@@ -69,7 +69,7 @@ class De_Post_Title extends Widget_Base {
 		return in_array( strtolower( $tag ), self::ALLOWED_HTML_WRAPPER_TAGS ) ? $tag : 'div';
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 
@@ -78,7 +78,7 @@ class De_Post_Title extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Title', 'detheme-kit' ),
+					__( '%s Title', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -87,7 +87,7 @@ class De_Post_Title extends Widget_Base {
 		$this->add_control(
 			'de_html_tag',
 			[
-				'label' => __( 'HTML Tag', 'detheme-kit' ),
+				'label' => __( 'HTML Tag', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -107,23 +107,23 @@ class De_Post_Title extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'detheme-kit' ),
+				'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'detheme-kit' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'detheme-kit' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'detheme-kit' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'detheme-kit' ),
+						'title' => __( 'Justified', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -137,18 +137,18 @@ class De_Post_Title extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => __( 'Link to', 'detheme-kit' ),
+				'label' => __( 'Link to', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => __( 'None', 'detheme-kit' ),
-					'home' => __( 'Home URL', 'detheme-kit' ),
+					'none' => __( 'None', 'dethemekit-for-elementor' ),
+					'home' => __( 'Home URL', 'dethemekit-for-elementor' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
-						__( '%s URL', 'detheme-kit' ),
+						__( '%s URL', 'dethemekit-for-elementor' ),
 						$post_type_object->labels->singular_name
 					),
-					'custom' => __( 'Custom URL', 'detheme-kit' ),
+					'custom' => __( 'Custom URL', 'dethemekit-for-elementor' ),
 				],
 			]
 		);
@@ -156,9 +156,9 @@ class De_Post_Title extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link', 'detheme-kit' ),
+				'label' => __( 'Link', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'detheme-kit' ),
+				'placeholder' => __( 'https://your-link.com', 'dethemekit-for-elementor' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -176,7 +176,7 @@ class De_Post_Title extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Title', 'detheme-kit' ),
+					__( '%s Title', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 				'tab' => Controls_Manager::TAB_STYLE,
@@ -186,7 +186,7 @@ class De_Post_Title extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'detheme-kit' ),
+				'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -220,7 +220,7 @@ class De_Post_Title extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'detheme-kit' ),
+				'label' => __( 'Hover Animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);

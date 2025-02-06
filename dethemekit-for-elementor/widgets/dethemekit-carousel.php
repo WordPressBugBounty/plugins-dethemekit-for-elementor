@@ -56,7 +56,7 @@ class DethemeKit_Carousel extends Widget_Base {
 	 * @access public
 	 */
 	public function get_title() {
-		return __('De Carousel', 'dethemekit-addons-for-elementor') ;
+		return __('De Carousel', 'dethemekit-for-elementor') ;
 
 	}
 
@@ -142,41 +142,41 @@ class DethemeKit_Carousel extends Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'dethemekit_carousel_global_settings',
 			array(
-				'label' => __( 'De Carousel', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'De Carousel', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_parent_name',
 			array(
-				'label'       => __( 'Set De Carousel Name', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Set De Carousel Name', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT2,
 				'options'     => array(
-					''   	  => __( 'Select Field', 'dethemekit-addons-for-elementor' ),
-					'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-addons-for-elementor' ),
-					'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-addons-for-elementor' ),
-					'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-addons-for-elementor' ),
-					'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-addons-for-elementor' ),
+					''   	  => __( 'Select Field', 'dethemekit-for-elementor' ),
+					'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-for-elementor' ),
+					'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-for-elementor' ),
+					'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-for-elementor' ),
+					'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-for-elementor' ),
 				),
 				'default'     => '',
-				'description' => __( 'Used by De Carousel Navigation Wrapper (in Section) and De Carousel Navigation Item ( in column ) to target this element <br /><br /><a href="https://detheme.helpscoutdocs.com/article/368-how-to-use-decarousel" target="_blank">How To Use De Carousel ?</a>', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Used by De Carousel Navigation Wrapper (in Section) and De Carousel Navigation Item ( in column ) to target this element <br /><br /><a href="https://detheme.helpscoutdocs.com/article/368-how-to-use-decarousel" target="_blank">How To Use De Carousel ?</a>', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_content_type',
 			array(
-				'label'       => __( 'Content Type', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'How templates are selected', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Content Type', 'dethemekit-for-elementor' ),
+				'description' => __( 'How templates are selected', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'options'     => array(
-					'select'   => __( 'Select Field', 'dethemekit-addons-for-elementor' ),
-					'repeater' => __( 'Repeater', 'dethemekit-addons-for-elementor' ),
+					'select'   => __( 'Select Field', 'dethemekit-for-elementor' ),
+					'repeater' => __( 'Repeater', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'select',
 			)
@@ -185,8 +185,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_slider_content',
 			array(
-				'label'       => __( 'Templates', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Slider content is a template which you can choose from Elementor library. Each template will be a slider content', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Templates', 'dethemekit-for-elementor' ),
+				'description' => __( 'Slider content is a template which you can choose from Elementor library. Each template will be a slider content', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT2,
 				'options'     => $this->getTemplateInstance()->get_elementor_page_list(),
 				'multiple'    => true,
@@ -202,7 +202,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$repeater->add_control(
 			'dethemekit_carousel_repeater_item',
 			array(
-				'label'       => __( 'Content', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Content', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT2,
 				'label_block' => true,
 				'options'     => $this->getTemplateInstance()->get_elementor_page_list(),
@@ -212,17 +212,17 @@ class DethemeKit_Carousel extends Widget_Base {
 		$repeater->add_control(
 			'custom_navigation',
 			array(
-				'label'       => __( 'Custom Navigation Element Selector', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Custom Navigation Element Selector', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
-				'description' => __( 'Use this to add an element selector to be used to navigate to this slide. For example #slide-1', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Use this to add an element selector to be used to navigate to this slide. For example #slide-1', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_templates_repeater',
 			array(
-				'label'       => __( 'Templates', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Templates', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::REPEATER,
 				'fields'      => $repeater->get_controls(),
 				'condition'   => array(
@@ -235,12 +235,12 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_slider_type',
 			array(
-				'label'       => __( 'Type', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Set a navigation type', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Type', 'dethemekit-for-elementor' ),
+				'description' => __( 'Set a navigation type', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'options'     => array(
-					'horizontal' => __( 'Horizontal', 'dethemekit-addons-for-elementor' ),
-					'vertical'   => __( 'Vertical', 'dethemekit-addons-for-elementor' ),
+					'horizontal' => __( 'Horizontal', 'dethemekit-for-elementor' ),
+					'vertical'   => __( 'Vertical', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'horizontal',
 			)
@@ -249,8 +249,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_dot_navigation_show',
 			array(
-				'label'       => __( 'Dots', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Enable or disable navigation dots', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Dots', 'dethemekit-for-elementor' ),
+				'description' => __( 'Enable or disable navigation dots', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'separator'   => 'before',
 				'default'     => 'yes',
@@ -260,12 +260,12 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_dot_position',
 			array(
-				'label'     => __( 'Position', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Position', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'below',
 				'options'   => array(
-					'below' => __( 'Below Slides', 'dethemekit-addons-for-elementor' ),
-					'above' => __( 'On Slides', 'dethemekit-addons-for-elementor' ),
+					'below' => __( 'Below Slides', 'dethemekit-for-elementor' ),
+					'above' => __( 'On Slides', 'dethemekit-for-elementor' ),
 				),
 				'condition' => array(
 					'dethemekit_carousel_dot_navigation_show' => 'yes',
@@ -276,7 +276,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_carousel_dot_offset',
 			array(
-				'label'      => __( 'Horizontal Offset', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Horizontal Offset', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -292,7 +292,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_carousel_dot_voffset',
 			array(
-				'label'      => __( 'Vertical Offset', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Vertical Offset', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -308,8 +308,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_navigation_effect',
 			array(
-				'label'        => __( 'Ripple Effect', 'dethemekit-addons-for-elementor' ),
-				'description'  => __( 'Enable a ripple effect when the active dot is hovered/clicked', 'dethemekit-addons-for-elementor' ),
+				'label'        => __( 'Ripple Effect', 'dethemekit-for-elementor' ),
+				'description'  => __( 'Enable a ripple effect when the active dot is hovered/clicked', 'dethemekit-for-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'prefix_class' => 'dethemekit-carousel-ripple-',
 				'condition'    => array(
@@ -321,8 +321,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_navigation_show',
 			array(
-				'label'       => __( 'Arrows', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Enable or disable navigation arrows', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Arrows', 'dethemekit-for-elementor' ),
+				'description' => __( 'Enable or disable navigation arrows', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'separator'   => 'before',
 				'default'     => 'yes',
@@ -332,13 +332,13 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_slides_to_show',
 			array(
-				'label'     => __( 'Appearance', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Appearance', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'all',
 				'separator' => 'before',
 				'options'   => array(
-					'all'    => __( 'All visible', 'dethemekit-addons-for-elementor' ),
-					'single' => __( 'One at a time', 'dethemekit-addons-for-elementor' ),
+					'all'    => __( 'All visible', 'dethemekit-for-elementor' ),
+					'single' => __( 'One at a time', 'dethemekit-for-elementor' ),
 				),
 			)
 		);
@@ -346,7 +346,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_responsive_desktop',
 			array(
-				'label'   => __( 'Desktop Slides', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Desktop Slides', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 1,
 			)
@@ -355,7 +355,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_responsive_tabs',
 			array(
-				'label'   => __( 'Tabs Slides', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Tabs Slides', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 1,
 			)
@@ -364,7 +364,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_responsive_mobile',
 			array(
-				'label'   => __( 'Mobile Slides', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Mobile Slides', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 1,
 			)
@@ -375,16 +375,16 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_carousel_slides_settings',
 			array(
-				'label' => __( 'Slides Settings', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Slides Settings', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_loop',
 			array(
-				'label'       => __( 'Infinite Loop', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Infinite Loop', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
-				'description' => __( 'Restart the slider automatically as it passes the last slide', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Restart the slider automatically as it passes the last slide', 'dethemekit-for-elementor' ),
 				'default'     => 'yes',
 			)
 		);
@@ -392,9 +392,9 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_fade',
 			array(
-				'label'       => __( 'Fade', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Fade', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
-				'description' => __( 'Enable fade transition between slides', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Enable fade transition between slides', 'dethemekit-for-elementor' ),
 				'condition'   => array(
 					'dethemekit_carousel_slider_type' => 'horizontal',
 				),
@@ -404,7 +404,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_zoom',
 			array(
-				'label'     => __( 'Zoom Effect', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Zoom Effect', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_carousel_fade'        => 'yes',
@@ -416,8 +416,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_speed',
 			array(
-				'label'       => __( 'Transition Speed', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Set a navigation speed value. The value will be counted in milliseconds (ms)', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Transition Speed', 'dethemekit-for-elementor' ),
+				'description' => __( 'Set a navigation speed value. The value will be counted in milliseconds (ms)', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
 				'default'     => 300,
 			)
@@ -426,8 +426,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_autoplay',
 			array(
-				'label'       => __( 'Autoplay Slides‏', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Slide will start automatically', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Autoplay Slides‏', 'dethemekit-for-elementor' ),
+				'description' => __( 'Slide will start automatically', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'default'     => 'yes',
 			)
@@ -436,8 +436,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_autoplay_speed',
 			array(
-				'label'       => __( 'Autoplay Speed', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Autoplay Speed means at which time the next slide should come. Set a value in milliseconds (ms)', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Autoplay Speed', 'dethemekit-for-elementor' ),
+				'description' => __( 'Autoplay Speed means at which time the next slide should come. Set a value in milliseconds (ms)', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
 				'default'     => 5000,
 				'condition'   => array(
@@ -449,7 +449,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_animation_list',
 			array(
-				'label'       => __( 'Animations', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Animations', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::HIDDEN,
 				'render_type' => 'template',
 			)
@@ -458,9 +458,9 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_extra_class',
 			array(
-				'label'       => __( 'Extra Class', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Extra Class', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
-				'description' => __( 'Add extra class name that will be applied to the carousel, and you can use this class for your customizations.', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Add extra class name that will be applied to the carousel, and you can use this class for your customizations.', 'dethemekit-for-elementor' ),
 			)
 		);
 
@@ -469,15 +469,15 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit-carousel-advance-settings',
 			array(
-				'label' => __( 'Additional Settings', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Additional Settings', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_draggable_effect',
 			array(
-				'label'       => __( 'Draggable Effect', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Allow the slides to be dragged by mouse click', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Draggable Effect', 'dethemekit-for-elementor' ),
+				'description' => __( 'Allow the slides to be dragged by mouse click', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'default'     => 'yes',
 			)
@@ -486,8 +486,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_touch_move',
 			array(
-				'label'       => __( 'Touch Move', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Enable slide moving with touch', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Touch Move', 'dethemekit-for-elementor' ),
+				'description' => __( 'Enable slide moving with touch', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'default'     => 'yes',
 			)
@@ -496,8 +496,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_RTL_Mode',
 			array(
-				'label'       => __( 'RTL Mode', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Turn on RTL mode if your language starts from right to left', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'RTL Mode', 'dethemekit-for-elementor' ),
+				'description' => __( 'Turn on RTL mode if your language starts from right to left', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'condition'   => array(
 					'dethemekit_carousel_slider_type!' => 'vertical',
@@ -508,8 +508,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_adaptive_height',
 			array(
-				'label'       => __( 'Adaptive Height', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Adaptive height setting gives each slide a fixed height to avoid huge white space gaps', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Adaptive Height', 'dethemekit-for-elementor' ),
+				'description' => __( 'Adaptive height setting gives each slide a fixed height to avoid huge white space gaps', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 			)
 		);
@@ -517,8 +517,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_pausehover',
 			array(
-				'label'       => __( 'Pause on Hover', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Pause the slider when mouse hover', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Pause on Hover', 'dethemekit-for-elementor' ),
+				'description' => __( 'Pause the slider when mouse hover', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 			)
 		);
@@ -526,8 +526,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		// $this->add_control(
 		// 	'dethemekit_carousel_center_mode',
 		// 	array(
-		// 		'label'       => __( 'Center Mode', 'dethemekit-addons-for-elementor' ),
-		// 		'description' => __( 'Center mode enables a centered view with partial next/previous slides. Animations and all visible scroll type doesn\'t work with this mode', 'dethemekit-addons-for-elementor' ),
+		// 		'label'       => __( 'Center Mode', 'dethemekit-for-elementor' ),
+		// 		'description' => __( 'Center mode enables a centered view with partial next/previous slides. Animations and all visible scroll type doesn\'t work with this mode', 'dethemekit-for-elementor' ),
 		// 		'type'        => Controls_Manager::SWITCHER,
 		// 	)
 		// );
@@ -535,8 +535,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		// $this->add_control(
 		// 	'dethemekit_carousel_space_btw_items',
 		// 	array(
-		// 		'label'       => __( 'Slides\' Spacing', 'dethemekit-addons-for-elementor' ),
-		// 		'description' => __( 'Set a spacing value in pixels (px)', 'dethemekit-addons-for-elementor' ),
+		// 		'label'       => __( 'Slides\' Spacing', 'dethemekit-for-elementor' ),
+		// 		'description' => __( 'Set a spacing value in pixels (px)', 'dethemekit-for-elementor' ),
 		// 		'type'        => Controls_Manager::NUMBER,
 		// 		'default'     => '15',
 		// 	)
@@ -545,8 +545,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_tablet_breakpoint',
 			array(
-				'label'       => __( 'Tablet Breakpoint', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Sets the breakpoint between desktop and tablet devices. Below this breakpoint tablet layout will appear (Default: 1025px).', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Tablet Breakpoint', 'dethemekit-for-elementor' ),
+				'description' => __( 'Sets the breakpoint between desktop and tablet devices. Below this breakpoint tablet layout will appear (Default: 1025px).', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
 				'default'     => 1025,
 			)
@@ -555,8 +555,8 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_mobile_breakpoint',
 			array(
-				'label'       => __( 'Mobile Breakpoint', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Sets the breakpoint between tablet and mobile devices. Below this breakpoint mobile layout will appear (Default: 768px).', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Mobile Breakpoint', 'dethemekit-for-elementor' ),
+				'description' => __( 'Sets the breakpoint between tablet and mobile devices. Below this breakpoint mobile layout will appear (Default: 768px).', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
 				'default'     => 768,
 			)
@@ -567,7 +567,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_carousel_navigation_arrows',
 			array(
-				'label'     => __( 'Navigation Arrows', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Navigation Arrows', 'dethemekit-for-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => array(
 					'dethemekit_carousel_navigation_show' => 'yes',
@@ -578,7 +578,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_left_arrow',
 			array(
-				'label' => __( 'Custom Previous Icon', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Custom Previous Icon', 'dethemekit-for-elementor' ),
 				'type'  => Controls_Manager::SWITCHER,
 			)
 		);
@@ -586,7 +586,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_left_arrow_select',
 			array(
-				'label'       => __( 'Select Icon', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Select Icon', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'default'     => array(
 					'value'   => 'fas fa-arrow-alt-circle-left',
@@ -603,7 +603,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_icon_prev_ver',
 			array(
-				'label'     => __( 'Top Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Top Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'left_arrow_bold'        => array(
@@ -634,7 +634,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_icon_prev',
 			array(
-				'label'     => __( 'Left Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Left Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'left_arrow_bold'        => array(
@@ -665,7 +665,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_right_arrow',
 			array(
-				'label'     => __( 'Custom Next Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Custom Next Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'separator' => 'before',
 			)
@@ -674,7 +674,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_right_arrow_select',
 			array(
-				'label'       => __( 'Select Icon', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Select Icon', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'default'     => array(
 					'value'   => 'fas fa-arrow-alt-circle-right',
@@ -691,7 +691,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_icon_next',
 			array(
-				'label'     => __( 'Right Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Right Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'right_arrow_bold'        => array(
@@ -722,7 +722,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_icon_next_ver',
 			array(
-				'label'     => __( 'Bottom Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Bottom Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'right_arrow_bold'        => array(
@@ -753,7 +753,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_carousel_arrow_size',
 			array(
-				'label'      => __( 'Size', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Size', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', 'vw' ),
 				'default'    => array(
@@ -777,7 +777,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_carousel_arrow_position',
 			array(
-				'label'     => __( 'Position (PX)', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Position (PX)', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => array(
 					'px' => array(
@@ -799,14 +799,14 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_button_style_normal',
 			array(
-				'label' => __( 'Normal', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Normal', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_arrow_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -821,7 +821,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_bg_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} a.carousel-next, {{WRAPPER}} a.carousel-prev' => 'background-color: {{VALUE}};',
@@ -840,7 +840,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrows_radius_normal',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'selectors'  => array(
@@ -854,14 +854,14 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_carousel_arrows_hover',
 			array(
-				'label' => __( 'Hover', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Hover', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_carousel_hover_arrow_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -876,7 +876,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrow_hover_bg_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} a.carousel-next:hover, {{WRAPPER}} a.carousel-prev:hover' => 'background-color: {{VALUE}};',
@@ -895,7 +895,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_arrows_radius_hover',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'selectors'  => array(
@@ -913,7 +913,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_carousel_navigation_dots',
 			array(
-				'label'     => __( 'Navigation Dots', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Navigation Dots', 'dethemekit-for-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => array(
 					'dethemekit_carousel_dot_navigation_show' => 'yes',
@@ -924,7 +924,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_dot_icon',
 			array(
-				'label'     => __( 'Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'square_white' => array(
@@ -951,7 +951,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_pagination_icon',
 			array(
-				'label' => __( 'Custom Icon', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Custom Icon', 'dethemekit-for-elementor' ),
 				'type'  => Controls_Manager::SWITCHER,
 			)
 		);
@@ -959,7 +959,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'custom_pagination_icon_select',
 			array(
-				'label'       => __( 'Select Icon', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Select Icon', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'default'     => array(
 					'value'   => 'fas fa-dot-circle',
@@ -976,7 +976,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_responsive_control(
 			'dot_size',
 			array(
-				'label'      => __( 'Size', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Size', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em' ),
 				'selectors'  => array(
@@ -988,7 +988,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_dot_navigation_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1003,7 +1003,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_dot_navigation_active_color',
 			array(
-				'label'     => __( 'Active Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Active Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -1018,7 +1018,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_ripple_active_color',
 			array(
-				'label'     => __( 'Active Ripple Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Active Ripple Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => array(
 					'dethemekit_carousel_navigation_effect' => 'yes',
@@ -1032,7 +1032,7 @@ class DethemeKit_Carousel extends Widget_Base {
 		$this->add_control(
 			'dethemekit_carousel_ripple_color',
 			array(
-				'label'     => __( 'Inactive Ripple Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Inactive Ripple Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => array(
 					'dethemekit_carousel_navigation_effect' => 'yes',

@@ -36,12 +36,12 @@ if ( ! class_exists( 'De_Column_Clickable_Setup' ) ) :
       $element->add_control(
         'column_link',
         [
-          'label'       => __( 'Column Link', 'detheme-kit' ),
+          'label'       => __( 'Column Link', 'dethemekit-for-elementor' ),
           'type'        => Elementor\Controls_Manager::URL,
           'dynamic'     => [
             'active' => true,
           ],
-          'placeholder' => __( 'https://your-link.com', 'elementor' ),
+          'placeholder' => __( 'https://your-link.com', 'dethemekit-for-elementor' ),
           'selectors'   => [
         ],
         ]

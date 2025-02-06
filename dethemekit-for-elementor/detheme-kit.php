@@ -3,12 +3,14 @@
  * Plugin Name:         DethemeKit for Elementor
  * Plugin URI:          https://vastthemes.com
  * Description:         Detheme Widgets for elementor.
- * Version:             2.1.8
+ * Version:             2.1.9
  * Author:              deTheme
  * Author URI:          https://detheme.com
  * Requires at least:   5.2
- * Tested up to:        6.4
+ * Tested up to:        6.7
  *
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: dethemekit-for-elementor
  * Domain Path: /languages/
  
@@ -17,13 +19,13 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 // Define Constants
-define('DETHEMEKIT_ADDONS_VERSION', '2.1.8');
+define('DETHEMEKIT_ADDONS_VERSION', '2.1.9');
 define('DETHEMEKIT_ADDONS_URL', plugins_url( '/', __FILE__ ) );
 define('DETHEMEKIT_ADDONS_PATH', plugin_dir_path( __FILE__ ) );
 define('DETHEMEKIT_ADDONS_FILE', __FILE__);
 define('DETHEMEKIT_ADDONS_BASENAME', plugin_basename( DETHEMEKIT_ADDONS_FILE ) );
 define('DETHEMEKIT_ADDONS_DIR_URL', plugin_dir_url( __FILE__ ));
-define('DETHEMEKIT_ADDONS_STABLE_VERSION', '2.1.8');
+define('DETHEMEKIT_ADDONS_STABLE_VERSION', '2.1.9');
 
 define('DETHEMEKIT_ADDONS_DIR', __DIR__);
 define('DETHEMEKIT_ADDONS_DIRNAME', dirname(DETHEMEKIT_ADDONS_BASENAME));
@@ -209,13 +211,13 @@ final class Detheme_Kit {
 			</div>
 			<div>
 				<div class="e-major-update-warning__title">
-					<?php echo esc_html__( 'New Features are here, update Dethemekit now!', 'dethemekit' ); ?>
+					<?php echo esc_html__( 'New Features are here, update Dethemekit now!', 'dethemekit-for-elementor' ); ?>
 				</div>
 				<div class="e-major-update-warning__message">
 					<?php
 						printf(
 							/* translators: %1$s Link open tag, %2$s: Link close tag. */
-							esc_html__( 'We have been working on some features that can help you make an attractive website. Also, we are happy to inform you that we have opened our %1$sShop%2$s where you can find the best Elementor Templates in town!', 'dethemekit' ),
+							esc_html__( 'We have been working on some features that can help you make an attractive website. Also, we are happy to inform you that we have opened our %1$sShop%2$s where you can find the best Elementor Templates in town!', 'dethemekit-for-elementor' ),
 							'<a target="_blank" href="http://detheme.com/">',
 							'</a>'
 						);
@@ -235,13 +237,13 @@ final class Detheme_Kit {
 			</div>
 			<div>
 				<div class="e-major-update-warning__title">
-					<?php echo esc_html__( 'New Features are here, update Dethemekit now!', 'dethemekit' ); ?>
+					<?php echo esc_html__( 'New Features are here, update Dethemekit now!', 'dethemekit-for-elementor' ); ?>
 				</div>
 				<div class="e-major-update-warning__message">
 					<?php
 						printf(
 							/* translators: %1$s Link open tag, %2$s: Link close tag. */
-							esc_html__( 'We have been working on some features that can help you make an attractive website. Also, we are happy to inform you that we have opened our %1$sShop%2$s where you can find the best Elementor Templates in town!', 'dethemekit' ),
+							esc_html__( 'We have been working on some features that can help you make an attractive website. Also, we are happy to inform you that we have opened our %1$sShop%2$s where you can find the best Elementor Templates in town!', 'dethemekit-for-elementor' ),
 							'<a target="_blank" href="http://detheme.com/">',
 							'</a>'
 						);
@@ -267,7 +269,7 @@ final class Detheme_Kit {
 		];
 
 		$wp_meta_boxes['dashboard']['normal']['core'] = array_merge( $ours, $dashboard );
-		// wp_add_dashboard_widget( 'dethemekit-stories', __( 'DethemeKit Storiese', 'dethemekit' ), [ $this, 'show' ] );
+		// wp_add_dashboard_widget( 'dethemekit-stories', __( 'DethemeKit Storiese', 'dethemekit-for-elementor' ), [ $this, 'show' ] );
 	}
 
 	public function nc_settings_link( $links ) {
@@ -278,7 +280,7 @@ final class Detheme_Kit {
 			get_admin_url() . 'admin.php'
 		) );
 		// Create the link.
-		$settings_link = "<a href='$url'>" . __( 'Settings' ) . '</a>';
+		$settings_link = "<a href='$url'>" . __( 'Settings', 'dethemekit-for-elementor' ) . '</a>';
 		// Adds the link to the end of the array.
 		array_push(
 			$links,
@@ -351,7 +353,7 @@ final class Detheme_Kit {
 	 */
 	public function load_domain() {
 		
-		load_plugin_textdomain( 'dethemekit-addons-for-elementor', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'dethemekit-for-elementor', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		
 	}
 
@@ -503,9 +505,9 @@ final class Detheme_Kit {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'detheme-kit' ),
-			'<strong>' . esc_html__( 'Elementor Hello World', 'detheme-kit' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'detheme-kit' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'dethemekit-for-elementor' ),
+			'<strong>' . esc_html__( 'Elementor Hello World', 'dethemekit-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'dethemekit-for-elementor' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -526,9 +528,9 @@ final class Detheme_Kit {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'detheme-kit' ),
-			'<strong>' . esc_html__( 'Elementor Hello World', 'detheme-kit' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'detheme-kit' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'dethemekit-for-elementor' ),
+			'<strong>' . esc_html__( 'Elementor Hello World', 'dethemekit-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'dethemekit-for-elementor' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -620,9 +622,9 @@ final class Detheme_Kit {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'detheme-kit' ),
-			'<strong>' . esc_html__( 'Elementor Hello World', 'detheme-kit' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'detheme-kit' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'dethemekit-for-elementor' ),
+			'<strong>' . esc_html__( 'Elementor Hello World', 'dethemekit-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'dethemekit-for-elementor' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 

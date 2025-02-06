@@ -659,9 +659,9 @@ class DethemeKit_Template_Tags {
 		if ( 'yes' === $comments_meta ) {
 
 			$comments_strings = array(
-				'no-comments'       => __( 'No Comments', 'dethemekit-addons-for-elementor' ),
-				'one-comment'       => __( '1 Comment', 'dethemekit-addons-for-elementor' ),
-				'multiple-comments' => __( '% Comments', 'dethemekit-addons-for-elementor' ),
+				'no-comments'       => __( 'No Comments', 'dethemekit-for-elementor' ),
+				'one-comment'       => __( '1 Comment', 'dethemekit-for-elementor' ),
+				'multiple-comments' => __( '% Comments', 'dethemekit-for-elementor' ),
 			);
 
 		}
@@ -980,7 +980,7 @@ class DethemeKit_Template_Tags {
 		);
 
 		?>
-		<nav class="dethemekit-blog-pagination-container" role="navigation" aria-label="<?php echo esc_attr( __( 'Pagination', 'dethemekit-addons-for-elementor' ) ); ?>">
+		<nav class="dethemekit-blog-pagination-container" role="navigation" aria-label="<?php echo esc_attr( __( 'Pagination', 'dethemekit-for-elementor' ) ); ?>">
 			<?php echo wp_kses_post( implode( PHP_EOL, $nav_links ) ); ?>
 		</nav>
 		<?php

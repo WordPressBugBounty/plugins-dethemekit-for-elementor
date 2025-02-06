@@ -65,7 +65,7 @@ class DethemeKit_Grid extends Widget_Base {
 	 * @access public
 	 */
 	public function get_title() {
-		return __('De Gallery', 'dethemekit-addons-for-elementor') ;
+		return __('De Gallery', 'dethemekit-for-elementor') ;
 	}
 
 	/**
@@ -163,12 +163,12 @@ class DethemeKit_Grid extends Widget_Base {
 	 * @since 2.1.0
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'dethemekit_gallery_general',
 			array(
-				'label' => __( 'Layout', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Layout', 'dethemekit-for-elementor' ),
 
 			)
 		);
@@ -176,12 +176,12 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_img_size_select',
 			array(
-				'label'   => __( 'Grid Layout', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Grid Layout', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => array(
-					'fitRows' => __( 'Even', 'dethemekit-addons-for-elementor' ),
-					'masonry' => __( 'Masonry', 'dethemekit-addons-for-elementor' ),
-					'metro'   => __( 'Metro', 'dethemekit-addons-for-elementor' ),
+					'fitRows' => __( 'Even', 'dethemekit-for-elementor' ),
+					'masonry' => __( 'Masonry', 'dethemekit-for-elementor' ),
+					'metro'   => __( 'Metro', 'dethemekit-for-elementor' ),
 				),
 				'default' => 'fitRows',
 			)
@@ -190,7 +190,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'pemium_gallery_even_img_height',
 			array(
-				'label'       => __( 'Height', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Height', 'dethemekit-for-elementor' ),
 				'label_block' => true,
 				'size_units'  => array( 'px', 'em', 'vh' ),
 				'type'        => Controls_Manager::SLIDER,
@@ -217,11 +217,11 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_images_fit',
 			array(
-				'label'     => __( 'Images Fit', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Images Fit', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => array(
-					'fill'  => __( 'Fill', 'dethemekit-addons-for-elementor' ),
-					'cover' => __( 'Cover', 'dethemekit-addons-for-elementor' ),
+					'fill'  => __( 'Fill', 'dethemekit-for-elementor' ),
+					'cover' => __( 'Cover', 'dethemekit-for-elementor' ),
 				),
 				'default'   => 'fill',
 				'selectors' => array(
@@ -244,20 +244,20 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_column_number',
 			array(
-				'label'           => __( 'Columns', 'dethemekit-addons-for-elementor' ),
+				'label'           => __( 'Columns', 'dethemekit-for-elementor' ),
 				'label_block'     => true,
 				'type'            => Controls_Manager::SELECT,
 				'desktop_default' => '50%',
 				'tablet_default'  => '100%',
 				'mobile_default'  => '100%',
 				'options'         => array(
-					'100%'    => __( '1 Column', 'dethemekit-addons-for-elementor' ),
-					'50%'     => __( '2 Columns', 'dethemekit-addons-for-elementor' ),
-					'33.330%' => __( '3 Columns', 'dethemekit-addons-for-elementor' ),
-					'25%'     => __( '4 Columns', 'dethemekit-addons-for-elementor' ),
-					'20%'     => __( '5 Columns', 'dethemekit-addons-for-elementor' ),
-					'16.66%'  => __( '6 Columns', 'dethemekit-addons-for-elementor' ),
-					'8.33%'   => __( '12 Columns', 'dethemekit-addons-for-elementor' ),
+					'100%'    => __( '1 Column', 'dethemekit-for-elementor' ),
+					'50%'     => __( '2 Columns', 'dethemekit-for-elementor' ),
+					'33.330%' => __( '3 Columns', 'dethemekit-for-elementor' ),
+					'25%'     => __( '4 Columns', 'dethemekit-for-elementor' ),
+					'20%'     => __( '5 Columns', 'dethemekit-for-elementor' ),
+					'16.66%'  => __( '6 Columns', 'dethemekit-for-elementor' ),
+					'8.33%'   => __( '12 Columns', 'dethemekit-for-elementor' ),
 				),
 				'condition'       => array(
 					'dethemekit_gallery_img_size_select!' => 'metro',
@@ -272,8 +272,8 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_load_more',
 			array(
-				'label'       => __( 'Load More Button', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Requires number of images larger than 6', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Load More Button', 'dethemekit-for-elementor' ),
+				'description' => __( 'Requires number of images larger than 6', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 			)
 		);
@@ -281,9 +281,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_load_more_text',
 			array(
-				'label'     => __( 'Button Text', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Button Text', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => __( 'Load More', 'dethemekit-addons-for-elementor' ),
+				'default'   => __( 'Load More', 'dethemekit-for-elementor' ),
 				'dynamic'   => array( 'active' => true ),
 				'condition' => array(
 					'dethemekit_gallery_load_more' => 'yes',
@@ -294,9 +294,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_load_minimum',
 			array(
-				'label'       => __( 'Minimum Number of Images', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Minimum Number of Images', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
-				'description' => __( 'Set the minimum number of images before showing load more button', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Set the minimum number of images before showing load more button', 'dethemekit-for-elementor' ),
 				'default'     => 6,
 				'condition'   => array(
 					'dethemekit_gallery_load_more' => 'yes',
@@ -307,9 +307,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_load_click_number',
 			array(
-				'label'       => __( 'Images to Show', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Images to Show', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
-				'description' => __( 'Set the minimum number of images to show with each click', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Set the minimum number of images to show with each click', 'dethemekit-for-elementor' ),
 				'default'     => 6,
 				'condition'   => array(
 					'dethemekit_gallery_load_more' => 'yes',
@@ -320,19 +320,19 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_load_more_align',
 			array(
-				'label'     => __( 'Button Alignment', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Button Alignment', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'left'   => array(
-						'title' => __( 'Left', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					),
 					'center' => array(
-						'title' => __( 'Center', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					),
 					'right'  => array(
-						'title' => __( 'Right', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					),
 				),
@@ -351,14 +351,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_cats',
 			array(
-				'label' => __( 'Categories', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Categories', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_filter',
 			array(
-				'label'   => __( 'Filter Tabs', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Filter Tabs', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			)
@@ -369,7 +369,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_first_cat_switcher',
 			array(
-				'label'     => __( 'First Category', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'First Category', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'condition' => $condition,
@@ -379,9 +379,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_first_cat_label',
 			array(
-				'label'     => __( 'First Category Label', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'First Category Label', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => __( 'All', 'dethemekit-addons-for-elementor' ),
+				'default'   => __( 'All', 'dethemekit-for-elementor' ),
 				'dynamic'   => array( 'active' => true ),
 				'condition' => array_merge(
 					array(
@@ -397,7 +397,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$repeater->add_control(
 			'dethemekit_gallery_img_cat',
 			array(
-				'label'   => __( 'Category', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Category', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 				'dynamic' => array( 'active' => true ),
 			)
@@ -406,9 +406,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$repeater->add_control(
 			'dethemekit_gallery_img_cat_rotation',
 			array(
-				'label'       => __( 'Rotation Degrees', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Rotation Degrees', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
-				'description' => __( 'Set rotation value in degrees', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Set rotation value in degrees', 'dethemekit-for-elementor' ),
 				'min'         => -180,
 				'max'         => 180,
 				'selectors'   => array(
@@ -420,7 +420,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_cats_content',
 			array(
-				'label'       => __( 'Categories', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Categories', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::REPEATER,
 				'default'     => array(
 					array(
@@ -439,7 +439,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_active_cat',
 			array(
-				'label'     => __( 'Active Category Index', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Active Category Index', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::NUMBER,
 				'default'   => 0,
 				'min'       => 0,
@@ -451,7 +451,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'active_cat_notice',
 			array(
-				'raw'             => __( 'Please note categories are zero indexed, so if you need the first category to be active, you need to set the value to 0', 'dethemekit-addons-for-elementor' ),
+				'raw'             => __( 'Please note categories are zero indexed, so if you need the first category to be active, you need to set the value to 0', 'dethemekit-for-elementor' ),
 				'type'            => Controls_Manager::RAW_HTML,
 				'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				'condition'       => $condition,
@@ -461,7 +461,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_shuffle',
 			array(
-				'label'     => __( 'Shuffle Images on Filter Click', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Shuffle Images on Filter Click', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'condition' => array_merge(
 					array(
@@ -475,19 +475,19 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_filters_align',
 			array(
-				'label'     => __( 'Alignment', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'flex-start' => array(
-						'title' => __( 'Left', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					),
 					'center'     => array(
-						'title' => __( 'Center', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					),
 					'flex-end'   => array(
-						'title' => __( 'Right', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					),
 				),
@@ -502,10 +502,10 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'url_flag',
 			array(
-				'label'       => __( 'URL Flag', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'URL Flag', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'default'     => 'cat',
-				'description' => __( 'This is used to link categories from different pages. For example: dethemekitaddons.com/grid-widget-for-elementor-page-builder?cat=2', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'This is used to link categories from different pages. For example: dethemekitaddons.com/grid-widget-for-elementor-page-builder?cat=2', 'dethemekit-for-elementor' ),
 				'label_block' => true,
 				'condition'   => $condition,
 			)
@@ -516,7 +516,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_content',
 			array(
-				'label' => __( 'Images/Videos', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Images/Videos', 'dethemekit-for-elementor' ),
 			)
 		);
 
@@ -525,7 +525,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img',
 			array(
-				'label'   => __( 'Upload Image', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Upload Image', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::MEDIA,
 				'dynamic' => array( 'active' => true ),
 				'default' => array(
@@ -537,8 +537,8 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_responsive_control(
 			'dethemekit_gallery_image_cell',
 			array(
-				'label'       => __( 'Width', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Works only when layout set to Metro', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Width', 'dethemekit-for-elementor' ),
+				'description' => __( 'Works only when layout set to Metro', 'dethemekit-for-elementor' ),
 				'label_block' => true,
 				'default'     => array(
 					'unit' => 'px',
@@ -558,8 +558,8 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_responsive_control(
 			'dethemekit_gallery_image_vcell',
 			array(
-				'label'       => __( 'Height', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'Works only when layout set to \'Metro\'', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Height', 'dethemekit-for-elementor' ),
+				'description' => __( 'Works only when layout set to \'Metro\'', 'dethemekit-for-elementor' ),
 				'label_block' => true,
 				'type'        => Controls_Manager::SLIDER,
 				'default'     => array(
@@ -579,7 +579,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video',
 			array(
-				'label'        => __( 'Video', 'dethemekit-addons-for-elementor' ),
+				'label'        => __( 'Video', 'dethemekit-for-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 			)
@@ -588,12 +588,12 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_type',
 			array(
-				'label'       => __( 'Type', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Type', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'options'     => array(
-					'youtube' => __( 'YouTube', 'dethemekit-addons-for-elementor' ),
-					'vimeo'   => __( 'Vimeo', 'dethemekit-addons-for-elementor' ),
-					'hosted'  => __( 'Self Hosted', 'dethemekit-addons-for-elementor' ),
+					'youtube' => __( 'YouTube', 'dethemekit-for-elementor' ),
+					'vimeo'   => __( 'Vimeo', 'dethemekit-for-elementor' ),
+					'hosted'  => __( 'Self Hosted', 'dethemekit-for-elementor' ),
 				),
 				'label_block' => true,
 				'default'     => 'youtube',
@@ -606,7 +606,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_url',
 			array(
-				'label'       => __( 'Video URL', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Video URL', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
 				'dynamic'     => array(
@@ -626,7 +626,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_self',
 			array(
-				'label'      => __( 'Select Video', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Select Video', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::MEDIA,
 				'dynamic'    => array(
 					'active'     => true,
@@ -646,7 +646,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_self_url',
 			array(
-				'label'       => __( 'Remote Video URL', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Remote Video URL', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'dynamic'     => array(
 					'active' => true,
@@ -662,7 +662,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_controls',
 			array(
-				'label'        => __( 'Controls', 'dethemekit-addons-for-elementor' ),
+				'label'        => __( 'Controls', 'dethemekit-for-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'default'      => 'true',
@@ -675,7 +675,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_video_mute',
 			array(
-				'label'        => __( 'Mute', 'dethemekit-addons-for-elementor' ),
+				'label'        => __( 'Mute', 'dethemekit-for-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'condition'    => array(
@@ -687,7 +687,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_name',
 			array(
-				'label'       => __( 'Title', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Title', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'dynamic'     => array( 'active' => true ),
 				'label_block' => true,
@@ -697,7 +697,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_desc',
 			array(
-				'label'       => __( 'Description', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Description', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXTAREA,
 				'dynamic'     => array( 'active' => true ),
 				'label_block' => true,
@@ -707,9 +707,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_category',
 			array(
-				'label'       => __( 'Category', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Category', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::TEXT,
-				'description' => __( 'To assign for multiple categories, separate by a comma \',\'', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'To assign for multiple categories, separate by a comma \',\'', 'dethemekit-for-elementor' ),
 				'dynamic'     => array( 'active' => true ),
 			)
 		);
@@ -717,11 +717,11 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_link_type',
 			array(
-				'label'       => __( 'Link Type', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Link Type', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'options'     => array(
-					'url'  => __( 'URL', 'dethemekit-addons-for-elementor' ),
-					'link' => __( 'Existing Page', 'dethemekit-addons-for-elementor' ),
+					'url'  => __( 'URL', 'dethemekit-for-elementor' ),
+					'link' => __( 'Existing Page', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'url',
 				'label_block' => true,
@@ -734,7 +734,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_link',
 			array(
-				'label'       => __( 'Link', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Link', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::URL,
 				'dynamic'     => array( 'active' => true ),
 				'placeholder' => 'https://dethemekitaddons.com/',
@@ -749,7 +749,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_img_existing',
 			array(
-				'label'       => __( 'Existing Page', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Existing Page', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT2,
 				'options'     => $this->getTemplateInstance()->get_all_post(),
 				'condition'   => array(
@@ -768,7 +768,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_link_whole',
 			array(
-				'label'     => __( 'Whole Image Link', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Whole Image Link', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_gallery_video!' => 'true',
@@ -779,7 +779,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$img_repeater->add_control(
 			'dethemekit_gallery_lightbox_whole',
 			array(
-				'label'     => __( 'Whole Image Lightbox', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Whole Image Lightbox', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_gallery_video!' => 'true',
@@ -790,7 +790,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_img_content',
 			array(
-				'label'       => __( 'Images', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Images', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::REPEATER,
 				'default'     => array(
 					array(
@@ -810,7 +810,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_shuffle_onload',
 			array(
-				'label' => __( 'Shuffle Images on Page Load', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Shuffle Images on Page Load', 'dethemekit-for-elementor' ),
 				'type'  => Controls_Manager::SWITCHER,
 			)
 		);
@@ -818,13 +818,13 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_yt_thumbnail_size',
 			array(
-				'label'       => __( 'Youtube Videos Thumbnail Size', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Youtube Videos Thumbnail Size', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'options'     => array(
-					'maxresdefault' => __( 'Maximum Resolution', 'dethemekit-addons-for-elementor' ),
-					'hqdefault'     => __( 'High Quality', 'dethemekit-addons-for-elementor' ),
-					'mqdefault'     => __( 'Medium Quality', 'dethemekit-addons-for-elementor' ),
-					'sddefault'     => __( 'Standard Quality', 'dethemekit-addons-for-elementor' ),
+					'maxresdefault' => __( 'Maximum Resolution', 'dethemekit-for-elementor' ),
+					'hqdefault'     => __( 'High Quality', 'dethemekit-for-elementor' ),
+					'mqdefault'     => __( 'Medium Quality', 'dethemekit-for-elementor' ),
+					'sddefault'     => __( 'Standard Quality', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'maxresdefault',
 				'label_block' => true,
@@ -836,7 +836,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_grid_settings',
 			array(
-				'label' => __( 'Display Options', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Display Options', 'dethemekit-for-elementor' ),
 
 			)
 		);
@@ -844,7 +844,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_gap',
 			array(
-				'label'      => __( 'Image Gap', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Image Gap', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'range'      => array(
@@ -862,14 +862,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_img_style',
 			array(
-				'label'       => __( 'Skin', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Skin', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
-				'description' => __( 'Choose a layout style for the gallery', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Choose a layout style for the gallery', 'dethemekit-for-elementor' ),
 				'options'     => array(
-					'default' => __( 'Style 1', 'dethemekit-addons-for-elementor' ),
-					'style1'  => __( 'Style 2', 'dethemekit-addons-for-elementor' ),
-					'style2'  => __( 'Style 3', 'dethemekit-addons-for-elementor' ),
-					'style3'  => __( 'Style 4', 'dethemekit-addons-for-elementor' ),
+					'default' => __( 'Style 1', 'dethemekit-for-elementor' ),
+					'style1'  => __( 'Style 2', 'dethemekit-for-elementor' ),
+					'style2'  => __( 'Style 3', 'dethemekit-for-elementor' ),
+					'style3'  => __( 'Style 4', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'default',
 				'separator'   => 'before',
@@ -880,7 +880,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_grid_style_notice',
 			array(
-				'raw'             => __( 'Style 4 works only with Even / Masonry Layout', 'dethemekit-addons-for-elementor' ),
+				'raw'             => __( 'Style 4 works only with Even / Masonry Layout', 'dethemekit-for-elementor' ),
 				'type'            => Controls_Manager::RAW_HTML,
 				'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				'condition'       => array(
@@ -893,7 +893,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_style1_border_border',
 			array(
-				'label'       => __( 'Height', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Height', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SLIDER,
 				'range'       => array(
 					'px' => array(
@@ -914,19 +914,19 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_img_effect',
 			array(
-				'label'       => __( 'Hover Effect', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Hover Effect', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SELECT,
-				'description' => __( 'Choose a hover effect for the image', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Choose a hover effect for the image', 'dethemekit-for-elementor' ),
 				'options'     => array(
-					'none'    => __( 'None', 'dethemekit-addons-for-elementor' ),
-					'zoomin'  => __( 'Zoom In', 'dethemekit-addons-for-elementor' ),
-					'zoomout' => __( 'Zoom Out', 'dethemekit-addons-for-elementor' ),
-					'scale'   => __( 'Scale', 'dethemekit-addons-for-elementor' ),
-					'gray'    => __( 'Grayscale', 'dethemekit-addons-for-elementor' ),
-					'blur'    => __( 'Blur', 'dethemekit-addons-for-elementor' ),
-					'bright'  => __( 'Bright', 'dethemekit-addons-for-elementor' ),
-					'sepia'   => __( 'Sepia', 'dethemekit-addons-for-elementor' ),
-					'trans'   => __( 'Translate', 'dethemekit-addons-for-elementor' ),
+					'none'    => __( 'None', 'dethemekit-for-elementor' ),
+					'zoomin'  => __( 'Zoom In', 'dethemekit-for-elementor' ),
+					'zoomout' => __( 'Zoom Out', 'dethemekit-for-elementor' ),
+					'scale'   => __( 'Scale', 'dethemekit-for-elementor' ),
+					'gray'    => __( 'Grayscale', 'dethemekit-for-elementor' ),
+					'blur'    => __( 'Blur', 'dethemekit-for-elementor' ),
+					'bright'  => __( 'Bright', 'dethemekit-for-elementor' ),
+					'sepia'   => __( 'Sepia', 'dethemekit-for-elementor' ),
+					'trans'   => __( 'Translate', 'dethemekit-for-elementor' ),
 				),
 				'default'     => 'zoomin',
 				'label_block' => true,
@@ -937,7 +937,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_links_icon',
 			array(
-				'label'   => __( 'Links Icon', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Links Icon', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::ICONS,
 				'default' => array(
 					'library' => 'fa-solid',
@@ -949,7 +949,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_videos_heading',
 			array(
-				'label'     => __( 'Videos', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Videos', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -958,7 +958,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_video_icon',
 			array(
-				'label'        => __( 'Always Show Play Icon', 'dethemekit-addons-for-elementor' ),
+				'label'        => __( 'Always Show Play Icon', 'dethemekit-for-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'default'      => 'true',
@@ -972,7 +972,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_videos_icon',
 			array(
-				'label'   => __( 'Videos Play Icon', 'dethemekit-addons-for-elementor' ),
+				'label'   => __( 'Videos Play Icon', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::ICONS,
 				'default' => array(
 					'library' => 'fa-solid',
@@ -984,8 +984,8 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_rtl_mode',
 			array(
-				'label'       => __( 'RTL Mode', 'dethemekit-addons-for-elementor' ),
-				'description' => __( 'This option moves the origin of the grid to the right side. Useful for RTL direction sites', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'RTL Mode', 'dethemekit-for-elementor' ),
+				'description' => __( 'This option moves the origin of the grid to the right side. Useful for RTL direction sites', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
 				'separator'   => 'before',
 			)
@@ -994,19 +994,19 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_content_align',
 			array(
-				'label'     => __( 'Content Alignment', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Content Alignment', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'left'   => array(
-						'title' => __( 'Left', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					),
 					'center' => array(
-						'title' => __( 'Center', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					),
 					'right'  => array(
-						'title' => __( 'Right', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					),
 				),
@@ -1023,14 +1023,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_lightbox_section',
 			array(
-				'label' => __( 'Lightbox', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Lightbox', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_light_box',
 			array(
-				'label'     => __( 'Lightbox', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Lightbox', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'separator' => 'before',
@@ -1040,13 +1040,13 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_lightbox_type',
 			array(
-				'label'     => __( 'Lightbox Style', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Lightbox Style', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'default',
 				'options'   => array(
-					'default' => __( 'PrettyPhoto', 'dethemekit-addons-for-elementor' ),
-					'yes'     => __( 'Elementor', 'dethemekit-addons-for-elementor' ),
-					'no'      => __( 'Other Lightbox Plugin', 'dethemekit-addons-for-elementor' ),
+					'default' => __( 'PrettyPhoto', 'dethemekit-for-elementor' ),
+					'yes'     => __( 'Elementor', 'dethemekit-for-elementor' ),
+					'no'      => __( 'Other Lightbox Plugin', 'dethemekit-for-elementor' ),
 				),
 				'condition' => array(
 					'dethemekit_gallery_light_box' => 'yes',
@@ -1057,7 +1057,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'lightbox_show_title',
 			array(
-				'label'     => __( 'Show Image Title', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Show Image Title', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'condition' => array(
@@ -1070,7 +1070,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_lightbox_doc',
 			array(
-				'raw'             => __( 'Please note Elementor lightbox style is always applied on videos.', 'dethemekit-addons-for-elementor' ),
+				'raw'             => __( 'Please note Elementor lightbox style is always applied on videos.', 'dethemekit-for-elementor' ),
 				'type'            => Controls_Manager::RAW_HTML,
 				'content_classes' => 'editor-pa-doc',
 			)
@@ -1079,15 +1079,15 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_lightbox_theme',
 			array(
-				'label'     => __( 'Lightbox Theme', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Lightbox Theme', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => array(
-					'pp_default'    => __( 'Default', 'dethemekit-addons-for-elementor' ),
-					'light_rounded' => __( 'Light Rounded', 'dethemekit-addons-for-elementor' ),
-					'dark_rounded'  => __( 'Dark Rounded', 'dethemekit-addons-for-elementor' ),
-					'light_square'  => __( 'Light Square', 'dethemekit-addons-for-elementor' ),
-					'dark_square'   => __( 'Dark Square', 'dethemekit-addons-for-elementor' ),
-					'facebook'      => __( 'Facebook', 'dethemekit-addons-for-elementor' ),
+					'pp_default'    => __( 'Default', 'dethemekit-for-elementor' ),
+					'light_rounded' => __( 'Light Rounded', 'dethemekit-for-elementor' ),
+					'dark_rounded'  => __( 'Dark Rounded', 'dethemekit-for-elementor' ),
+					'light_square'  => __( 'Light Square', 'dethemekit-for-elementor' ),
+					'dark_square'   => __( 'Dark Square', 'dethemekit-for-elementor' ),
+					'facebook'      => __( 'Facebook', 'dethemekit-for-elementor' ),
 				),
 				'default'   => 'pp_default',
 				'condition' => array(
@@ -1100,7 +1100,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_overlay_gallery',
 			array(
-				'label'     => __( 'Overlay Gallery Images', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Overlay Gallery Images', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_gallery_light_box'     => 'yes',
@@ -1112,7 +1112,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_lightbox_icon',
 			array(
-				'label'     => __( 'Lightbox Icon', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Lightbox Icon', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::ICONS,
 				'default'   => array(
 					'library' => 'fa-solid',
@@ -1129,25 +1129,25 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_responsive_section',
 			array(
-				'label' => __( 'Responsive', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Responsive', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_responsive_switcher',
 			array(
-				'label'       => __( 'Responsive Controls', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Responsive Controls', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
-				'description' => __( 'If the content text is not suiting well on specific screen sizes, you may enable this option which will hide the description text.', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'If the content text is not suiting well on specific screen sizes, you may enable this option which will hide the description text.', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_min_range',
 			array(
-				'label'       => __( 'Minimum Size', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Minimum Size', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
-				'description' => __( 'Note: minimum size for extra small screens is 1px.', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Note: minimum size for extra small screens is 1px.', 'dethemekit-for-elementor' ),
 				'default'     => 1,
 				'condition'   => array(
 					'dethemekit_gallery_responsive_switcher' => 'yes',
@@ -1158,9 +1158,9 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_max_range',
 			array(
-				'label'       => __( 'Maximum Size', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Maximum Size', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::NUMBER,
-				'description' => __( 'Note: maximum size for extra small screens is 767px.', 'dethemekit-addons-for-elementor' ),
+				'description' => __( 'Note: maximum size for extra small screens is 767px.', 'dethemekit-for-elementor' ),
 				'default'     => 767,
 				'condition'   => array(
 					'dethemekit_gallery_responsive_switcher' => 'yes',
@@ -1173,7 +1173,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_general_style',
 			array(
-				'label' => __( 'General', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'General', 'dethemekit-for-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -1198,7 +1198,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_general_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'selectors'  => array(
@@ -1218,7 +1218,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_general_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1230,7 +1230,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_general_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1244,7 +1244,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_img_style_section',
 			array(
-				'label' => __( 'Image', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Image', 'dethemekit-for-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -1252,7 +1252,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_icons_style_overlay',
 			array(
-				'label'     => __( 'Hover Overlay Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Hover Overlay Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .pa-gallery-img:not(.style2):hover .pa-gallery-icons-wrapper, {{WRAPPER}} .pa-gallery-img .pa-gallery-icons-caption-container, {{WRAPPER}} .pa-gallery-img:hover .pa-gallery-icons-caption-container' => 'background-color: {{VALUE}};',
@@ -1271,7 +1271,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_img_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'selectors'  => array(
@@ -1283,7 +1283,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Box_Shadow::get_type(),
 			array(
-				'label'     => __( 'Shadow', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Shadow', 'dethemekit-for-elementor' ),
 				'name'      => 'dethemekit_gallery_img_box_shadow',
 				'selector'  => '{{WRAPPER}} .pa-gallery-img-container',
 				'condition' => array(
@@ -1303,7 +1303,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Css_Filter::get_type(),
 			array(
-				'label'    => __( 'Hover CSS Filters', 'dethemekit-addons-for-elementor' ),
+				'label'    => __( 'Hover CSS Filters', 'dethemekit-for-elementor' ),
 				'name'     => 'hover_css_filters',
 				'selector' => '{{WRAPPER}} .dethemekit-gallery-item:hover img',
 			)
@@ -1312,7 +1312,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_img_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1324,7 +1324,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_img_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1338,7 +1338,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_content_style',
 			array(
-				'label' => __( 'Title / Description', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Title / Description', 'dethemekit-for-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -1346,7 +1346,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_title_heading',
 			array(
-				'label' => __( 'Title', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Title', 'dethemekit-for-elementor' ),
 				'type'  => Controls_Manager::HEADING,
 			)
 		);
@@ -1354,7 +1354,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_title_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1379,7 +1379,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_description_heading',
 			array(
-				'label'     => __( 'Description', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Description', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -1388,7 +1388,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_description_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -1431,7 +1431,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_content_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'em' ),
 				'selectors'  => array(
@@ -1443,7 +1443,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Text_Shadow::get_type(),
 			array(
-				'label'    => __( 'Shadow', 'dethemekit-addons-for-elementor' ),
+				'label'    => __( 'Shadow', 'dethemekit-for-elementor' ),
 				'name'     => 'dethemekit_gallery_content_shadow',
 				'selector' => '{{WRAPPER}} .dethemekit-gallery-caption',
 			)
@@ -1460,7 +1460,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_content_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1472,7 +1472,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_content_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1486,7 +1486,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_icons_style',
 			array(
-				'label' => __( 'Icons', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Icons', 'dethemekit-for-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
@@ -1494,7 +1494,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_style1_icons_position',
 			array(
-				'label'       => __( 'Position', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Position', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SLIDER,
 				'size_units'  => array( 'px', '%', 'em' ),
 				'range'       => array(
@@ -1516,7 +1516,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_icons_size',
 			array(
-				'label'       => __( 'Size', 'dethemekit-addons-for-elementor' ),
+				'label'       => __( 'Size', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::SLIDER,
 				'size_units'  => array( 'px', 'em' ),
 				'range'       => array(
@@ -1538,14 +1538,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_icons_style_normal',
 			array(
-				'label' => __( 'Normal', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Normal', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_icons_style_color',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -1559,7 +1559,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_icons_style_background',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1581,7 +1581,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_icons_style_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1593,7 +1593,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Box_Shadow::get_type(),
 			array(
-				'label'    => __( 'Shadow', 'dethemekit-addons-for-elementor' ),
+				'label'    => __( 'Shadow', 'dethemekit-for-elementor' ),
 				'name'     => 'dethemekit_gallery_icons_style_shadow',
 				'selector' => '{{WRAPPER}} .pa-gallery-magnific-image span, {{WRAPPER}} .pa-gallery-img-link span',
 			)
@@ -1602,7 +1602,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_icons_style_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1614,7 +1614,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_icons_style_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1628,14 +1628,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_icons_style_hover',
 			array(
-				'label' => __( 'Hover', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Hover', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_icons_style_color_hover',
 			array(
-				'label'     => __( 'Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -1649,7 +1649,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_icons_style_background_hover',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1671,7 +1671,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_icons_style_border_radius_hover',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1683,7 +1683,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Box_Shadow::get_type(),
 			array(
-				'label'    => __( 'Shadow', 'dethemekit-addons-for-elementor' ),
+				'label'    => __( 'Shadow', 'dethemekit-for-elementor' ),
 				'name'     => 'dethemekit_gallery_icons_style_shadow_hover',
 				'selector' => '{{WRAPPER}} {{WRAPPER}} .pa-gallery-magnific-image:hover span, {{WRAPPER}} .pa-gallery-img-link:hover span',
 			)
@@ -1692,7 +1692,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_icons_style_margin_hover',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1704,7 +1704,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_icons_style_padding_hover',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1722,7 +1722,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_filter_style',
 			array(
-				'label'     => __( 'Filter', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Filter', 'dethemekit-for-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => array(
 					'dethemekit_gallery_filter' => 'yes',
@@ -1746,14 +1746,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_filters_normal',
 			array(
-				'label' => __( 'Normal', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Normal', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_filter_color',
 			array(
-				'label'     => __( 'Text Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1767,7 +1767,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_background_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .dethemekit-gallery-cats-container li a.category' => 'background-color: {{VALUE}};',
@@ -1786,7 +1786,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_filter_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1800,14 +1800,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_filters_hover',
 			array(
-				'label' => __( 'Hover', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Hover', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_filter_hover_color',
 			array(
-				'label'     => __( 'Text Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .dethemekit-gallery-cats-container li a:hover span' => 'color: {{VALUE}};',
@@ -1818,7 +1818,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_background_hover_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .dethemekit-gallery-cats-container li a:hover' => 'background-color: {{VALUE}};',
@@ -1837,7 +1837,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_filter_border_radius_hover',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1851,14 +1851,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_filters_active',
 			array(
-				'label' => __( 'Active', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Active', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_filter_active_color',
 			array(
-				'label'     => __( 'Text Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -1872,7 +1872,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_background_active_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .dethemekit-gallery-cats-container li a.active' => 'background-color: {{VALUE}};',
@@ -1891,7 +1891,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_filter_border_radius_active',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1915,7 +1915,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_filter_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1927,7 +1927,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_filter_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -1941,7 +1941,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'dethemekit_gallery_button_style_settings',
 			array(
-				'label'     => __( 'Load More Button', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Load More Button', 'dethemekit-for-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => array(
 					'dethemekit_gallery_load_more' => 'yes',
@@ -1965,14 +1965,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_button_style_normal',
 			array(
-				'label' => __( 'Normal', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Normal', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_button_color',
 			array(
-				'label'     => __( 'Text Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -1987,7 +1987,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_button_spin_color',
 			array(
-				'label'     => __( 'Spinner Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Spinner Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -2026,7 +2026,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'dethemekit_gallery_button_border_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2046,7 +2046,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_button_margin',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2058,7 +2058,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_button_padding',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2072,14 +2072,14 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_tab(
 			'dethemekit_gallery_button_style_hover',
 			array(
-				'label' => __( 'Hover', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Hover', 'dethemekit-for-elementor' ),
 			)
 		);
 
 		$this->add_control(
 			'dethemekit_gallery_button_hover_color',
 			array(
-				'label'     => __( 'Text Hover Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Text Hover Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_SECONDARY,
@@ -2118,7 +2118,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'button_border_radius_hover',
 			array(
-				'label'      => __( 'Border Radius', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2138,7 +2138,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'button_margin_hover',
 			array(
-				'label'      => __( 'Margin', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Margin', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2150,7 +2150,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'dethemekit_gallery_button_padding_hover',
 			array(
-				'label'      => __( 'Padding', 'dethemekit-addons-for-elementor' ),
+				'label'      => __( 'Padding', 'dethemekit-for-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -2168,7 +2168,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'section_lightbox_style',
 			array(
-				'label'     => __( 'Lightbox', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Lightbox', 'dethemekit-for-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => array(
 					'dethemekit_gallery_lightbox_type' => 'yes',
@@ -2179,7 +2179,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'lightbox_color',
 			array(
-				'label'     => __( 'Background Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'Background Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'#elementor-lightbox-slideshow-{{ID}}' => 'background-color: {{VALUE}};',
@@ -2190,7 +2190,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'lightbox_ui_color',
 			array(
-				'label'     => __( 'UI Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'UI Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'#elementor-lightbox-slideshow-{{ID}} .dialog-lightbox-close-button, #elementor-lightbox-slideshow-{{ID}} .elementor-swiper-button' => 'color: {{VALUE}};',
@@ -2201,7 +2201,7 @@ class DethemeKit_Grid extends Widget_Base {
 		$this->add_control(
 			'lightbox_ui_hover_color',
 			array(
-				'label'     => __( 'UI Hover Color', 'dethemekit-addons-for-elementor' ),
+				'label'     => __( 'UI Hover Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'#elementor-lightbox-slideshow-{{ID}} .dialog-lightbox-close-button:hover, #elementor-lightbox-slideshow-{{ID}} .elementor-swiper-button:hover' => 'color: {{VALUE}};',
@@ -2479,6 +2479,9 @@ class DethemeKit_Grid extends Widget_Base {
 			endif;
 
 			foreach ( $settings['dethemekit_gallery_img_content'] as $index => $image ) :
+				if ( wp_http_validate_url( $image['dethemekit_gallery_img']['url'] ) === false ) {
+					continue;
+				}
 
 				$key = 'gallery_item_' . $index;
 
@@ -2586,7 +2589,7 @@ class DethemeKit_Grid extends Widget_Base {
 								$lightbox_key,
 								array(
 									'class' => 'pa-gallery-whole-link',
-									'href'  => $image['dethemekit_gallery_img']['url'],
+									'href'  => wp_http_validate_url( $item['dethemekit_gallery_img']['url'] ) ? $item['dethemekit_gallery_img']['url'] : '',
 								)
 							);
 
@@ -2762,7 +2765,7 @@ class DethemeKit_Grid extends Widget_Base {
 
 		$link_key = 'image_link_' . $index;
 
-		$href = $item['dethemekit_gallery_img']['url'];
+		$href = wp_http_validate_url( $item['dethemekit_gallery_img']['url'] ) ? $item['dethemekit_gallery_img']['url'] : '';
 
 		$lightbox = $settings['dethemekit_gallery_light_box'];
 

@@ -4255,3 +4255,7 @@ span.wlvideo-button {
   display: flex;
   align-items: center;
 }
+
+.elementor-widget-de-breadcrumb svg {
+  height: 0.75em;
+}

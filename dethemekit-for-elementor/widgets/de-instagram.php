@@ -41,7 +41,7 @@ class De_Instagram extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'De Instagram', 'detheme-kit' );
+		return __( 'De Instagram', 'dethemekit-for-elementor' );
 	}
 
 	/**
@@ -99,18 +99,18 @@ class De_Instagram extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'De Instagram', 'detheme-kit' ),
+				'label' => __( 'De Instagram', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'dethemekit_product_ids_manually',
 			[
-				'label' => __( 'Username', 'dethemekit' ),
+				'label' => __( 'Username', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'condition' => [

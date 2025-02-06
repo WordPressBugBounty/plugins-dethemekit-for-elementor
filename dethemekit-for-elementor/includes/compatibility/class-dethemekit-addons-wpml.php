@@ -91,27 +91,27 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_banner_title',
-                       'type'        => __( 'Banner: Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_banner_description',
-                       'type'        => __( 'Banner: Description', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Description', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'dethemekit_banner_more_text',
-                       'type'        => __( 'Banner: Button Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Button Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_banner_image_custom_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Banner: URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Banner: URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                    'dethemekit_banner_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Banner: Button URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Banner: Button URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -122,12 +122,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_button_text',
-                       'type'        => __( 'Button: Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Button: Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_button_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Button: URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Button: URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -138,82 +138,82 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_countdown_expiry_text_',
-                       'type'        => __( 'Countdown: Expiration Message', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Expiration Message', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_day_singular',
-                       'type'        => __( 'Countdown: Day Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Day Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_day_plural',
-                       'type'        => __( 'Countdown: Day Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Day Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_week_singular',
-                       'type'        => __( 'Countdown: Week Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Week Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_week_plural',
-                       'type'        => __( 'Countdown: Week Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Week Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_month_singular',
-                       'type'        => __( 'Countdown: Month Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Month Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_month_plural',
-                       'type'        => __( 'Countdown: Month Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Month Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_year_singular',
-                       'type'        => __( 'Countdown: Year Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Year Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_year_plural',
-                       'type'        => __( 'Countdown: Year Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Year Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_hour_singular',
-                       'type'        => __( 'Countdown: Hour Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Hour Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_hour_plural',
-                       'type'        => __( 'Countdown: Hour Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Hour Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_minute_singular',
-                       'type'        => __( 'Countdown: Minute Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Minute Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_minute_plural',
-                       'type'        => __( 'Countdown: Minute Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Minute Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_second_singular',
-                       'type'        => __( 'Countdown: Second Singular', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Second Singular', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_countdown_second_plural',
-                       'type'        => __( 'Countdown: Second Plural', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Second Plural', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_countdown_expiry_redirection_' => [
                        'field'       => 'url',
-                       'type'        => __( 'Countdown: Direction URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Countdown: Direction URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -224,27 +224,27 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_counter_title',
-                       'type'        => __( 'Counter: Title Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Title Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_counter_t_separator',
-                       'type'        => __( 'Counter: Thousands Separator', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Thousands Separator', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_counter_preffix',
-                       'type'        => __( 'Counter: Prefix', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Prefix', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_counter_suffix',
-                       'type'        => __( 'Counter: Suffix', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Counter: Suffix', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_dual_heading_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Advanced Heading: Heading URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Advanced Heading: Heading URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -255,17 +255,17 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_dual_header_first_header_text',
-                       'type'        => __( 'Dual Heading: First Heading', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Dual Heading: First Heading', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_dual_header_second_header_text',
-                       'type'        => __( 'Dual Heading: Second Heading', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Dual Heading: Second Heading', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_dual_heading_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Advanced Heading: Heading URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Advanced Heading: Heading URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -281,17 +281,17 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_fancy_prefix_text',
-                       'type'        => __( 'Fancy Text: Prefix', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Prefix', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_fancy_suffix_text',
-                       'type'        => __( 'Fancy Text: Suffix', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Suffix', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_fancy_text_cursor_text',
-                       'type'        => __( 'Fancy Text: Cursor Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Fancy Text: Cursor Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -303,7 +303,7 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_gallery_load_more_text',
-                       'type'        => __( 'Grid: Load More Button', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Grid: Load More Button', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -315,12 +315,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_image_button_text',
-                       'type'        => __( 'Button: Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Button: Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'dethemekit_image_button_link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Button: URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Button: URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                ]
@@ -331,12 +331,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'link_text',
-                       'type'        => __( 'Image Scroll: Link Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Image Scroll: Link Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'link' => [
                        'field'       => 'url',
-                       'type'        => __( 'Image Scroll: URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Image Scroll: URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -347,12 +347,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_image_separator_image_link_text',
-                       'type'        => __( 'Image Separator: Link Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Image Separator: Link Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    'link' => [
                        'field'       => 'dethemekit_image_separator_image_link',
-                       'type'        => __( 'Image Separator: URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Image Separator: URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ]
                ]
@@ -363,12 +363,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_maps_center_lat',
-                       'type'        => __( 'Maps: Center Latitude', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Maps: Center Latitude', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_maps_center_long',
-                       'type'        => __( 'Maps: Center Longitude', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Maps: Center Longitude', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -380,27 +380,27 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_modal_box_title',
-                       'type'        => __( 'Modal Box: Header Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Header Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_modal_box_content',
-                       'type'        => __( 'Modal Box: Content Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Content Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'VISUAL',
                    ],
                    [
                        'field'       => 'dethemekit_modal_close_text',
-                       'type'        => __( 'Modal Box: Close Button', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Close Button', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_modal_box_button_text',
-                       'type'        => __( 'Modal Box: Trigger Button', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Trigger Button', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_modal_box_selector_text',
-                       'type'        => __( 'Modal Box: Trigger Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Modal Box: Trigger Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],  
                ],
@@ -411,17 +411,17 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_person_name',
-                       'type'        => __( 'Person: Name', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Person: Name', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_person_title',
-                       'type'        => __( 'Person: Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Person: Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_person_content',
-                       'type'        => __( 'Person: Description', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Person: Description', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ],
                ],
@@ -432,52 +432,52 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_pricing_table_title_text',
-                       'type'        => __( 'Pricing Table: Title', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Title', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_slashed_price_value',
-                       'type'        => __( 'Pricing Table: Slashed Price', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Slashed Price', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_price_currency',
-                       'type'        => __( 'Pricing Table: Currency', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Currency', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_price_value',
-                       'type'        => __( 'Pricing Table: Price Value', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Price Value', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_price_separator',
-                       'type'        => __( 'Pricing Table: Separator', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Separator', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_price_duration',
-                       'type'        => __( 'Pricing Table: Duration', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Duration', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_description_text',
-                       'type'        => __( 'Pricing Table: Description', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Description', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_button_text',
-                       'type'        => __( 'Pricing Table: Button Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Button Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_button_link',
-                       'type'        => __( 'Pricing Table: Button URL', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Button URL', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'dethemekit_pricing_table_badge_text',
-                       'type'        => __( 'Pricing Table: Badge', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Pricing Table: Badge', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -489,7 +489,7 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_progressbar_left_label',
-                       'type'        => __( 'Progress Bar: Left Label', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Progress Bar: Left Label', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                ],
@@ -501,22 +501,22 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_testimonial_person_name',
-                       'type'        => __( 'Testimonial: Name', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Name', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_testimonial_company_name',
-                       'type'        => __( 'Testimonial: Company', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Company', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ],
                    [
                        'field'       => 'dethemekit_testimonial_company_link',
-                       'type'        => __( 'Testimonial: Company Link', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Company Link', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'dethemekit_testimonial_content',
-                       'type'        => __( 'Testimonial: Content', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Testimonial: Content', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ],
                ],
@@ -527,7 +527,7 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_title_text',
-                       'type'        => __( 'Title: Text', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Title: Text', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ]
                ],
@@ -538,12 +538,12 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dethemekit_video_box_link',
-                       'type'        => __( 'Video Box: Link', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Video Box: Link', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINK',
                    ],
                    [
                        'field'       => 'dethemekit_video_box_description_text',
-                       'type'        => __( 'Video Box: Description', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Video Box: Description', 'dethemekit-for-elementor' ),
                        'editor_type' => 'AREA',
                    ]
                ]
@@ -554,7 +554,7 @@ if ( ! class_exists ('DethemeKit_Addons_Wpml') ) {
                'fields'     => [
                    [
                        'field'       => 'dots_tooltips',
-                       'type'        => __( 'Vertical Scroll: Tooltips', 'dethemekit-addons-for-elementor' ),
+                       'type'        => __( 'Vertical Scroll: Tooltips', 'dethemekit-for-elementor' ),
                        'editor_type' => 'LINE',
                    ]
                ],

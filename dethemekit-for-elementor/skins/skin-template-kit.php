@@ -34,7 +34,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
 	}
 
 	public function get_title() {
-		return __( 'Saved Templates (Section)', 'detheme-kit' );
+		return __( 'Saved Templates (Section)', 'dethemekit-for-elementor' );
 	}
 
   private function admin_bar_menu(){
@@ -62,10 +62,10 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
     $this->add_control(
 			'skin_template',
 			[
-				'label' => __( 'Select a default template', 'detheme-kit' ),
+				'label' => __( 'Select a default template', 'dethemekit-for-elementor' ),
         'description' => '<div style="text-align:center;"><a target="_blank" style="text-align: center;font-style: normal;" href="' . esc_url( admin_url( '/edit.php?post_type=elementor_library&tabs_group=theme&elementor_library_type=de_loop' ) ) .
                           '" class="elementor-button elementor-button-default elementor-repeater-add">' . 
-                          __( 'Create/edit a Loop Template', 'detheme-kit' ) . '</a></div>',
+                          __( 'Create/edit a Loop Template', 'dethemekit-for-elementor' ) . '</a></div>',
 				'type' => Controls_Manager::SELECT2,
 				'label_block' => true,
 				'default' => [],
@@ -77,7 +77,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
 		$this->add_control(//this would make use of 100% if width
 			'view',
 			[
-				'label' => __( 'View', 'detheme-kit' ),
+				'label' => __( 'View', 'dethemekit-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::HIDDEN,
 				'default' => 'top',
 				'prefix_class' => 'elementor-posts--thumbnail-',
@@ -87,10 +87,10 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
     $this->add_control(
 			'use_de_grid',
 			[
-				'label' => __( 'Use De Grid?', 'detheme-kit' ),
+				'label' => __( 'Use De Grid?', 'dethemekit-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_off' => __( 'No', 'detheme-kit' ),
-				'label_on' => __( 'Yes', 'detheme-kit' ),
+				'label_off' => __( 'No', 'dethemekit-for-elementor' ),
+				'label_on' => __( 'Yes', 'dethemekit-for-elementor' ),
         'return_value' => 'yes',
         'separator' => 'before',
 				'default' =>'',
@@ -101,10 +101,10 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
     $this->add_control(
 			'de_grid',
 			[
-				'label' => __( 'Select a default template', 'detheme-kit' ),
+				'label' => __( 'Select a default template', 'dethemekit-for-elementor' ),
         'description' => '<div style="text-align:center;"><a target="_blank" style="text-align: center;font-style: normal;" href="' . esc_url( admin_url( '/edit.php?post_type=elementor_library&tabs_group=theme&elementor_library_type=de_grid' ) ) .
                           '" class="elementor-button elementor-button-default elementor-repeater-add">' . 
-                          __( 'Create/edit a De Grid', 'detheme-kit' ) . '</a></div>',
+                          __( 'Create/edit a De Grid', 'dethemekit-for-elementor' ) . '</a></div>',
 				'type' => Controls_Manager::SELECT2,
 				'label_block' => true,
 				'default' => [],
@@ -357,7 +357,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
     }
 
 			else  echo esc_html( '<div style="display:table;border:1px solid #c6ced5; background:#dde1e5; width:100%; height:100%; min-height:200px;text-align:center; padding:20px;"><span style="vertical-align:middle;display: table-cell;color:#8995a0;">' ) .
-        __( "Please select a default template! ", 'detheme-kit') . esc_html( '</span></div>' );
+        __( "Please select a default template! ", 'dethemekit-for-elementor') . esc_html( '</span></div>' );
 
     do_action( 'dtk_before_render_post_footer', $this );
 		$this->render_post_footer();
@@ -462,7 +462,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
 				'total' => $page_limit,
 				'prev_next' => false,
 				'show_all' => 'yes' !== $parent_settings['pagination_numbers_shorten'],
-				'before_page_number' => '<span class="elementor-screen-only">' . __( 'Page', 'elementor-pro' ) . '</span>',
+				'before_page_number' => '<span class="elementor-screen-only">' . __( 'Page', 'dethemekit-for-elementor' ) . '</span>',
 			];
 
 			if ( is_singular() && ! is_front_page() ) {
@@ -485,7 +485,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
 		}
 
 		?>
-		<nav class="elementor-pagination" role="navigation" aria-label="<?php esc_attr_e( 'Pagination', 'elementor-pro' ); ?>">
+		<nav class="elementor-pagination" role="navigation" aria-label="<?php esc_attr_e( 'Pagination', 'dethemekit-for-elementor' ); ?>">
 			<?php echo esc_html( implode( PHP_EOL, $links ) ); ?>
 		</nav>
 		<?php
@@ -533,7 +533,7 @@ class dtk_Skin_Posts_Template_Kit extends Skin_Base {
 		}
 
 		?>
-		<nav class="elementor-button-wrapper elementor-pagination ecs-load-more-button" data-settings="<?php echo esc_attr( $data ); ?>">
+		<nav class="elementor-pagination ecs-load-more-button" data-settings="<?php echo esc_attr( $data ); ?>">
 			<a href="<?php echo $next_page_link; ?>" class="elementor-button-link elementor-button <?php echo esc_attr( $class ); ?>" role="button">
 				<span><?php echo esc_html( $settings['de_loadmore_text'] ); ?></span>
 			</a>
@@ -646,7 +646,7 @@ class dtk_Skin_Archive_Template_Kit extends dtk_Skin_Posts_Template_Kit {
 	}
 
 	public function get_title() {
-		return __( 'De Loop', 'detheme-kit' );
+		return __( 'De Loop', 'dethemekit-for-elementor' );
 	}
   
  /* Remove `posts_per_page` control */

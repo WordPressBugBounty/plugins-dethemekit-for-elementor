@@ -39,10 +39,10 @@ class Modules_Settings {
                 'i18n' => [
 					'rollback_confirm' => sprintf( 
                         /* translators: 1: version. */
-                        __( 'Are you sure you want to reinstall version %1$s ?', 'dethemekit-addons-for-elementor' ), DETHEMEKIT_ADDONS_STABLE_VERSION ),
-					'rollback_to_previous_version' => __( 'Rollback to Previous Version', 'dethemekit-addons-for-elementor' ),
-					'yes' => __( 'Yes', 'dethemekit-addons-for-elementor' ),
-					'cancel' => __( 'Cancel', 'dethemekit-addons-for-elementor' ),
+                        __( 'Are you sure you want to reinstall version %1$s ?', 'dethemekit-for-elementor' ), DETHEMEKIT_ADDONS_STABLE_VERSION ),
+					'rollback_to_previous_version' => __( 'Rollback to Previous Version', 'dethemekit-for-elementor' ),
+					'yes' => __( 'Yes', 'dethemekit-for-elementor' ),
+					'cancel' => __( 'Cancel', 'dethemekit-for-elementor' ),
 				],
             ]
             );
@@ -168,7 +168,7 @@ class Modules_Settings {
                     <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
                     <h3 class="pa-title-sub"><?php echo sprintf(
                         /* translators: 1: plugin name, 2: author. */
-                        esc_html__('Thank you for using %1$s. This plugin has been developed by %1$s and we hope you enjoy using it.','dethemekit-addons-for-elementor'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+                        esc_html__('Thank you for using %1$s. This plugin has been developed by %1$s and we hope you enjoy using it.','dethemekit-for-elementor'), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
                 </div>
                 <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -186,14 +186,14 @@ class Modules_Settings {
                     <table class="pa-elements-table">
                         <tbody>
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Banner', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Banner', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                         <input type="checkbox" id="dethemekit-banner" name="dethemekit-banner" <?php checked(1, $this->pa_get_settings['dethemekit-banner'], true) ?>>
                                         <span class="slider round"></span>
                                 </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Blog', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-blog" name="dethemekit-blog" <?php checked(1, $this->pa_get_settings['dethemekit-blog'], true) ?>>
@@ -203,14 +203,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Button', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Button', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-button" name="dethemekit-button" <?php checked(1, $this->pa_get_settings['dethemekit-button'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Carousel', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Carousel', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-carousel" name="dethemekit-carousel" <?php checked(1, $this->pa_get_settings['dethemekit-carousel'], true) ?>>
@@ -220,14 +220,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Contact Form7', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Contact Form7', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-contactform" name="dethemekit-contactform" <?php checked(1, $this->pa_get_settings['dethemekit-contactform'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Countdown', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Countdown', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-countdown" name="dethemekit-countdown" <?php checked(1, $this->pa_get_settings['dethemekit-countdown'], true) ?>>
@@ -237,14 +237,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Counter', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Counter', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-counter" name="dethemekit-counter" <?php checked(1, $this->pa_get_settings['dethemekit-counter'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Dual Heading', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-dual-header" name="dethemekit-dual-header" <?php checked(1, $this->pa_get_settings['dethemekit-dual-header'], true) ?>>
@@ -254,7 +254,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Fancy Text', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Fancy Text', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-fancytext" name="dethemekit-fancytext" <?php checked(1, $this->pa_get_settings['dethemekit-fancytext'], true) ?>>
@@ -262,7 +262,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Media Grid', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Media Grid', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-grid" name="dethemekit-grid" <?php checked(1, $this->pa_get_settings['dethemekit-grid'], true) ?>>
@@ -272,7 +272,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Button', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Button', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-image-button" name="dethemekit-image-button" <?php checked(1, $this->pa_get_settings['dethemekit-image-button'], true) ?>>
@@ -280,7 +280,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Scroll', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Scroll', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-image-scroll" name="dethemekit-image-scroll" <?php checked(1, $this->pa_get_settings['dethemekit-image-scroll'], true) ?>>
@@ -290,14 +290,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Separator', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Image Separator', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-image-separator" name="dethemekit-image-separator" <?php checked(1, $this->pa_get_settings['dethemekit-image-separator'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Lottie Animations', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Lottie Animations', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-lottie" name="dethemekit-lottie" <?php checked(1, $this->pa_get_settings['dethemekit-lottie'], true) ?>>
@@ -307,14 +307,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Maps', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Maps', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-maps" name="dethemekit-maps" <?php checked(1, $this->pa_get_settings['dethemekit-maps'], true) ?>>
                                             <span class="slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Modal Box', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Modal Box', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-modalbox" name="dethemekit-modalbox" <?php checked(1, $this->pa_get_settings['dethemekit-modalbox'], true) ?>>
@@ -324,7 +324,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Team Members', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Team Members', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-person" name="dethemekit-person" <?php checked(1, $this->pa_get_settings['dethemekit-person'], true) ?>>
@@ -332,7 +332,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Progress Bar', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Progress Bar', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-progressbar" name="dethemekit-progressbar" <?php checked(1, $this->pa_get_settings['dethemekit-progressbar'], true) ?>>
@@ -342,7 +342,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Pricing Table', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Pricing Table', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-pricing-table" name="dethemekit-pricing-table" <?php checked(1, $this->pa_get_settings['dethemekit-pricing-table'], true) ?>>
@@ -350,7 +350,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Testimonials', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Testimonials', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-testimonials" name="dethemekit-testimonials" <?php checked(1, $this->pa_get_settings['dethemekit-testimonials'], true) ?>>
@@ -360,7 +360,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Title', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Title', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-title" name="dethemekit-title" <?php checked(1, $this->pa_get_settings['dethemekit-title'], true) ?>>
@@ -368,7 +368,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Video Box', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Video Box', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-videobox" name="dethemekit-videobox" <?php checked(1, $this->pa_get_settings['dethemekit-videobox'], true) ?>>
@@ -378,7 +378,7 @@ class Modules_Settings {
                             </tr>
 
                             <tr>
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Vertical Scroll', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Vertical Scroll', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-vscroll" name="dethemekit-vscroll" <?php checked(1, $this->pa_get_settings['dethemekit-vscroll'], true) ?>>
@@ -389,7 +389,7 @@ class Modules_Settings {
                             
                             <tr>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Duplicator', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Duplicator', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-duplicator" name="dethemekit-duplicator" <?php checked(1, $this->pa_get_settings['dethemekit-duplicator'], true) ?>>
@@ -397,7 +397,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Templates', 'dethemekit-addons-for-elementor') ); ?></th>
+                                <th><?php echo sprintf( '%1$s %2$s', $prefix, __('Templates', 'dethemekit-for-elementor') ); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox" id="dethemekit-templates" name="dethemekit-templates" <?php checked(1, $this->pa_get_settings['dethemekit-templates'], true) ?>>
@@ -412,7 +412,7 @@ class Modules_Settings {
 
                             <tr>
                                 
-                                <th><?php echo __('DethemeKit Alert Box', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Alert Box', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -420,27 +420,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo __('DethemeKit Behance Feed', 'dethemekit-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
-                                
-                            </tr>
-                            
-                            <tr>
-                                
-                                <th><?php echo __('DethemeKit Charts', 'dethemekit-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
-                                
-                                <th><?php echo __('DethemeKit Content Switcher', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Behance Feed', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -451,7 +431,8 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Background Transition', 'dethemekit-addons-for-elementor'); ?></th>
+                                
+                                <th><?php echo __('DethemeKit Charts', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -459,7 +440,26 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo __('DethemeKit Divider', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Content Switcher', 'dethemekit-for-elementor'); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="pro-slider round"></span>
+                                    </label>
+                                </td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                <th><?php echo __('DethemeKit Background Transition', 'dethemekit-for-elementor'); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="pro-slider round"></span>
+                                    </label>
+                                </td>
+                                
+                                <th><?php echo __('DethemeKit Divider', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -470,7 +470,7 @@ class Modules_Settings {
                             
                             <tr>
                                 
-                                <th><?php echo __('DethemeKit Facebook Feed', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Facebook Feed', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -478,7 +478,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo __('DethemeKit Facebook Reviews', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Facebook Reviews', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -488,7 +488,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Flip Box', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Flip Box', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -496,7 +496,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
                                 
-                                <th><?php echo __('DethemeKit Google Reviews', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Google Reviews', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -506,7 +506,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Horizontal Scroll', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Horizontal Scroll', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -514,7 +514,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Icon Box', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Icon Box', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -524,7 +524,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit iHover', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit iHover', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -532,7 +532,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Image Accordion', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Image Accordion', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -542,7 +542,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Image Comparison', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Image Comparison', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -550,7 +550,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Image Hotspots', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Image Hotspots', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -560,7 +560,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Image Layers', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Image Layers', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -568,7 +568,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Instagram Feed', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Instagram Feed', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -578,7 +578,7 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Magic Section', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Magic Section', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -586,7 +586,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Messenger Chat', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Messenger Chat', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -596,31 +596,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Multi Scroll', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Multi Scroll', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
                                             <span class="pro-slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo __('DethemeKit Preview Window', 'dethemekit-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <th><?php echo __('DethemeKit Table', 'dethemekit-addons-for-elementor'); ?></th>
-                                <td>
-                                    <label class="switch">
-                                            <input type="checkbox">
-                                            <span class="pro-slider round"></span>
-                                    </label>
-                                </td>
-                                <th><?php echo __('DethemeKit Tabs', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Preview Window', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -630,14 +613,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Twitter Feed', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Table', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
                                             <span class="pro-slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo __('DethemeKit Unfold', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Tabs', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -647,7 +630,24 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Whatsapp Chat', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Twitter Feed', 'dethemekit-for-elementor'); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="pro-slider round"></span>
+                                    </label>
+                                </td>
+                                <th><?php echo __('DethemeKit Unfold', 'dethemekit-for-elementor'); ?></th>
+                                <td>
+                                    <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="pro-slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th><?php echo __('DethemeKit Whatsapp Chat', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -655,7 +655,7 @@ class Modules_Settings {
                                     </label>
                                 </td>
 
-                                <th><?php echo __('DethemeKit Yelp Reviews', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Yelp Reviews', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -665,14 +665,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Section Parallax', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Section Parallax', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
                                             <span class="pro-slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo __('DethemeKit Section Particles', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Section Particles', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -682,14 +682,14 @@ class Modules_Settings {
                             </tr>
                             
                             <tr>
-                                <th><?php echo __('DethemeKit Section Animated Gradient', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Section Animated Gradient', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
                                             <span class="pro-slider round"></span>
                                     </label>
                                 </td>
-                                <th><?php echo __('DethemeKit Section Ken Burns', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Section Ken Burns', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -699,7 +699,7 @@ class Modules_Settings {
                             </tr>
 
                             <tr>
-                                <th><?php echo __('DethemeKit Section Lottie Animations', 'dethemekit-addons-for-elementor'); ?></th>
+                                <th><?php echo __('DethemeKit Section Lottie Animations', 'dethemekit-for-elementor'); ?></th>
                                 <td>
                                     <label class="switch">
                                             <input type="checkbox">
@@ -711,12 +711,12 @@ class Modules_Settings {
                             <?php endif; ?> 
                         </tbody>
                     </table>
-                    <input type="submit" value="<?php echo __('Save Settings', 'dethemekit-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
+                    <input type="submit" value="<?php echo __('Save Settings', 'dethemekit-for-elementor'); ?>" class="button pa-btn pa-save-button">
                     
                 </div>
                 <?php if( ! Helper_Functions::is_hide_rate()) : ?>
                     <div>
-                        <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-addons-for-elementor'); ?></a></p>
+                        <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-for-elementor'); ?></a></p>
                     </div>
                 <?php endif; ?>
             </div>

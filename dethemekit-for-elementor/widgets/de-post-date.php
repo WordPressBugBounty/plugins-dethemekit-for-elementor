@@ -35,7 +35,7 @@ class De_Post_Date extends Widget_Base {
 
 		return sprintf(
 			/* translators: %s: Post type singular name (e.g. Post or Page) */
-			__( '%s Date', 'press-elements' ),
+			__( '%s Date', 'dethemekit-for-elementor' ),
 			$post_type_object->labels->singular_name
 		);
 	}
@@ -48,7 +48,7 @@ class De_Post_Date extends Widget_Base {
 		return [ 'dethemekit-elements' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 
@@ -57,7 +57,7 @@ class De_Post_Date extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Date', 'press-elements' ),
+					__( '%s Date', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -66,11 +66,11 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'date_type',
 			[
-				'label' => __( 'Date Type', 'press-elements' ),
+				'label' => __( 'Date Type', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'publish' => __( 'Publish Date', 'press-elements' ),
-					'modified' => __( 'Last Modified Date', 'press-elements' ),
+					'publish' => __( 'Publish Date', 'dethemekit-for-elementor' ),
+					'modified' => __( 'Last Modified Date', 'dethemekit-for-elementor' ),
 				],
 				'default' => 'publish',
 			]
@@ -79,7 +79,7 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'html_tag',
 			[
-				'label' => __( 'HTML Tag', 'press-elements' ),
+				'label' => __( 'HTML Tag', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -99,23 +99,23 @@ class De_Post_Date extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'press-elements' ),
+				'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'press-elements' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'press-elements' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'press-elements' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'press-elements' ),
+						'title' => __( 'Justified', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -129,18 +129,18 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => __( 'Link to', 'press-elements' ),
+				'label' => __( 'Link to', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => __( 'None', 'press-elements' ),
-					'home' => __( 'Home URL', 'press-elements' ),
+					'none' => __( 'None', 'dethemekit-for-elementor' ),
+					'home' => __( 'Home URL', 'dethemekit-for-elementor' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
-						__( '%s URL', 'press-elements' ),
+						__( '%s URL', 'dethemekit-for-elementor' ),
 						$post_type_object->labels->singular_name
 					),
-					'custom' => __( 'Custom URL', 'press-elements' ),
+					'custom' => __( 'Custom URL', 'dethemekit-for-elementor' ),
 				],
 			]
 		);
@@ -148,9 +148,9 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link', 'press-elements' ),
+				'label' => __( 'Link', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'press-elements' ),
+				'placeholder' => __( 'https://your-link.com', 'dethemekit-for-elementor' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -168,7 +168,7 @@ class De_Post_Date extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Date', 'press-elements' ),
+					__( '%s Date', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 				'tab' => Controls_Manager::TAB_STYLE,
@@ -178,7 +178,7 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'press-elements' ),
+				'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -212,7 +212,7 @@ class De_Post_Date extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'press-elements' ),
+				'label' => __( 'Hover Animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);

@@ -49,7 +49,7 @@ class De_Copyright extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'De Copyright', 'detheme-kit' );
+		return __( 'De Copyright', 'dethemekit-for-elementor' );
 	}
 	/**
 	 * Retrieve the widget icon.
@@ -86,7 +86,7 @@ class De_Copyright extends Widget_Base {
 	 * @since 1.2.0
 	 * @access protected
 	 */
-	protected function _register_controls() { //phpcs:ignore PSR2.Methods.MethodDeclaration.Underscore
+	protected function register_controls() { //phpcs:ignore PSR2.Methods.MethodDeclaration.Underscore
 		$this->register_content_copy_right_controls();
 	}
 	/**
@@ -99,47 +99,47 @@ class De_Copyright extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Copyright', 'detheme-kit' ),
+				'label' => __( 'Copyright', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'shortcode',
 			[
-				'label'   => __( 'Copyright Text', 'detheme-kit' ),
+				'label'   => __( 'Copyright Text', 'dethemekit-for-elementor' ),
 				'type'    => Controls_Manager::TEXTAREA,
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => __( 'Copyright © [dtk_current_year] [dtk_site_title] | Powered by [dtk_site_title]', 'detheme-kit' ),
+				'default' => __( 'Copyright © [dtk_current_year] [dtk_site_title] | Powered by [dtk_site_title]', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'link',
 			[
-				'label'       => __( 'Link', 'detheme-kit' ),
+				'label'       => __( 'Link', 'dethemekit-for-elementor' ),
 				'type'        => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'detheme-kit' ),
+				'placeholder' => __( 'https://your-link.com', 'dethemekit-for-elementor' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'align',
 			[
-				'label'     => __( 'Alignment', 'detheme-kit' ),
+				'label'     => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => [
 					'left'   => [
-						'title' => __( 'Left', 'detheme-kit' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'detheme-kit' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'detheme-kit' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -152,7 +152,7 @@ class De_Copyright extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label'     => __( 'Text Color', 'detheme-kit' ),
+				'label'     => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -230,20 +230,6 @@ class De_Copyright extends Widget_Base {
 	 * @access protected
 	 */
 	protected function content_template() {}
-
-	/**
-	 * Render shortcode output in the editor.
-	 *
-	 * Written as a Backbone JavaScript template and used to generate the live preview.
-	 *
-	 * Remove this after Elementor v3.3.0
-	 *
-	 * @since 1.2.0
-	 * @access protected
-	 */
-	// protected function _content_template() {
-	// 	$this->content_template();
-	// }
 }
 
 /**

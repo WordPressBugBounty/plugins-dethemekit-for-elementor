@@ -10,11 +10,11 @@
             </div>
             <div class="htwptpopupcontent">
                 <ul class="htwptemplata-requiredplugins"></ul>
-                <p><?php esc_html_e( 'Import template to your Library', 'dethemekit' ); ?></p>
+                <p><?php esc_html_e( 'Import template to your Library', 'dethemekit-for-elementor' ); ?></p>
                 <span class="htwptimport-button-dynamic"></span>
                 <div class="htpageimportarea">
-                    <p> <?php esc_html_e( 'Create a new page from this template', 'dethemekit' ); ?></p>
-                    <input id="htwptpagetitle" type="text" name="htwptpagetitle" placeholder="<?php echo esc_attr_x( 'Enter a Page Name', 'placeholder', 'dethemekit' ); ?>">
+                    <p> <?php esc_html_e( 'Create a new page from this template', 'dethemekit-for-elementor' ); ?></p>
+                    <input id="htwptpagetitle" type="text" name="htwptpagetitle" placeholder="<?php echo esc_attr_x( 'Enter a Page Name', 'placeholder', 'dethemekit-for-elementor' ); ?>">
                     <span class="htwptimport-button-dynamic-page"></span>
                 </div>
             </div>
@@ -30,27 +30,27 @@
                     <div class="col-md-auto col">
                         <div class="htwpt-demos-select">
                             <select id="htwpt-demos">
-                                <option value="templates"><?php esc_html_e( 'Templates', 'dethemekit' ); ?></option>
+                                <option value="templates"><?php esc_html_e( 'Templates', 'dethemekit-for-elementor' ); ?></option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-auto col">
                         <div class="htwpt-builder-select">
                             <select id="htwpt-builder">
-                                <option value="all"><?php esc_html_e( 'All Builders', 'dethemekit' ); ?></option>
-                                <option value="elementor"><?php esc_html_e( 'Elementor', 'dethemekit' ); ?></option>
+                                <option value="all"><?php esc_html_e( 'All Builders', 'dethemekit-for-elementor' ); ?></option>
+                                <option value="elementor"><?php esc_html_e( 'Elementor', 'dethemekit-for-elementor' ); ?></option>
                             </select>
                         </div>
                     </div>
                     <div class="col-auto mr-auto">
-                        <input id="htwpt-search-field" type="text" placeholder="<?php esc_attr_e( 'Search..', 'dethemekit' );?>">
+                        <input id="htwpt-search-field" type="text" placeholder="<?php esc_attr_e( 'Search..', 'dethemekit-for-elementor' );?>">
                     </div>
                     <div class="col-auto">
                         <div class="htwpt-type-select">
                             <select id="htwpt-type">
-                                <option value="all"><?php esc_html_e( 'ALL', 'dethemekit' ); ?></option>
-                                <option value="free"><?php esc_html_e( 'Free', 'dethemekit' ); ?></option>
-                                <option value="pro"><?php esc_html_e( 'Pro', 'dethemekit' ); ?></option>
+                                <option value="all"><?php esc_html_e( 'ALL', 'dethemekit-for-elementor' ); ?></option>
+                                <option value="free"><?php esc_html_e( 'Free', 'dethemekit-for-elementor' ); ?></option>
+                                <option value="pro"><?php esc_html_e( 'Pro', 'dethemekit-for-elementor' ); ?></option>
                             </select>
                         </div>
                     </div>
@@ -68,14 +68,14 @@
 
     <div id="htwpt-group-section">
         <div id="htwpt-group-bar" class="htwpt-group-bar">
-            <span id="htwpt-group-close" class="back"><i>&#8592;</i> <?php esc_html_e( 'Back to Library', 'dethemekit' ); ?></span>
+            <span id="htwpt-group-close" class="back"><i>&#8592;</i> <?php esc_html_e( 'Back to Library', 'dethemekit-for-elementor' ); ?></span>
             <h3 id="htwpt-group-name" class="title"></h3>
         </div>
 
         <div id="htwpt-group-grid" class="row"></div>
-        <a href="#top" class="htwpt-groupScrollToTop"><?php echo esc_html__( 'Top', 'dethemekit' );?></a>
+        <a href="#top" class="htwpt-groupScrollToTop"><?php echo esc_html__( 'Top', 'dethemekit-for-elementor' );?></a>
     </div>
 
-    <a href="#top" class="htwpt-scrollToTop"><?php echo esc_html__( 'Top', 'dethemekit' );?></a>
+    <a href="#top" class="htwpt-scrollToTop"><?php echo esc_html__( 'Top', 'dethemekit-for-elementor' );?></a>
 
 </div>

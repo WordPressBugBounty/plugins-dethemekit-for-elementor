@@ -47,7 +47,7 @@ class Carousel extends WPML_Elementor_Module_With_Items {
 	 */
 	protected function get_title( $field ) {
 		
-        return __( 'Carousel: Template', 'dethemekit-addons-for-elementor' );
+        return __( 'Carousel: Template', 'dethemekit-for-elementor' );
 		
 	}
 

@@ -73,20 +73,20 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			
 			$elems->start_controls_section('dethemekit_carousel_global_settings_advance2',
 			[
-				'label'         => __( 'De Carousel Navigation Wrapper' , 'dethemekit-addons-for-elementor' ),
+				'label'         => __( 'De Carousel Navigation Wrapper' , 'dethemekit-for-elementor' ),
 				'tab'   => Elementor\Controls_Manager::TAB_ADVANCED,
 			]
 			);
 			$elems->add_control('dethemekit_carousel_child_name',
 				array(          
-					'label'       => __( 'De Carousel Target', 'dethemekit-addons-for-elementor' ),
+					'label'       => __( 'De Carousel Target', 'dethemekit-for-elementor' ),
 					'type'        => Elementor\Controls_Manager::SELECT2,
 					'options'     => array(
-						''   	  => __( 'Select Field', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-addons-for-elementor' ),
+						''   	  => __( 'Select Field', 'dethemekit-for-elementor' ),
+						'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-for-elementor' ),
+						'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-for-elementor' ),
+						'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-for-elementor' ),
+						'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-for-elementor' ),
 					),
 					'default'     => '',
 					'description' => '<a href="https://detheme.helpscoutdocs.com/article/368-how-to-use-decarousel" target="_blank">How To Use De Carousel ?</a>'
@@ -96,15 +96,15 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_scrollable',
 				[
-					'label' 		=> __( 'Responsive Mobile Tab', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Responsive Mobile Tab', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 				]
 			);
 			$elems->add_control('dethemekit_carousel_pointer',
 				[
-					'label' 		=> __( 'Set Cursor to Pointer', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Cursor to Pointer', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Change Mouse Cursor to "Pointer" When Hovering Child Columns.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Change Mouse Cursor to "Pointer" When Hovering Child Columns.', 'dethemekit-for-elementor' ),
 					// 'selectors' 	=> array(
 					// 	'.dethemekit_show_pointer .'.$settings['dethemekit_carousel_child_name'].':hover' => 'cursor:pointer;')
 				]
@@ -112,7 +112,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active1',
 				[
-					'label' 		=> __( 'Set Default Active Tab 1', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 1', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_1',
@@ -156,9 +156,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active_icon_box1',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 1', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 1', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active1' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_1',
@@ -169,7 +169,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_icon_color1',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -187,7 +187,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_title_color1',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -205,7 +205,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_description_color1',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -223,7 +223,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active2',
 				[
-					'label' 		=> __( 'Set Default Active Tab 2', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 2', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_2',
@@ -270,9 +270,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active_icon_box2',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 2', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 2', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active2' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_2'
@@ -283,7 +283,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_icon_color2',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -301,7 +301,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_title_color2',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -319,7 +319,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_description_color2',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -336,7 +336,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active3',
 				[
-					'label' 		=> __( 'Set Default Active Tab 3', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 3', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_3',
@@ -383,9 +383,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active_icon_box3',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 3', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 3', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active3' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_3',
@@ -396,7 +396,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_icon_color3',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -414,7 +414,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_title_color3',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -432,7 +432,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_description_color3',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -449,7 +449,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active4',
 				[
-					'label' 		=> __( 'Set Default Active Tab 4', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 4', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_4',
@@ -496,9 +496,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$elems->add_control('dethemekit_carousel_tab_active_icon_box4',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 4', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 4', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active4' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_4',
@@ -509,7 +509,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_icon_color4',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -527,7 +527,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_title_color4',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -545,7 +545,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$elems->add_control(
 				'dethemekit_carousel_tab_active_description_color4',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -587,20 +587,20 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->start_controls_section('dethemekit_carousel_global_settings_advance',
 			[
-				'label'         => __( 'De Carousel Navigation Item' , 'dethemekit-addons-for-elementor' ),
+				'label'         => __( 'De Carousel Navigation Item' , 'dethemekit-for-elementor' ),
 				'tab'   => Elementor\Controls_Manager::TAB_ADVANCED,
 			]
 			);
 			$obj->add_control('dethemekit_carousel_child_name',
 				array(
-					'label'       => __( 'De Carousel Target', 'dethemekit-addons-for-elementor' ),
+					'label'       => __( 'De Carousel Target', 'dethemekit-for-elementor' ),
 					'type'        => Elementor\Controls_Manager::SELECT2,
 					'options'     => array(
-						''   	  => __( 'Select Field', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-addons-for-elementor' ),
-						'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-addons-for-elementor' ),
+						''   	  => __( 'Select Field', 'dethemekit-for-elementor' ),
+						'de_carousel_1'   	=> __( 'De Carousel 1', 'dethemekit-for-elementor' ),
+						'de_carousel_2' 	=> __( 'De Carousel 2', 'dethemekit-for-elementor' ),
+						'de_carousel_3'   	=> __( 'De Carousel 3', 'dethemekit-for-elementor' ),
+						'de_carousel_4' 	=> __( 'De Carousel 4', 'dethemekit-for-elementor' ),
 					),
 					'default'     => '',
 					'description' => '<a href="https://detheme.helpscoutdocs.com/article/368-how-to-use-decarousel" target="_blank">How To Use De Carousel ?</a>'
@@ -611,7 +611,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active1',
 				[
-					'label' 		=> __( 'Set Default Active Tab 1', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 1', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_1',
@@ -658,9 +658,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active_icon_box1',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 1', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 1', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active1' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_1',
@@ -671,7 +671,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_icon_color1',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -689,7 +689,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_title_color1',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -707,7 +707,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_description_color1',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -728,7 +728,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active2',
 				[
-					'label' 		=> __( 'Set Default Active Tab 2', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Set Default Active Tab 2', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_2',
@@ -775,9 +775,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active_icon_box2',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 2', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 2', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_child_name' => 'de_carousel_2',
 						'dethemekit_carousel_tab_active2' => 'yes',
@@ -788,7 +788,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_icon_color2',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -806,7 +806,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_title_color2',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -824,7 +824,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_description_color2',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -844,7 +844,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			// BEGIN  ACTIVE TAB 3 & ICON BOX 3
 			$obj->add_control('dethemekit_carousel_tab_active3',
 			[
-				'label' 		=> __( 'Set Default Active Tab 3', 'dethemekit-addons-for-elementor' ),
+				'label' 		=> __( 'Set Default Active Tab 3', 'dethemekit-for-elementor' ),
 				'type'			=> Elementor\Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_carousel_child_name' => 'de_carousel_3',
@@ -891,9 +891,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active_icon_box3',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 3', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 3', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active3' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_3',
@@ -904,7 +904,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_icon_color3',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -922,7 +922,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_title_color3',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -940,7 +940,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_description_color3',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -960,7 +960,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			// BEGIN  ACTIVE TAB 4 & ICON BOX 4
 			$obj->add_control('dethemekit_carousel_tab_active4',
 			[
-				'label' 		=> __( 'Set Default Active Tab 4', 'dethemekit-addons-for-elementor' ),
+				'label' 		=> __( 'Set Default Active Tab 4', 'dethemekit-for-elementor' ),
 				'type'			=> Elementor\Controls_Manager::SWITCHER,
 				'condition' => array(
 					'dethemekit_carousel_child_name' => 'de_carousel_4',
@@ -1007,9 +1007,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 
 			$obj->add_control('dethemekit_carousel_tab_active_icon_box4',
 				[
-					'label' 		=> __( 'Style Active Tab Icon Box 4', 'dethemekit-addons-for-elementor' ),
+					'label' 		=> __( 'Style Active Tab Icon Box 4', 'dethemekit-for-elementor' ),
 					'type'			=> Elementor\Controls_Manager::SWITCHER,
-					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-addons-for-elementor' ),
+					'description'	=> __( 'Set Style Active Column From Icon Box Style.', 'dethemekit-for-elementor' ),
 					'condition' => array(
 						'dethemekit_carousel_tab_active4' => 'yes',
 						'dethemekit_carousel_child_name' => 'de_carousel_4',
@@ -1020,7 +1020,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_icon_color4',
 				[
-					'label'     => __( 'Icon Color', 'detheme-kit' ),
+					'label'     => __( 'Icon Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -1038,7 +1038,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_title_color4',
 				[
-					'label'     => __( 'Title Color', 'detheme-kit' ),
+					'label'     => __( 'Title Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -1056,7 +1056,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'dethemekit_carousel_tab_active_description_color4',
 				[
-					'label'     => __( 'Description Color', 'detheme-kit' ),
+					'label'     => __( 'Description Color', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::COLOR,
 					'global'    => [
 						'default' => Global_Colors::COLOR_TEXT,
@@ -1096,7 +1096,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->start_controls_section(
 				'de_sticky_column_sticky_section',
 				array(
-					'label' => esc_html__( 'De Sticky', 'desticky-for-elementor' ),
+					'label' => esc_html__( 'De Sticky', 'dethemekit-for-elementor' ),
 					'tab'   => Elementor\Controls_Manager::TAB_ADVANCED,
 				)
 			);
@@ -1104,10 +1104,10 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'de_sticky_column_sticky_enable',
 				array(
-					'label'        => esc_html__( 'Sticky Column', 'desticky-for-elementor' ),
+					'label'        => esc_html__( 'Sticky Column', 'dethemekit-for-elementor' ),
 					'type'         => Elementor\Controls_Manager::SWITCHER,
-					'label_on'     => esc_html__( 'Yes', 'desticky-for-elementor' ),
-					'label_off'    => esc_html__( 'No', 'desticky-for-elementor' ),
+					'label_on'     => esc_html__( 'Yes', 'dethemekit-for-elementor' ),
+					'label_off'    => esc_html__( 'No', 'dethemekit-for-elementor' ),
 					'return_value' => 'true',
 					'default'      => 'false',
 				)
@@ -1116,7 +1116,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'de_sticky_column_sticky_top_spacing',
 				array(
-					'label'   => esc_html__( 'Top Spacing', 'desticky-for-elementor' ),
+					'label'   => esc_html__( 'Top Spacing', 'dethemekit-for-elementor' ),
 					'type'    => Elementor\Controls_Manager::NUMBER,
 					'default' => 50,
 					'min'     => 0,
@@ -1131,7 +1131,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'de_sticky_column_sticky_bottom_spacing',
 				array(
-					'label'   => esc_html__( 'Bottom Spacing', 'desticky-for-elementor' ),
+					'label'   => esc_html__( 'Bottom Spacing', 'dethemekit-for-elementor' ),
 					'type'    => Elementor\Controls_Manager::NUMBER,
 					'default' => 50,
 					'min'     => 0,
@@ -1146,7 +1146,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_responsive_control(
 				'de_sticky_column_sticky_padding',
 				[
-					'label' => esc_html__( 'Margin', 'elementor' ),
+					'label' => esc_html__( 'Margin', 'dethemekit-for-elementor' ),
 					'type' => Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%', 'rem' ],
 
@@ -1163,7 +1163,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_responsive_control(
 				'de_sticky_column_sticky_margin',
 				[
-					'label' => esc_html__( 'Padding', 'elementor' ),
+					'label' => esc_html__( 'Padding', 'dethemekit-for-elementor' ),
 					'type' => Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%', 'rem' ],
 
@@ -1180,7 +1180,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$obj->add_control(
 				'de_sticky_column_sticky_enable_on',
 				array(
-					'label'    => __( 'Sticky On', 'desticky-for-elementor' ),
+					'label'    => __( 'Sticky On', 'dethemekit-for-elementor' ),
 					'type'     => Elementor\Controls_Manager::SELECT2,
 					'multiple' => true,
 					'label_block' => 'true',
@@ -1189,9 +1189,9 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 						'tablet',
 					),
 					'options' => array(
-						'desktop' => __( 'Desktop', 'desticky-for-elementor' ),
-						'tablet'  => __( 'Tablet', 'desticky-for-elementor' ),
-						'mobile'  => __( 'Mobile', 'desticky-for-elementor' ),
+						'desktop' => __( 'Desktop', 'dethemekit-for-elementor' ),
+						'tablet'  => __( 'Tablet', 'dethemekit-for-elementor' ),
+						'mobile'  => __( 'Mobile', 'dethemekit-for-elementor' ),
 					),
 					'condition' => array(
 						'de_sticky_column_sticky_enable' => 'true',
@@ -1337,7 +1337,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->start_controls_section(
 				'de_sticky_section_sticky_settings',
 				array(
-					'label' => esc_html__( 'De Sticky', 'desticky-for-elementor' ),
+					'label' => esc_html__( 'De Sticky', 'dethemekit-for-elementor' ),
 					'tab'   => Elementor\Controls_Manager::TAB_ADVANCED,
 				)
 			);
@@ -1345,7 +1345,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_control(
 				'de_sticky_section_sticky',
 				array(
-					'label'   => esc_html__( 'Sticky Section', 'desticky-for-elementor' ),
+					'label'   => esc_html__( 'Sticky Section', 'dethemekit-for-elementor' ),
 					'type'    => Elementor\Controls_Manager::SWITCHER,
 					'default' => '',
 					'frontend_available' => true,
@@ -1355,15 +1355,15 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_control(
 				'de_sticky_section_sticky_visibility',
 				array(
-					'label'       => esc_html__( 'Sticky Section Visibility', 'desticky-for-elementor' ),
+					'label'       => esc_html__( 'Sticky Section Visibility', 'dethemekit-for-elementor' ),
 					'type'        => Elementor\Controls_Manager::SELECT2,
 					'multiple'    => true,
 					'label_block' => true,
 					'default' => array( 'desktop', 'tablet', 'mobile' ),
 					'options' => array(
-						'desktop' => esc_html__( 'Desktop', 'desticky-for-elementor' ),
-						'tablet'  => esc_html__( 'Tablet', 'desticky-for-elementor' ),
-						'mobile'  => esc_html__( 'Mobile', 'desticky-for-elementor' ),
+						'desktop' => esc_html__( 'Desktop', 'dethemekit-for-elementor' ),
+						'tablet'  => esc_html__( 'Tablet', 'dethemekit-for-elementor' ),
+						'mobile'  => esc_html__( 'Mobile', 'dethemekit-for-elementor' ),
 					),
 					'condition' => array(
 						'de_sticky_section_sticky' => 'yes',
@@ -1375,7 +1375,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_control(
 				'de_sticky_section_sticky_z_index',
 				array(
-					'label'       => esc_html__( 'Z-index', 'desticky-for-elementor' ),
+					'label'       => esc_html__( 'Z-index', 'dethemekit-for-elementor' ),
 					'type'        => Elementor\Controls_Manager::NUMBER,
 					'placeholder' => 1100,
 					'min'         => 1,
@@ -1393,7 +1393,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_control(
 				'de_sticky_section_sticky_max_width',
 				array(
-					'label' => esc_html__( 'Max Width (px)', 'desticky-for-elementor' ),
+					'label' => esc_html__( 'Max Width (px)', 'dethemekit-for-elementor' ),
 					'type'  => Elementor\Controls_Manager::SLIDER,
 					'range' => array(
 						'px' => array(
@@ -1413,7 +1413,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_responsive_control(
 				'de_sticky_section_sticky_style_heading',
 				array(
-					'label'     => esc_html__( 'Sticky Section Style', 'desticky-for-elementor' ),
+					'label'     => esc_html__( 'Sticky Section Style', 'dethemekit-for-elementor' ),
 					'type'      => Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 					'condition' => array(
@@ -1425,7 +1425,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_responsive_control(
 				'de_sticky_section_sticky_margin',
 				array(
-					'label'      => esc_html__( 'Margin', 'desticky-for-elementor' ),
+					'label'      => esc_html__( 'Margin', 'dethemekit-for-elementor' ),
 					'type'       => Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'allowed_dimensions' => 'vertical',
@@ -1447,7 +1447,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_responsive_control(
 				'de_sticky_section_sticky_padding',
 				array(
-					'label'      => esc_html__( 'Padding', 'desticky-for-elementor' ),
+					'label'      => esc_html__( 'Padding', 'dethemekit-for-elementor' ),
 					'type'       => Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', 'em', '%' ),
 					'selectors'  => array(
@@ -1484,7 +1484,7 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 			$element->add_control(
 				'de_sticky_section_sticky_transition',
 				array(
-					'label'   => esc_html__( 'Transition Duration', 'desticky-for-elementor' ),
+					'label'   => esc_html__( 'Transition Duration', 'dethemekit-for-elementor' ),
 					'type'    => Elementor\Controls_Manager::SLIDER,
 					'default' => array(
 						'size' => 0.1,
@@ -1527,14 +1527,6 @@ if ( ! class_exists( 'De_Sticky_Element_Extension' ) ) {
 				DETHEMEKIT_ADDONS_URL . 'assets/js/lib/sticky-sidebar/sticky-sidebar.min.js' ,
 				array( 'jquery', 'de-resize-sensor' ),
 				'3.3.1',
-				true
-			);
-
-			wp_enqueue_script(
-				'jsticky',
-				DETHEMEKIT_ADDONS_URL . 'assets/js/lib/jsticky/jquery.jsticky.js' ,
-				array( 'jquery' ),
-				'1.1.0',
 				true
 			);
 

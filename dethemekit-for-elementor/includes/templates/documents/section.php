@@ -11,7 +11,7 @@ class DethemeKit_Section_Document extends DethemeKit_Document_Base {
 	}
 
 	public static function get_title() {
-		return __( 'Section', 'dethemekit-addons-for-elementor' );
+		return __( 'Section', 'dethemekit-for-elementor' );
 	}
 
 	public function has_conditions() {

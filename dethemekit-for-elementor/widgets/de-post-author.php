@@ -37,7 +37,7 @@ class De_Post_Author extends Widget_Base {
 
 		return sprintf(
 			/* translators: %s: Post type singular name (e.g. Post or Page) */
-			__( '%s Author', 'detheme-kit' ),
+			__( '%s Author', 'dethemekit-for-elementor' ),
 			$post_type_object->labels->singular_name
 		);
 	}
@@ -50,7 +50,7 @@ class De_Post_Author extends Widget_Base {
 		return [ 'dethemekit-elements' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 
@@ -59,7 +59,7 @@ class De_Post_Author extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Author', 'detheme-kit' ),
+					__( '%s Author', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -68,7 +68,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'author',
 			[
-				'label' => __( 'Author', 'detheme-kit' ),
+				'label' => __( 'Author', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $this->user_fields_labels(),
 				'default' => 'display_name',
@@ -78,7 +78,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'html_tag',
 			[
-				'label' => __( 'HTML Tag', 'detheme-kit' ),
+				'label' => __( 'HTML Tag', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -98,23 +98,23 @@ class De_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'detheme-kit' ),
+				'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'detheme-kit' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'detheme-kit' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'detheme-kit' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'detheme-kit' ),
+						'title' => __( 'Justified', 'dethemekit-for-elementor' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -128,19 +128,19 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => __( 'Link to', 'detheme-kit' ),
+				'label' => __( 'Link to', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
-					'none' => __( 'None', 'detheme-kit' ),
-					'home' => __( 'Home URL', 'detheme-kit' ),
+					'none' => __( 'None', 'dethemekit-for-elementor' ),
+					'home' => __( 'Home URL', 'dethemekit-for-elementor' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
-						__( '%s URL', 'detheme-kit' ),
+						__( '%s URL', 'dethemekit-for-elementor' ),
 						$post_type_object->labels->singular_name
 					),
-					'author' => __( 'Author URL', 'detheme-kit' ),
-					'custom' => __( 'Custom URL', 'detheme-kit' ),
+					'author' => __( 'Author URL', 'dethemekit-for-elementor' ),
+					'custom' => __( 'Custom URL', 'dethemekit-for-elementor' ),
 				],
 			]
 		);
@@ -148,9 +148,9 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link', 'detheme-kit' ),
+				'label' => __( 'Link', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'detheme-kit' ),
+				'placeholder' => __( 'https://your-link.com', 'dethemekit-for-elementor' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -168,7 +168,7 @@ class De_Post_Author extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Author', 'detheme-kit' ),
+					__( '%s Author', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 				'tab' => Controls_Manager::TAB_STYLE,
@@ -178,7 +178,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => __( 'Text Color', 'detheme-kit' ),
+				'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -221,7 +221,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'space',
 			[
-				'label' => __( 'Size (%)', 'detheme-kit' ),
+				'label' => __( 'Size (%)', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -246,7 +246,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_responsive_control(
 			'opacity',
 			[
-				'label' => __( 'Opacity (%)', 'detheme-kit' ),
+				'label' => __( 'Opacity (%)', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -270,7 +270,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'angle',
 			[
-				'label' => __( 'Angle (deg)', 'detheme-kit' ),
+				'label' => __( 'Angle (deg)', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
@@ -296,7 +296,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'detheme-kit' ),
+				'label' => __( 'Hover Animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -305,7 +305,7 @@ class De_Post_Author extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'image_border',
-				'label' => __( 'Image Border', 'detheme-kit' ),
+				'label' => __( 'Image Border', 'dethemekit-for-elementor' ),
 				'selector' => '{{WRAPPER}} .detheme-kit-author img',
 				'condition' => [
 					'author' => 'image',
@@ -316,7 +316,7 @@ class De_Post_Author extends Widget_Base {
 		$this->add_control(
 			'image_border_radius',
 			[
-				'label' => __( 'Border Radius', 'detheme-kit' ),
+				'label' => __( 'Border Radius', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -477,15 +477,15 @@ class De_Post_Author extends Widget_Base {
 	protected function user_fields_labels() {
 
 		$fields = [
-			'first_name'   => __( 'First Name', 'detheme-kit' ),
-			'last_name'    => __( 'Last Name', 'detheme-kit' ),
-			'first_last'   => __( 'First Name + Last Name', 'detheme-kit' ),
-			'last_first'   => __( 'Last Name + First Name', 'detheme-kit' ),
-			'nickname'     => __( 'Nick Name', 'detheme-kit' ),
-			'display_name' => __( 'Display Name', 'detheme-kit' ),
-			'user_login'   => __( 'User Name', 'detheme-kit' ),
-			'description'  => __( 'User Bio', 'detheme-kit' ),
-			'image'        => __( 'User Image', 'detheme-kit' ),
+			'first_name'   => __( 'First Name', 'dethemekit-for-elementor' ),
+			'last_name'    => __( 'Last Name', 'dethemekit-for-elementor' ),
+			'first_last'   => __( 'First Name + Last Name', 'dethemekit-for-elementor' ),
+			'last_first'   => __( 'Last Name + First Name', 'dethemekit-for-elementor' ),
+			'nickname'     => __( 'Nick Name', 'dethemekit-for-elementor' ),
+			'display_name' => __( 'Display Name', 'dethemekit-for-elementor' ),
+			'user_login'   => __( 'User Name', 'dethemekit-for-elementor' ),
+			'description'  => __( 'User Bio', 'dethemekit-for-elementor' ),
+			'image'        => __( 'User Image', 'dethemekit-for-elementor' ),
 		];
 
 		return $fields;

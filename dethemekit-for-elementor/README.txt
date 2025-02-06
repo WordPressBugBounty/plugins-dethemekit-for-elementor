@@ -1,13 +1,14 @@
-=== DethemeKit For Elementor ===
+=== DethemeKit for Elementor ===
 Contributors: deTheme
 Requires at least: WordPress 5.2
-Tested up to: WordPress 6.4
-Version: 2.1.8
-Stable tag: 2.1.8
+Tested up to: WordPress 6.7
+Version: 2.1.9
+Stable tag: 2.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: detheme, dethemekit, elementor
 
+DethemeKit is an Elementor add-on to help you build your WordPress website creatively and easily.
 
 == Description ==
 
@@ -168,6 +169,10 @@ GNU General Public License for more details.
     License URL: https://github.com/ionic-team/ionicons/blob/master/LICENSE
 
 == Changelog ==
+
+= 2.1.9 =
+* Fix: Fixed vulnerable to Stored Cross-Site Scripting via the plugin's De Gallery widget issue reported by zer0gh0st on Wordfence
+* Fix: Fixed vulnerable to Information Exposure via the duplicate_post() function due to insufficient restrictions on which posts can be duplicated issue reported by Webbernaut on Wordfence
 
 = 2.1.8 =
 * Fix: Removed waypoint 

@@ -131,9 +131,9 @@ class Admin_Notices {
 
                     $install_url = wp_nonce_url( self_admin_url( sprintf( 'update.php?action=install-plugin&plugin=%s', self::$elementor ) ), 'install-plugin_elementor' );
 
-                    $message = sprintf( '<p>%s</p>', __('DethemeKit Addons for Elementor is not working because you need to Install Elementor plugin.', 'dethemekit-addons-for-elementor' ) );
+                    $message = sprintf( '<p>%s</p>', __('DethemeKit Addons for Elementor is not working because you need to Install Elementor plugin.', 'dethemekit-for-elementor' ) );
 
-                    $message .= sprintf( '<p><a href="%s" class="button-primary">%s</a></p>', $install_url, __( 'Install Now', 'dethemekit-addons-for-elementor' ) );
+                    $message .= sprintf( '<p><a href="%s" class="button-primary">%s</a></p>', $install_url, __( 'Install Now', 'dethemekit-for-elementor' ) );
 
                 }
             } else {
@@ -141,9 +141,9 @@ class Admin_Notices {
 
                     $activation_url = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $elementor_path . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $elementor_path );
 
-                    $message = '<p>' . __( 'DethemeKit Addons for Elementor is not working because you need to activate Elementor plugin.', 'dethemekit-addons-for-elementor' ) . '</p>';
+                    $message = '<p>' . __( 'DethemeKit Addons for Elementor is not working because you need to activate Elementor plugin.', 'dethemekit-for-elementor' ) . '</p>';
 
-                    $message .= '<p>' . sprintf( '<a href="%s" class="button-primary">%s</a>', $activation_url, __( 'Activate Now', 'dethemekit-addons-for-elementor' ) ) . '</p>';
+                    $message .= '<p>' . sprintf( '<a href="%s" class="button-primary">%s</a>', $activation_url, __( 'Activate Now', 'dethemekit-for-elementor' ) ) . '</p>';
 
                 }
             }
@@ -161,11 +161,11 @@ class Admin_Notices {
     public function get_review_text( $review_url, $optout_url ) {
         
         $notice = sprintf(
-            '<p>' . __('Did you like','dethemekit-addons-for-elementor') . '<strong>&nbspDethemeKit Addons for Elementor&nbsp</strong>' . __('Plugin?','dethemekit-addons-for-elementor') . '</p>
-             <p>' . __('Could you please do us a BIG favor ? if you could take 2 min of your time, we\'d really appreciate if you give DethemeKit Addons for Elementor 5-star rating on WordPress. By spreading the love, we can create even greater free stuff in the future!','dethemekit-addons-for-elementor') . '</p>
-            <p><a class="button button-primary" href="%s" target="_blank"><span><i class="dashicons dashicons-external"></i>' . __('Leave a Review','dethemekit-addons-for-elementor') . '</span></a>
-                <a class="button button-secondary pa-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','dethemekit-addons-for-elementor') . '</span></a>
-                <a class="button button-secondary" href="%2$s"><span><i class="dashicons dashicons-smiley"></i>' . __('I Already did','dethemekit-addons-for-elementor') . '</span></a>
+            '<p>' . __('Did you like','dethemekit-for-elementor') . '<strong>&nbspDethemeKit Addons for Elementor&nbsp</strong>' . __('Plugin?','dethemekit-for-elementor') . '</p>
+             <p>' . __('Could you please do us a BIG favor ? if you could take 2 min of your time, we\'d really appreciate if you give DethemeKit Addons for Elementor 5-star rating on WordPress. By spreading the love, we can create even greater free stuff in the future!','dethemekit-for-elementor') . '</p>
+            <p><a class="button button-primary" href="%s" target="_blank"><span><i class="dashicons dashicons-external"></i>' . __('Leave a Review','dethemekit-for-elementor') . '</span></a>
+                <a class="button button-secondary pa-notice-reset"><span><i class="dashicons dashicons-calendar-alt"></i>' . __('Maybe Later','dethemekit-for-elementor') . '</span></a>
+                <a class="button button-secondary" href="%2$s"><span><i class="dashicons dashicons-smiley"></i>' . __('I Already did','dethemekit-for-elementor') . '</span></a>
             </p>',
         $review_url, $optout_url );
         
@@ -232,7 +232,7 @@ class Admin_Notices {
 
         $templates_message .= '<img class="pa-notice-logo" src="' . DETHEMEKIT_ADDONS_URL .'admin/images/dethemekit-addons-logo.png' . '">';
 
-        $templates_message .= '<strong>' . __('DethemeKit Lottie Animations','dethemekit-addons-for-elementor') . '&nbsp</strong><span>' . __('widget is now available.', 'dethemekit-addons-for-elementor') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'dethemekit-addons-for-elementor') . '</a>';
+        $templates_message .= '<strong>' . __('DethemeKit Lottie Animations','dethemekit-for-elementor') . '&nbsp</strong><span>' . __('widget is now available.', 'dethemekit-for-elementor') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'dethemekit-for-elementor') . '</a>';
 
         $templates_message .= '<div class="pa-notice-close" data-notice="lottie"><span class="dashicons dashicons-dismiss"></span></div>';
 

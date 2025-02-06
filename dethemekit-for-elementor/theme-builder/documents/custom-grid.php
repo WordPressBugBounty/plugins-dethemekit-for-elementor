@@ -32,13 +32,13 @@ class deGrid extends Theme_Section_Document {
 	}
 
 	public static function get_title() {
-		return __( 'De Grid', 'detheme-kit' );
+		return __( 'De Grid', 'dethemekit-for-elementor' );
 	}
 
   protected static function get_editor_panel_categories() {
 		$categories = [
 			'de-grid' => [
-				'title' => __( 'De Grid', 'detheme-kit' ),
+				'title' => __( 'De Grid', 'dethemekit-for-elementor' ),
 			],
 		];
     return $categories + parent::get_editor_panel_categories();

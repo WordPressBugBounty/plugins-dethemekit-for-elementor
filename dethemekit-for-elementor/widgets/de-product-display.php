@@ -33,7 +33,7 @@ class De_Product_Display extends Widget_Base {
     }
     
     public function get_title() {
-        return __( 'De Product Display', 'dethemekit' );
+        return __( 'De Product Display', 'dethemekit-for-elementor' );
     }
 
     public function get_icon() {
@@ -67,26 +67,26 @@ class De_Product_Display extends Widget_Base {
         return ['slider','product','dethemekit','de product display','woocommerce'];
     }
 
-    protected function _register_controls() {
+    protected function register_controls() {
 
         // Product Content
         $this->start_controls_section(
             'dethemekit-products-layout-setting',
             [
-                'label' => esc_html__( 'Layout Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Layout Settings', 'dethemekit-for-elementor' ),
             ]
         );
             
             $this->add_control(
                 'product_layout_style',
                 [
-                    'label'   => __( 'Layout', 'dethemekit' ),
+                    'label'   => __( 'Layout', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::SELECT,
                     'default' => 'default',
                     'options' => [
-                        'slider'   => __( 'Slider', 'dethemekit' ),
-                        'tab'      => __( 'Tab', 'dethemekit' ),
-                        'default'  => __( 'Default', 'dethemekit' ),
+                        'slider'   => __( 'Slider', 'dethemekit-for-elementor' ),
+                        'tab'      => __( 'Tab', 'dethemekit-for-elementor' ),
+                        'default'  => __( 'Default', 'dethemekit-for-elementor' ),
                     ]
                 ]
             );
@@ -94,7 +94,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'columns',
                 [
-                    'label' => __( 'Columns', 'dethemekit' ),
+                    'label' => __( 'Columns', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::NUMBER,
                     'prefix_class' => 'elementor-products-columns%s-',
                     'min' => 1,
@@ -113,25 +113,25 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products',
             [
-                'label' => esc_html__( 'Query Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Query Settings', 'dethemekit-for-elementor' ),
             ]
         );
 
             $this->add_control(
                 'dethemekit_product_grid_product_filter',
                 [
-                    'label' => esc_html__( 'Filter By', 'dethemekit' ),
+                    'label' => esc_html__( 'Filter By', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'recent',
                     'options' => [
-                        'recent' => esc_html__( 'Recent Products', 'dethemekit' ),
-                        'featured' => esc_html__( 'Featured Products', 'dethemekit' ),
-                        'best_selling' => esc_html__( 'Best Selling Products', 'dethemekit' ),
-                        'sale' => esc_html__( 'Sale Products', 'dethemekit' ),
-                        'top_rated' => esc_html__( 'Top Rated Products', 'dethemekit' ),
-                        'mixed_order' => esc_html__( 'Random Products', 'dethemekit' ),
-                        'show_byid' => esc_html__( 'Show By ID', 'dethemekit' ),
-                        'show_byid_manually' => esc_html__( 'Add ID Manually', 'dethemekit' ),
+                        'recent' => esc_html__( 'Recent Products', 'dethemekit-for-elementor' ),
+                        'featured' => esc_html__( 'Featured Products', 'dethemekit-for-elementor' ),
+                        'best_selling' => esc_html__( 'Best Selling Products', 'dethemekit-for-elementor' ),
+                        'sale' => esc_html__( 'Sale Products', 'dethemekit-for-elementor' ),
+                        'top_rated' => esc_html__( 'Top Rated Products', 'dethemekit-for-elementor' ),
+                        'mixed_order' => esc_html__( 'Random Products', 'dethemekit-for-elementor' ),
+                        'show_byid' => esc_html__( 'Show By ID', 'dethemekit-for-elementor' ),
+                        'show_byid_manually' => esc_html__( 'Add ID Manually', 'dethemekit-for-elementor' ),
                     ],
                 ]
             );
@@ -139,7 +139,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'dethemekit_product_id',
                 [
-                    'label' => __( 'Select Product', 'dethemekit' ),
+                    'label' => __( 'Select Product', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SELECT2,
                     'label_block' => true,
                     'multiple' => true,
@@ -153,7 +153,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'dethemekit_product_ids_manually',
                 [
-                    'label' => __( 'Product IDs', 'dethemekit' ),
+                    'label' => __( 'Product IDs', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::TEXT,
                     'label_block' => true,
                     'condition' => [
@@ -165,7 +165,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
               'dethemekit_product_grid_products_count',
                 [
-                    'label'   => __( 'Product Limit', 'dethemekit' ),
+                    'label'   => __( 'Product Limit', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::NUMBER,
                     'default' => 3,
                     'step'    => 1,
@@ -175,7 +175,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'dethemekit_product_grid_categories',
                 [
-                    'label' => esc_html__( 'Product Categories', 'dethemekit' ),
+                    'label' => esc_html__( 'Product Categories', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SELECT2,
                     'label_block' => true,
                     'multiple' => true,
@@ -189,7 +189,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'dethemekit_custom_order',
                 [
-                    'label' => esc_html__( 'Custom Order', 'dethemekit' ),
+                    'label' => esc_html__( 'Custom Order', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
                     'return_value' => 'yes',
                     'default' => 'no',
@@ -199,17 +199,17 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'orderby',
                 [
-                    'label' => esc_html__( 'Order by', 'dethemekit' ),
+                    'label' => esc_html__( 'Order by', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'none',
                     'options' => [
-                        'none'          => esc_html__('None','dethemekit'),
-                        'ID'            => esc_html__('ID','dethemekit'),
-                        'date'          => esc_html__('Date','dethemekit'),
-                        'name'          => esc_html__('Name','dethemekit'),
-                        'title'         => esc_html__('Title','dethemekit'),
-                        'comment_count' => esc_html__('Comment count','dethemekit'),
-                        'rand'          => esc_html__('Random','dethemekit'),
+                        'none'          => esc_html__('None','dethemekit-for-elementor'),
+                        'ID'            => esc_html__('ID','dethemekit-for-elementor'),
+                        'date'          => esc_html__('Date','dethemekit-for-elementor'),
+                        'name'          => esc_html__('Name','dethemekit-for-elementor'),
+                        'title'         => esc_html__('Title','dethemekit-for-elementor'),
+                        'comment_count' => esc_html__('Comment count','dethemekit-for-elementor'),
+                        'rand'          => esc_html__('Random','dethemekit-for-elementor'),
                     ],
                     'condition' => [
                         'dethemekit_custom_order' => 'yes',
@@ -220,12 +220,12 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'order',
                 [
-                    'label' => esc_html__( 'Order', 'dethemekit' ),
+                    'label' => esc_html__( 'Order', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'DESC',
                     'options' => [
-                        'DESC'  => esc_html__('Descending','dethemekit'),
-                        'ASC'   => esc_html__('Ascending','dethemekit'),
+                        'DESC'  => esc_html__('Descending','dethemekit-for-elementor'),
+                        'ASC'   => esc_html__('Ascending','dethemekit-for-elementor'),
                     ],
                     'condition' => [
                         'dethemekit_custom_order' => 'yes',
@@ -239,21 +239,21 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-content-setting',
             [
-                'label' => esc_html__( 'Content Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Content Settings', 'dethemekit-for-elementor' ),
             ]
         );
             
             $this->add_control(
                 'product_content_style',
                 [
-                    'label'   => __( 'Style', 'dethemekit' ),
+                    'label'   => __( 'Style', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::SELECT,
                     'default' => '1',
                     'options' => [
-                        '1'  => __( 'Style One', 'dethemekit' ),
-                        '2'  => __( 'Style Two', 'dethemekit' ),
-                        '3'  => __( 'Style Three', 'dethemekit' ),
-                        '4'  => __( 'Style Four', 'dethemekit' ),
+                        '1'  => __( 'Style One', 'dethemekit-for-elementor' ),
+                        '2'  => __( 'Style Two', 'dethemekit-for-elementor' ),
+                        '3'  => __( 'Style Three', 'dethemekit-for-elementor' ),
+                        '4'  => __( 'Style Four', 'dethemekit-for-elementor' ),
                     ]
                 ]
             );
@@ -261,7 +261,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_product_title',
                 [
-                    'label'     => __( 'Hide Title', 'dethemekit' ),
+                    'label'     => __( 'Hide Title', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .ht-product-inner .ht-product-title' => 'display: none !important;',
@@ -272,7 +272,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_product_price',
                 [
-                    'label'     => __( 'Hide Price', 'dethemekit' ),
+                    'label'     => __( 'Hide Price', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .ht-product-inner .ht-product-price' => 'display: none !important;',
@@ -283,7 +283,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_product_category',
                 [
-                    'label'     => __( 'Hide Category', 'dethemekit' ),
+                    'label'     => __( 'Hide Category', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .ht-product-inner .ht-product-categories' => 'display: none !important;',
@@ -294,7 +294,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_product_ratting',
                 [
-                    'label'     => __( 'Hide Rating', 'dethemekit' ),
+                    'label'     => __( 'Hide Rating', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .ht-product-inner .ht-product-ratting-wrap' => 'display: none !important;',
@@ -305,7 +305,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'stock_progress_bar',
                 [
-                    'label'     => __( 'Show Product Stock Progress Bar', 'dethemekit-pro' ),
+                    'label'     => __( 'Show Product Stock Progress Bar', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                 ]
             );
@@ -315,7 +315,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'section_stock_progressbar',
             [
-                'label' => __( 'Stock Progressbar', 'dethemekit-pro' ),
+                'label' => __( 'Stock Progressbar', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
                 'condition'=>[
                     'stock_progress_bar'=>'yes',
@@ -326,7 +326,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_order_counter',
                 [
-                    'label'     => __( 'Hide Order Counter', 'dethemekit-pro' ),
+                    'label'     => __( 'Hide Order Counter', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .wltotal-sold' => 'display: none !important;',
@@ -337,7 +337,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'hide_available_counter',
                 [
-                    'label'     => __( 'Hide Available Counter', 'dethemekit-pro' ),
+                    'label'     => __( 'Hide Available Counter', 'dethemekit-for-elementor' ),
                     'type'      => Controls_Manager::SWITCHER,
                     'selectors' => [
                         '{{WRAPPER}} .wlcurrent-stock' => 'display: none !important;',
@@ -348,9 +348,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'order_custom_text',
                 [
-                    'label' => __( 'Ordered Custom Text', 'dethemekit-pro' ),
+                    'label' => __( 'Ordered Custom Text', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Ordered', 'dethemekit-pro' ),
+                    'placeholder' => __( 'Ordered', 'dethemekit-for-elementor' ),
                     'condition' => [
                         'hide_order_counter!' => 'yes',
                     ],
@@ -361,9 +361,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'available_custom_text',
                 [
-                    'label' => __( 'Available Custom Text', 'dethemekit-pro' ),
+                    'label' => __( 'Available Custom Text', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Items available', 'dethemekit-pro' ),
+                    'placeholder' => __( 'Items available', 'dethemekit-for-elementor' ),
                     'condition' => [
                         'hide_available_counter!' => 'yes',
                     ],
@@ -377,17 +377,17 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-action-button',
             [
-                'label' => esc_html__( 'Action Button Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Action Button Settings', 'dethemekit-for-elementor' ),
             ]
         );
             
             $this->add_control(
                 'show_action_button',
                 [
-                    'label' => __( 'Action Button', 'dethemekit' ),
+                    'label' => __( 'Action Button', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'dethemekit' ),
-                    'label_off' => __( 'Hide', 'dethemekit' ),
+                    'label_on' => __( 'Show', 'dethemekit-for-elementor' ),
+                    'label_off' => __( 'Hide', 'dethemekit-for-elementor' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -396,13 +396,13 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'action_button_style',
                 [
-                    'label'   => __( 'Style', 'dethemekit' ),
+                    'label'   => __( 'Style', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::SELECT,
                     'default' => '1',
                     'options' => [
-                        '1'   => __( 'Style One', 'dethemekit' ),
-                        '2'   => __( 'Style Two', 'dethemekit' ),
-                        '3'   => __( 'Style Three', 'dethemekit' ),
+                        '1'   => __( 'Style One', 'dethemekit-for-elementor' ),
+                        '2'   => __( 'Style Two', 'dethemekit-for-elementor' ),
+                        '3'   => __( 'Style Three', 'dethemekit-for-elementor' ),
                     ],
                     'condition'=>[
                         'show_action_button'=>'yes',
@@ -413,12 +413,12 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'action_button_show_on',
                 [
-                    'label'   => __( 'Show on', 'dethemekit' ),
+                    'label'   => __( 'Show on', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::SELECT,
                     'default' => 'normal',
                     'options' => [
-                        'hover'   => __( 'Hover', 'dethemekit' ),
-                        'normal'  => __( 'Normal', 'dethemekit' ),
+                        'hover'   => __( 'Hover', 'dethemekit-for-elementor' ),
+                        'normal'  => __( 'Normal', 'dethemekit-for-elementor' ),
                     ],
                     'condition'=>[
                         'show_action_button'=>'yes',
@@ -429,27 +429,27 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'action_button_position',
                 [
-                    'label'   => __( 'Position', 'dethemekit' ),
+                    'label'   => __( 'Position', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => __( 'Left', 'dethemekit' ),
+                            'title' => __( 'Left', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-h-align-left',
                         ],
                         'right' => [
-                            'title' => __( 'Right', 'dethemekit' ),
+                            'title' => __( 'Right', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-h-align-right',
                         ],
                         'middle' => [
-                            'title' => __( 'Middle', 'dethemekit' ),
+                            'title' => __( 'Middle', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-middle',
                         ],
                         'bottom' => [
-                            'title' => __( 'Bottom', 'dethemekit' ),
+                            'title' => __( 'Bottom', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-bottom',
                         ],
                         'contentbottom' => [
-                            'title' => __( 'Content Bottom', 'dethemekit' ),
+                            'title' => __( 'Content Bottom', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-bottom',
                         ],
                     ],
@@ -464,7 +464,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'addtocart_button_txt',
                 [
-                    'label' => __( 'Show Add to Cart Button Text', 'dethemekit' ),
+                    'label' => __( 'Show Add to Cart Button Text', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
                 ]
             );
@@ -475,20 +475,20 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-thumbnails-setting',
             [
-                'label' => esc_html__( 'Image Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Image Settings', 'dethemekit-for-elementor' ),
             ]
         );
 
             $this->add_control(
                 'thumbnails_style',
                 [
-                    'label'   => __( 'Thumbnails Style', 'dethemekit' ),
+                    'label'   => __( 'Thumbnails Style', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::SELECT,
                     'default' => '1',
                     'options' => [
-                        '1'   => __( 'Single Image', 'dethemekit' ),
-                        '2'  => __( 'Image Slider', 'dethemekit' ),
-                        '3'  => __( 'Gallery Tab', 'dethemekit' ),
+                        '1'   => __( 'Single Image', 'dethemekit-for-elementor' ),
+                        '2'  => __( 'Image Slider', 'dethemekit-for-elementor' ),
+                        '3'  => __( 'Gallery Tab', 'dethemekit-for-elementor' ),
                     ]
                 ]
             );
@@ -496,7 +496,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'image_navigation_bg_color',
                 [
-                    'label' => __( 'Arrows Color', 'dethemekit' ),
+                    'label' => __( 'Arrows Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' =>'#444444',
                     'selectors' => [
@@ -511,7 +511,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'image_dots_normal_bg_color',
                 [
-                    'label' => __( 'Dots Background Color', 'dethemekit' ),
+                    'label' => __( 'Dots Background Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' =>'#cccccc',
                     'selectors' => [
@@ -526,7 +526,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'image_dots_hover_bg_color',
                 [
-                    'label' => __( 'Dots Active Background Color', 'dethemekit' ),
+                    'label' => __( 'Dots Active Background Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'condition'=>[
                         'thumbnails_style'=>'2',
@@ -541,7 +541,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'image_tab_menu_border_color',
                 [
-                    'label' => __( 'Border Color', 'dethemekit' ),
+                    'label' => __( 'Border Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' =>'#737373',
                     'selectors' => [
@@ -556,7 +556,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'image_tab_menu_active_border_color',
                 [
-                    'label' => __( 'Active Border Color', 'dethemekit' ),
+                    'label' => __( 'Active Border Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' =>'#ECC87B',
                     'selectors' => [
@@ -574,17 +574,17 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-countdown-setting',
             [
-                'label' => esc_html__( 'Countdown Settings', 'dethemekit' ),
+                'label' => esc_html__( 'Countdown Settings', 'dethemekit-for-elementor' ),
             ]
         );
             
             $this->add_control(
                 'show_countdown',
                 [
-                    'label' => __( 'Show Countdown Timer', 'dethemekit' ),
+                    'label' => __( 'Show Countdown Timer', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Show', 'dethemekit' ),
-                    'label_off' => __( 'Hide', 'dethemekit' ),
+                    'label_on' => __( 'Show', 'dethemekit-for-elementor' ),
+                    'label_off' => __( 'Hide', 'dethemekit-for-elementor' ),
                     'return_value' => 'yes',
                     'default' => 'no',
                 ]
@@ -593,10 +593,10 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'show_countdown_gutter',
                 [
-                    'label' => __( 'Gutter', 'dethemekit' ),
+                    'label' => __( 'Gutter', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __( 'Yes', 'dethemekit' ),
-                    'label_off' => __( 'No', 'dethemekit' ),
+                    'label_on' => __( 'Yes', 'dethemekit-for-elementor' ),
+                    'label_off' => __( 'No', 'dethemekit-for-elementor' ),
                     'return_value' => 'yes',
                     'default' => 'yes',
                     'condition' =>[
@@ -608,27 +608,27 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_countdown_position',
                 [
-                    'label'   => __( 'Position', 'dethemekit' ),
+                    'label'   => __( 'Position', 'dethemekit-for-elementor' ),
                     'type'    => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => __( 'Left', 'dethemekit' ),
+                            'title' => __( 'Left', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-h-align-left',
                         ],
                         'right' => [
-                            'title' => __( 'Right', 'dethemekit' ),
+                            'title' => __( 'Right', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-h-align-right',
                         ],
                         'middle' => [
-                            'title' => __( 'Middle', 'dethemekit' ),
+                            'title' => __( 'Middle', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-middle',
                         ],
                         'bottom' => [
-                            'title' => __( 'Bottom', 'dethemekit' ),
+                            'title' => __( 'Bottom', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-bottom',
                         ],
                         'contentbottom' => [
-                            'title' => __( 'Content Bottom', 'dethemekit' ),
+                            'title' => __( 'Content Bottom', 'dethemekit-for-elementor' ),
                             'icon'  => 'eicon-v-align-bottom',
                         ],
                     ],
@@ -644,7 +644,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'custom_labels',
                 [
-                    'label'        => __( 'Custom Label', 'dethemekit' ),
+                    'label'        => __( 'Custom Label', 'dethemekit-for-elementor' ),
                     'type'         => Controls_Manager::SWITCHER,
                     'return_value' => 'yes',
                     'condition'   => [
@@ -656,9 +656,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'customlabel_days',
                 [
-                    'label'       => __( 'Days', 'dethemekit' ),
+                    'label'       => __( 'Days', 'dethemekit-for-elementor' ),
                     'type'        => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Days', 'dethemekit' ),
+                    'placeholder' => __( 'Days', 'dethemekit-for-elementor' ),
                     'condition'   => [
                         'custom_labels!' => '',
                         'show_countdown' => 'yes',
@@ -669,9 +669,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'customlabel_hours',
                 [
-                    'label'       => __( 'Hours', 'dethemekit' ),
+                    'label'       => __( 'Hours', 'dethemekit-for-elementor' ),
                     'type'        => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Hours', 'dethemekit' ),
+                    'placeholder' => __( 'Hours', 'dethemekit-for-elementor' ),
                     'condition'   => [
                         'custom_labels!' => '',
                         'show_countdown' => 'yes',
@@ -682,9 +682,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'customlabel_minutes',
                 [
-                    'label'       => __( 'Minutes', 'dethemekit' ),
+                    'label'       => __( 'Minutes', 'dethemekit-for-elementor' ),
                     'type'        => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Minutes', 'dethemekit' ),
+                    'placeholder' => __( 'Minutes', 'dethemekit-for-elementor' ),
                     'condition'   => [
                         'custom_labels!' => '',
                         'show_countdown' => 'yes',
@@ -695,9 +695,9 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'customlabel_seconds',
                 [
-                    'label'       => __( 'Seconds', 'dethemekit' ),
+                    'label'       => __( 'Seconds', 'dethemekit-for-elementor' ),
                     'type'        => Controls_Manager::TEXT,
-                    'placeholder' => __( 'Seconds', 'dethemekit' ),
+                    'placeholder' => __( 'Seconds', 'dethemekit-for-elementor' ),
                     'condition'   => [
                         'custom_labels!' => '',
                         'show_countdown' => 'yes',
@@ -711,7 +711,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-slider',
             [
-                'label' => esc_html__( 'Slider Option', 'dethemekit' ),
+                'label' => esc_html__( 'Slider Option', 'dethemekit-for-elementor' ),
                 'condition' => [
                     'product_layout_style' => 'slider',
                 ]
@@ -721,7 +721,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slitems',
                 [
-                    'label' => esc_html__( 'Slider Items', 'dethemekit' ),
+                    'label' => esc_html__( 'Slider Items', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 10,
@@ -733,7 +733,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slarrows',
                 [
-                    'label' => esc_html__( 'Slider Arrow', 'dethemekit' ),
+                    'label' => esc_html__( 'Slider Arrow', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
                     'return_value' => 'yes',
                     'default' => 'yes',
@@ -743,7 +743,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'sldots',
                 [
-                    'label' => esc_html__( 'Slider dots', 'dethemekit' ),
+                    'label' => esc_html__( 'Slider dots', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
                     'return_value' => 'yes',
                     'default' => 'no'
@@ -754,18 +754,18 @@ class De_Product_Display extends Widget_Base {
                 'slpause_on_hover',
                 [
                     'type' => Controls_Manager::SWITCHER,
-                    'label_off' => __('No', 'dethemekit'),
-                    'label_on' => __('Yes', 'dethemekit'),
+                    'label_off' => __('No', 'dethemekit-for-elementor'),
+                    'label_on' => __('Yes', 'dethemekit-for-elementor'),
                     'return_value' => 'yes',
                     'default' => 'yes',
-                    'label' => __('Pause on Hover?', 'dethemekit'),
+                    'label' => __('Pause on Hover?', 'dethemekit-for-elementor'),
                 ]
             );
 
             $this->add_control(
                 'slautolay',
                 [
-                    'label' => esc_html__( 'Slider auto play', 'dethemekit' ),
+                    'label' => esc_html__( 'Slider auto play', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SWITCHER,
                     'return_value' => 'yes',
                     'separator' => 'before',
@@ -776,7 +776,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slautoplay_speed',
                 [
-                    'label' => __('Autoplay speed', 'dethemekit'),
+                    'label' => __('Autoplay speed', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 3000,
                     'condition' => [
@@ -789,7 +789,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slanimation_speed',
                 [
-                    'label' => __('Autoplay animation speed', 'dethemekit'),
+                    'label' => __('Autoplay animation speed', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 300,
                     'condition' => [
@@ -801,7 +801,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slscroll_columns',
                 [
-                    'label' => __('Slider item to scroll', 'dethemekit'),
+                    'label' => __('Slider item to scroll', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 10,
@@ -813,7 +813,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'heading_tablet',
                 [
-                    'label' => __( 'Tablet', 'dethemekit' ),
+                    'label' => __( 'Tablet', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'after',
                 ]
@@ -822,7 +822,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'sltablet_display_columns',
                 [
-                    'label' => __('Slider Items', 'dethemekit'),
+                    'label' => __('Slider Items', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 8,
@@ -834,7 +834,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'sltablet_scroll_columns',
                 [
-                    'label' => __('Slider item to scroll', 'dethemekit'),
+                    'label' => __('Slider item to scroll', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 8,
@@ -846,8 +846,8 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'sltablet_width',
                 [
-                    'label' => __('Tablet Resolution', 'dethemekit'),
-                    'description' => __('The resolution to tablet.', 'dethemekit'),
+                    'label' => __('Tablet Resolution', 'dethemekit-for-elementor'),
+                    'description' => __('The resolution to tablet.', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 750,
                 ]
@@ -856,7 +856,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'heading_mobile',
                 [
-                    'label' => __( 'Mobile Phone', 'dethemekit' ),
+                    'label' => __( 'Mobile Phone', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'after',
                 ]
@@ -865,7 +865,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slmobile_display_columns',
                 [
-                    'label' => __('Slider Items', 'dethemekit'),
+                    'label' => __('Slider Items', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 4,
@@ -877,7 +877,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slmobile_scroll_columns',
                 [
-                    'label' => __('Slider item to scroll', 'dethemekit'),
+                    'label' => __('Slider item to scroll', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'min' => 1,
                     'max' => 4,
@@ -889,8 +889,8 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'slmobile_width',
                 [
-                    'label' => __('Mobile Resolution', 'dethemekit'),
-                    'description' => __('The resolution to mobile.', 'dethemekit'),
+                    'label' => __('Mobile Resolution', 'dethemekit-for-elementor'),
+                    'description' => __('The resolution to mobile.', 'dethemekit-for-elementor'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 480,
                 ]
@@ -902,7 +902,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'universal_product_style_section',
             [
-                'label' => __( 'Style', 'dethemekit' ),
+                'label' => __( 'Style', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -910,7 +910,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_inner_padding',
                 [
-                    'label' => __( 'Padding', 'dethemekit' ),
+                    'label' => __( 'Padding', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -922,7 +922,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_inner_margin',
                 [
-                    'label' => __( 'Margin', 'dethemekit' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -934,7 +934,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_inner_border_color',
                 [
-                    'label' => __( 'Border Color', 'dethemekit' ),
+                    'label' => __( 'Border Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#f1f1f1',
                     'selectors' => [
@@ -947,7 +947,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Box_Shadow::get_type(),
                 [
                     'name' => 'product_inner_box_shadow',
-                    'label' => __( 'Hover Box Shadow', 'dethemekit' ),
+                    'label' => __( 'Hover Box Shadow', 'dethemekit-for-elementor' ),
                     'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner:hover',
                 ]
             );
@@ -955,7 +955,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_content_area_heading',
                 [
-                    'label' => __( 'Content area', 'dethemekit' ),
+                    'label' => __( 'Content area', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -964,7 +964,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_content_area_padding',
                 [
-                    'label' => __( 'Padding', 'dethemekit' ),
+                    'label' => __( 'Padding', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -976,7 +976,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_content_area_bg_color',
                 [
-                    'label' => __( 'Background Color', 'dethemekit' ),
+                    'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'content_area_bg','dethemekit_style_tabs', '#ffffff' ),
                     'selectors' => [
@@ -989,7 +989,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'product_content_area_border',
-                    'label' => __( 'Border', 'dethemekit' ),
+                    'label' => __( 'Border', 'dethemekit-for-elementor' ),
                     'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-content',
                 ]
             );
@@ -997,7 +997,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_badge_heading',
                 [
-                    'label' => __( 'Product Badge', 'dethemekit' ),
+                    'label' => __( 'Product Badge', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1006,7 +1006,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_badge_color',
                 [
-                    'label' => __( 'Badge Color', 'dethemekit' ),
+                    'label' => __( 'Badge Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'badge_color','dethemekit_style_tabs', '#444444' ),
                     'selectors' => [
@@ -1030,7 +1030,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_category_heading',
                 [
-                    'label' => __( 'Product Category', 'dethemekit' ),
+                    'label' => __( 'Product Category', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1050,7 +1050,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_category_color',
                 [
-                    'label' => __( 'Category Color', 'dethemekit' ),
+                    'label' => __( 'Category Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'category_color','dethemekit_style_tabs', '#444444' ),
                     'selectors' => [
@@ -1063,7 +1063,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_category_hover_color',
                 [
-                    'label' => __( 'Category Hover Color', 'dethemekit' ),
+                    'label' => __( 'Category Hover Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'category_hover_color','dethemekit_style_tabs', '#dc9a0e' ),
                     'selectors' => [
@@ -1075,7 +1075,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_category_margin',
                 [
-                    'label' => __( 'Margin', 'dethemekit' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1088,7 +1088,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_title_heading',
                 [
-                    'label' => __( 'Product Title', 'dethemekit' ),
+                    'label' => __( 'Product Title', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1108,7 +1108,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_title_color',
                 [
-                    'label' => __( 'Title Color', 'dethemekit' ),
+                    'label' => __( 'Title Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'title_color','dethemekit_style_tabs', '#444444' ),
                     'selectors' => [
@@ -1120,7 +1120,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_title_hover_color',
                 [
-                    'label' => __( 'Title Hover Color', 'dethemekit' ),
+                    'label' => __( 'Title Hover Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'title_hover_color','dethemekit_style_tabs', '#dc9a0e' ),
                     'selectors' => [
@@ -1132,7 +1132,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_title_margin',
                 [
-                    'label' => __( 'Margin', 'dethemekit' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1145,7 +1145,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_price_heading',
                 [
-                    'label' => __( 'Product Price', 'dethemekit' ),
+                    'label' => __( 'Product Price', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1154,7 +1154,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_sale_price_color',
                 [
-                    'label' => __( 'Sale Price Color', 'dethemekit' ),
+                    'label' => __( 'Sale Price Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'sale_price_color','dethemekit_style_tabs', '#444444' ),
                     'selectors' => [
@@ -1177,7 +1177,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_regular_price_color',
                 [
-                    'label' => __( 'Regular Price Color', 'dethemekit' ),
+                    'label' => __( 'Regular Price Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'separator' => 'before',
                     'default' => dethemekit_get_option( 'regular_price_color','dethemekit_style_tabs', '#444444' ),
@@ -1201,7 +1201,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_price_margin',
                 [
-                    'label' => __( 'Margin', 'dethemekit' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1214,7 +1214,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_rating_heading',
                 [
-                    'label' => __( 'Product Rating', 'dethemekit' ),
+                    'label' => __( 'Product Rating', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1223,7 +1223,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_rating_color',
                 [
-                    'label' => __( 'Empty Rating Color', 'dethemekit' ),
+                    'label' => __( 'Empty Rating Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'empty_rating_color','dethemekit_style_tabs', '#aaaaaa' ),
                     'selectors' => [
@@ -1235,7 +1235,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_rating_give_color',
                 [
-                    'label' => __( 'Rating Color', 'dethemekit' ),
+                    'label' => __( 'Rating Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'rating_color','dethemekit_style_tabs', '#dc9a0e' ),
                     'selectors' => [
@@ -1247,7 +1247,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_rating_margin',
                 [
-                    'label' => __( 'Margin', 'dethemekit' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1262,7 +1262,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'universal_product_action_button_style_section',
             [
-                'label' => __( 'Action Button Style', 'dethemekit' ),
+                'label' => __( 'Action Button Style', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1271,7 +1271,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Background::get_type(),
                 [
                     'name' => 'product_action_button_background_color',
-                    'label' => __( 'Background', 'dethemekit' ),
+                    'label' => __( 'Background', 'dethemekit-for-elementor' ),
                     'types' => [ 'classic', 'gradient' ],
                     'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul',
                 ]
@@ -1281,7 +1281,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Box_Shadow::get_type(),
                 [
                     'name' => 'product_action_button_box_shadow',
-                    'label' => __( 'Box Shadow', 'dethemekit' ),
+                    'label' => __( 'Box Shadow', 'dethemekit-for-elementor' ),
                     'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul',
                 ]
             );
@@ -1289,7 +1289,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_tooltip_heading',
                 [
-                    'label' => __( 'Tooltip', 'dethemekit' ),
+                    'label' => __( 'Tooltip', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -1298,7 +1298,7 @@ class De_Product_Display extends Widget_Base {
                 $this->add_control(
                     'product_tooltip_color',
                     [
-                        'label' => __( 'Tooltip Color', 'dethemekit' ),
+                        'label' => __( 'Tooltip Color', 'dethemekit-for-elementor' ),
                         'type' => Controls_Manager::COLOR,
                         'default' => dethemekit_get_option( 'tooltip_color','dethemekit_style_tabs', '#ffffff' ),
                         'selectors' => [
@@ -1311,7 +1311,7 @@ class De_Product_Display extends Widget_Base {
                     Group_Control_Background::get_type(),
                     [
                         'name' => 'product_action_button_tooltip_background_color',
-                        'label' => __( 'Background', 'dethemekit' ),
+                        'label' => __( 'Background', 'dethemekit-for-elementor' ),
                         'types' => [ 'classic', 'gradient' ],
                         'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li a .ht-product-action-tooltip,{{WRAPPER}} span.dethemekit-tip',
                     ]
@@ -1323,14 +1323,14 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_action_button_style_normal_tab',
                     [
-                        'label' => __( 'Normal', 'dethemekit' ),
+                        'label' => __( 'Normal', 'dethemekit-for-elementor' ),
                     ]
                 );
                     
                     $this->add_control(
                         'product_action_button_normal_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' => dethemekit_get_option( 'btn_color','dethemekit_style_tabs', '#000000' ),
                             'selectors' => [
@@ -1342,7 +1342,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_font_size',
                         [
-                            'label' => __( 'Font Size', 'dethemekit' ),
+                            'label' => __( 'Font Size', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::SLIDER,
                             'size_units' => [ 'px', '%' ],
                             'range' => [
@@ -1370,7 +1370,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_line_height',
                         [
-                            'label' => __( 'Line Height', 'dethemekit' ),
+                            'label' => __( 'Line Height', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::SLIDER,
                             'size_units' => [ 'px', '%' ],
                             'range' => [
@@ -1399,7 +1399,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Background::get_type(),
                         [
                             'name' => 'product_action_button_normal_background_color',
-                            'label' => __( 'Background', 'dethemekit' ),
+                            'label' => __( 'Background', 'dethemekit-for-elementor' ),
                             'types' => [ 'classic', 'gradient' ],
                             'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li',
                         ]
@@ -1408,7 +1408,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_normal_padding',
                         [
-                            'label' => __( 'Padding', 'dethemekit' ),
+                            'label' => __( 'Padding', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -1420,7 +1420,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_normal_margin',
                         [
-                            'label' => __( 'Margin', 'dethemekit' ),
+                            'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -1433,7 +1433,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'product_action_button_normal_button_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li',
                         ]
                     );
@@ -1441,7 +1441,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_border_radius',
                         [
-                            'label' => __( 'Border Radius', 'dethemekit' ),
+                            'label' => __( 'Border Radius', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -1453,7 +1453,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_width',
                         [
-                            'label' => __( 'Width', 'dethemekit' ),
+                            'label' => __( 'Width', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::SLIDER,
                             'size_units' => [ 'px', '%' ],
                             'range' => [
@@ -1480,7 +1480,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_action_button_height',
                         [
-                            'label' => __( 'Height', 'dethemekit' ),
+                            'label' => __( 'Height', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::SLIDER,
                             'size_units' => [ 'px', '%' ],
                             'range' => [
@@ -1510,14 +1510,14 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_action_button_style_hover_tab',
                     [
-                        'label' => __( 'Hover', 'dethemekit' ),
+                        'label' => __( 'Hover', 'dethemekit-for-elementor' ),
                     ]
                 );
                     
                     $this->add_control(
                         'product_action_button_hover_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' => dethemekit_get_option( 'btn_hover_color','dethemekit_style_tabs', '#dc9a0e' ),
                             'selectors' => [
@@ -1531,7 +1531,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Background::get_type(),
                         [
                             'name' => 'product_action_button_hover_background_color',
-                            'label' => __( 'Background', 'dethemekit' ),
+                            'label' => __( 'Background', 'dethemekit-for-elementor' ),
                             'types' => [ 'classic', 'gradient' ],
                             'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li:hover',
                         ]
@@ -1541,7 +1541,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'product_action_button_hover_button_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li:hover',
                         ]
                     );
@@ -1556,7 +1556,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'universal_product_counter_style_section',
             [
-                'label' => __( 'Offer Price Countdown', 'dethemekit' ),
+                'label' => __( 'Offer Price Countdown', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition'=>[
                     'show_countdown'=>'yes',
@@ -1567,7 +1567,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'product_counter_color',
                 [
-                    'label' => __( 'Color', 'dethemekit' ),
+                    'label' => __( 'Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => dethemekit_get_option( 'counter_color','dethemekit_style_tabs', '#ffffff' ),
                     'selectors' => [
@@ -1581,7 +1581,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Background::get_type(),
                 [
                     'name' => 'product_counter_background_color',
-                    'label' => __( 'Counter Background', 'dethemekit' ),
+                    'label' => __( 'Counter Background', 'dethemekit-for-elementor' ),
                     'types' => [ 'classic', 'gradient' ],
                     'selector' => '{{WRAPPER}} .ht-products .ht-product .ht-product-inner .ht-product-countdown-wrap .ht-product-countdown .cd-single .cd-single-inner,{{WRAPPER}} .ht-products .ht-product.ht-product-countdown-fill .ht-product-inner .ht-product-countdown-wrap .ht-product-countdown',
                 ]
@@ -1590,7 +1590,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_counter_space_between',
                 [
-                    'label' => __( 'Space', 'dethemekit' ),
+                    'label' => __( 'Space', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1605,7 +1605,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'products-slider-controller-style',
             [
-                'label' => esc_html__( 'Slider Controller Style', 'dethemekit' ),
+                'label' => esc_html__( 'Slider Controller Style', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'product_layout_style' => 'slider',
@@ -1619,14 +1619,14 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_sliderbtn_style_normal_tab',
                     [
-                        'label' => __( 'Normal', 'dethemekit' ),
+                        'label' => __( 'Normal', 'dethemekit-for-elementor' ),
                     ]
                 );
 
                     $this->add_control(
                         'button_style_heading',
                         [
-                            'label' => __( 'Navigation Arrow', 'dethemekit' ),
+                            'label' => __( 'Navigation Arrow', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::HEADING,
                         ]
                     );
@@ -1634,7 +1634,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'nvigation_position',
                         [
-                            'label' => __( 'Position', 'dethemekit' ),
+                            'label' => __( 'Position', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::SLIDER,
                             'size_units' => [ 'px', '%' ],
                             'range' => [
@@ -1661,7 +1661,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#dddddd',
                             'selectors' => [
@@ -1673,7 +1673,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_bg_color',
                         [
-                            'label' => __( 'Background Color', 'dethemekit' ),
+                            'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#ffffff',
                             'selectors' => [
@@ -1686,7 +1686,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'button_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .product-slider .slick-arrow',
                         ]
                     );
@@ -1694,7 +1694,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'button_border_radius',
                         [
-                            'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                            'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'selectors' => [
                                 '{{WRAPPER}} .product-slider .slick-arrow' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -1705,7 +1705,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'button_padding',
                         [
-                            'label' => __( 'Padding', 'dethemekit' ),
+                            'label' => __( 'Padding', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -1717,7 +1717,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_style_dots_heading',
                         [
-                            'label' => __( 'Navigation Dots', 'dethemekit' ),
+                            'label' => __( 'Navigation Dots', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::HEADING,
                         ]
                     );
@@ -1725,7 +1725,7 @@ class De_Product_Display extends Widget_Base {
                         $this->add_responsive_control(
                             'dots_position',
                             [
-                                'label' => __( 'Position', 'dethemekit' ),
+                                'label' => __( 'Position', 'dethemekit-for-elementor' ),
                                 'type' => Controls_Manager::SLIDER,
                                 'size_units' => [ 'px', '%' ],
                                 'range' => [
@@ -1752,7 +1752,7 @@ class De_Product_Display extends Widget_Base {
                         $this->add_control(
                             'dots_bg_color',
                             [
-                                'label' => __( 'Background Color', 'dethemekit' ),
+                                'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
                                 'type' => Controls_Manager::COLOR,
                                 'default' =>'#ffffff',
                                 'selectors' => [
@@ -1765,7 +1765,7 @@ class De_Product_Display extends Widget_Base {
                             Group_Control_Border::get_type(),
                             [
                                 'name' => 'dots_border',
-                                'label' => __( 'Border', 'dethemekit' ),
+                                'label' => __( 'Border', 'dethemekit-for-elementor' ),
                                 'selector' => '{{WRAPPER}} .product-slider .slick-dots li button',
                             ]
                         );
@@ -1773,7 +1773,7 @@ class De_Product_Display extends Widget_Base {
                         $this->add_responsive_control(
                             'dots_border_radius',
                             [
-                                'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                                'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                                 'type' => Controls_Manager::DIMENSIONS,
                                 'selectors' => [
                                     '{{WRAPPER}} .product-slider .slick-dots li button' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -1787,14 +1787,14 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_sliderbtn_style_hover_tab',
                     [
-                        'label' => __( 'Hover', 'dethemekit' ),
+                        'label' => __( 'Hover', 'dethemekit-for-elementor' ),
                     ]
                 );
 
                     $this->add_control(
                         'button_style_arrow_heading',
                         [
-                            'label' => __( 'Navigation', 'dethemekit' ),
+                            'label' => __( 'Navigation', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::HEADING,
                         ]
                     );
@@ -1802,7 +1802,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_hover_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#23252a',
                             'selectors' => [
@@ -1814,7 +1814,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_hover_bg_color',
                         [
-                            'label' => __( 'Background', 'dethemekit' ),
+                            'label' => __( 'Background', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#ffffff',
                             'selectors' => [
@@ -1827,7 +1827,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'button_hover_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .product-slider .slick-arrow:hover',
                         ]
                     );
@@ -1835,7 +1835,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'button_hover_border_radius',
                         [
-                            'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                            'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'selectors' => [
                                 '{{WRAPPER}} .product-slider .slick-arrow:hover' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -1847,7 +1847,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'button_style_dotshov_heading',
                         [
-                            'label' => __( 'Navigation Dots', 'dethemekit' ),
+                            'label' => __( 'Navigation Dots', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::HEADING,
                         ]
                     );
@@ -1855,7 +1855,7 @@ class De_Product_Display extends Widget_Base {
                         $this->add_control(
                             'dots_hover_bg_color',
                             [
-                                'label' => __( 'Background Color', 'dethemekit' ),
+                                'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
                                 'type' => Controls_Manager::COLOR,
                                 'default' =>'#282828',
                                 'selectors' => [
@@ -1869,7 +1869,7 @@ class De_Product_Display extends Widget_Base {
                             Group_Control_Border::get_type(),
                             [
                                 'name' => 'dots_border_hover',
-                                'label' => __( 'Border', 'dethemekit' ),
+                                'label' => __( 'Border', 'dethemekit-for-elementor' ),
                                 'selector' => '{{WRAPPER}} .product-slider .slick-dots li button:hover',
                             ]
                         );
@@ -1877,7 +1877,7 @@ class De_Product_Display extends Widget_Base {
                         $this->add_responsive_control(
                             'dots_border_radius_hover',
                             [
-                                'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                                'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                                 'type' => Controls_Manager::DIMENSIONS,
                                 'selectors' => [
                                     '{{WRAPPER}} .product-slider .slick-dots li button:hover' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -1895,7 +1895,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'dethemekit-products-tab-menu',
             [
-                'label' => esc_html__( 'Tab Menu Style', 'dethemekit' ),
+                'label' => esc_html__( 'Tab Menu Style', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'product_layout_style' => 'tab',
@@ -1906,23 +1906,23 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'dethemekit-tab-menu-align',
                 [
-                    'label' => __( 'Alignment', 'dethemekit' ),
+                    'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => __( 'Left', 'dethemekit' ),
+                            'title' => __( 'Left', 'dethemekit-for-elementor' ),
                             'icon' => 'fa fa-align-left',
                         ],
                         'center' => [
-                            'title' => __( 'Center', 'dethemekit' ),
+                            'title' => __( 'Center', 'dethemekit-for-elementor' ),
                             'icon' => 'fa fa-align-center',
                         ],
                         'right' => [
-                            'title' => __( 'Right', 'dethemekit' ),
+                            'title' => __( 'Right', 'dethemekit-for-elementor' ),
                             'icon' => 'fa fa-align-right',
                         ],
                         'justify' => [
-                            'title' => __( 'Justified', 'dethemekit' ),
+                            'title' => __( 'Justified', 'dethemekit-for-elementor' ),
                             'icon' => 'fa fa-align-justify',
                         ],
                     ],
@@ -1937,7 +1937,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_responsive_control(
                 'product_tab_menu_area_margin',
                 [
-                    'label' => __( 'Tab Menu Area Margin', 'dethemekit' ),
+                    'label' => __( 'Tab Menu Area Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -1952,7 +1952,7 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_tab_style_normal_tab',
                     [
-                        'label' => __( 'Normal', 'dethemekit' ),
+                        'label' => __( 'Normal', 'dethemekit-for-elementor' ),
                     ]
                 );
 
@@ -1970,7 +1970,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'tab_menu_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#23252a',
                             'selectors' => [
@@ -1982,7 +1982,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'product_tab_menu_bg_color',
                         [
-                            'label' => __( 'Product tab menu background', 'dethemekit' ),
+                            'label' => __( 'Product tab menu background', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#ffffff',
                             'selectors' => [
@@ -1995,7 +1995,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'tabmenu_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .ht-tab-menus li a',
                         ]
                     );
@@ -2003,7 +2003,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'tabmenu_border_radius',
                         [
-                            'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                            'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'selectors' => [
                                 '{{WRAPPER}} .ht-tab-menus li a' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -2014,7 +2014,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_tab_menu_padding',
                         [
-                            'label' => __( 'Tab Menu padding', 'dethemekit' ),
+                            'label' => __( 'Tab Menu padding', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -2026,7 +2026,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'product_tab_menu_margin',
                         [
-                            'label' => __( 'Tab Menu margin', 'dethemekit' ),
+                            'label' => __( 'Tab Menu margin', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'size_units' => [ 'px', '%', 'em' ],
                             'selectors' => [
@@ -2041,7 +2041,7 @@ class De_Product_Display extends Widget_Base {
                 $this->start_controls_tab(
                     'product_tab_style_hover_tab',
                     [
-                        'label' => __( 'Hover', 'dethemekit' ),
+                        'label' => __( 'Hover', 'dethemekit-for-elementor' ),
                     ]
                 );
 
@@ -2049,7 +2049,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'tab_menu_hover_color',
                         [
-                            'label' => __( 'Color', 'dethemekit' ),
+                            'label' => __( 'Color', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#23252a',
                             'selectors' => [
@@ -2062,7 +2062,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_control(
                         'product_tab_menu_hover_bg_color',
                         [
-                            'label' => __( 'Product tab menu background', 'dethemekit' ),
+                            'label' => __( 'Product tab menu background', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::COLOR,
                             'default' =>'#ffffff',
                             'selectors' => [
@@ -2076,7 +2076,7 @@ class De_Product_Display extends Widget_Base {
                         Group_Control_Border::get_type(),
                         [
                             'name' => 'tabmenu_hover_border',
-                            'label' => __( 'Border', 'dethemekit' ),
+                            'label' => __( 'Border', 'dethemekit-for-elementor' ),
                             'selector' => '{{WRAPPER}} .ht-tab-menus li a:hover',
                             'selector' => '{{WRAPPER}} .ht-tab-menus li a.htactive',
                         ]
@@ -2085,7 +2085,7 @@ class De_Product_Display extends Widget_Base {
                     $this->add_responsive_control(
                         'tabmenu_hover_border_radius',
                         [
-                            'label' => esc_html__( 'Border Radius', 'dethemekit' ),
+                            'label' => esc_html__( 'Border Radius', 'dethemekit-for-elementor' ),
                             'type' => Controls_Manager::DIMENSIONS,
                             'selectors' => [
                                 '{{WRAPPER}} .ht-tab-menus li a:hover' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -2104,7 +2104,7 @@ class De_Product_Display extends Widget_Base {
         $this->start_controls_section(
             'section_stock_progressbar_style',
             [
-                'label' => __( 'Stock Progressbar', 'dethemekit-pro' ),
+                'label' => __( 'Stock Progressbar', 'dethemekit-for-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition'=>[
                     'stock_progress_bar'=>'yes',
@@ -2115,7 +2115,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_heading',
                 [
-                    'label' => __( 'Progressbar', 'dethemekit-pro' ),
+                    'label' => __( 'Progressbar', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -2124,7 +2124,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_height',
                 [
-                    'label' => __( 'Height', 'dethemekit-pro' ),
+                    'label' => __( 'Height', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => [ 'px', '%' ],
                     'range' => [
@@ -2151,7 +2151,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_bg_color',
                 [
-                    'label' => __( 'Background Color', 'dethemekit-pro' ),
+                    'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .dethemekit-stock-progress-bar .wlprogress-area' => 'background-color: {{VALUE}}',
@@ -2162,7 +2162,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_active_bg_color',
                 [
-                    'label' => __( 'Sell Progress Background Color', 'dethemekit-pro' ),
+                    'label' => __( 'Sell Progress Background Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .dethemekit-stock-progress-bar .wlprogress-bar' => 'background-color: {{VALUE}}',
@@ -2173,7 +2173,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_area',
                 [
-                    'label' => __( 'Margin', 'dethemekit-pro' ),
+                    'label' => __( 'Margin', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -2185,7 +2185,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'progressbar_order_heading',
                 [
-                    'label' => __( 'Order & Ability Counter', 'dethemekit-pro' ),
+                    'label' => __( 'Order & Ability Counter', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -2195,7 +2195,7 @@ class De_Product_Display extends Widget_Base {
                 Group_Control_Typography::get_type(),
                 [
                     'name' => 'order_ability_typography',
-                    'label' => __( 'Typography', 'dethemekit-pro' ),
+                    'label' => __( 'Typography', 'dethemekit-for-elementor' ),
                     'selector' => '{{WRAPPER}} .dethemekit-stock-progress-bar .wlstock-info',
                 ]
             );
@@ -2203,7 +2203,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'order_ability_color',
                 [
-                    'label' => __( 'Label Color', 'dethemekit-pro' ),
+                    'label' => __( 'Label Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .dethemekit-stock-progress-bar .wlstock-info' => 'color: {{VALUE}}',
@@ -2214,7 +2214,7 @@ class De_Product_Display extends Widget_Base {
             $this->add_control(
                 'counter_number_color',
                 [
-                    'label' => __( 'Counter Number Color', 'dethemekit-pro' ),
+                    'label' => __( 'Counter Number Color', 'dethemekit-for-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .dethemekit-stock-progress-bar .wlstock-info span' => 'color: {{VALUE}}',
@@ -2239,8 +2239,8 @@ class De_Product_Display extends Widget_Base {
         $columns            = $this->get_settings_for_display('dethemekit_product_grid_column');
 
         // Stock Progress Bar data
-        $order_text     = $settings['order_custom_text'] ? $settings['order_custom_text'] : esc_html__('Ordered:','dethemekit-pro');
-        $available_text = $settings['available_custom_text'] ? $settings['available_custom_text'] : esc_html__( 'Items available:','dethemekit-pro' );
+        $order_text     = $settings['order_custom_text'] ? $settings['order_custom_text'] : esc_html__('Ordered:','dethemekit-for-elementor');
+        $available_text = $settings['available_custom_text'] ? $settings['available_custom_text'] : esc_html__( 'Items available:','dethemekit-for-elementor' );
 
         // Query Argument
         $args = array(
@@ -2480,7 +2480,7 @@ class De_Product_Display extends Widget_Base {
                                         $taburl = "#dethemekittab" . $tabuniqid . $m;
                                         ?>
                                             <li><a class="<?php if($m==1){ echo 'htactive';}?>" href="<?php echo esc_url($taburl);?>">
-                                                <?php echo esc_attr( $prod_cats->name,'dethemekit' );?>
+                                                <?php echo esc_attr( $prod_cats->name,'dethemekit-for-elementor' );?>
                                             </a></li>
                                         <?php
                                     }
@@ -2617,7 +2617,7 @@ class De_Product_Display extends Widget_Base {
                                                             <li>
                                                                 <a href="javascript:void(0);" class="dethemekitquickview" data-quick-id="<?php the_ID();?>" >
                                                                     <i class="sli sli-magnifier"></i>
-                                                                    <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit'); ?></span>
+                                                                    <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit-for-elementor'); ?></span>
                                                                 </a>
                                                             </li>
                                                             <?php
@@ -2657,7 +2657,7 @@ class De_Product_Display extends Widget_Base {
                                                                 <li>
                                                                     <a href="javascript:void(0);" class="dethemekitquickview" data-quick-id="<?php the_ID();?>" >
                                                                         <i class="sli sli-magnifier"></i>
-                                                                        <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit'); ?></span>
+                                                                        <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit-for-elementor'); ?></span>
                                                                     </a>
                                                                 </li>
                                                                 <?php
@@ -2807,7 +2807,7 @@ class De_Product_Display extends Widget_Base {
                                                     <li>
                                                         <a href="javascript:void(0);" class="dethemekitquickview" data-quick-id="<?php the_ID();?>" >
                                                             <i class="sli sli-magnifier"></i>
-                                                            <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit'); ?></span>
+                                                            <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit-for-elementor'); ?></span>
                                                         </a>
                                                     </li>
                                                     <?php
@@ -2847,7 +2847,7 @@ class De_Product_Display extends Widget_Base {
                                                         <li>
                                                             <a href="javascript:void(0);" class="dethemekitquickview" data-quick-id="<?php the_ID();?>" >
                                                                 <i class="sli sli-magnifier"></i>
-                                                                <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit'); ?></span>
+                                                                <span class="ht-product-action-tooltip"><?php esc_html_e('Quick View','dethemekit-for-elementor'); ?></span>
                                                             </a>
                                                         </li>
                                                         <?php

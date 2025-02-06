@@ -9,7 +9,7 @@ use DethemeKitAddons\Includes\Templates;
 ?>
 <div class="elementor-library-error">
 	<div class="elementor-library-error-message"><?php
-		echo __( 'Template couldn\'t be loaded. Please activate you license key before.', 'dethemekit-addons-for-elementor' );
+		echo __( 'Template couldn\'t be loaded. Please activate you license key before.', 'dethemekit-for-elementor' );
 	?></div>
 	<div class="elementor-library-error-link"><?php
 		printf(

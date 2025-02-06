@@ -51,7 +51,7 @@ class De_Breadcrumb extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'De Breadcrumb', 'dethemekit-addons-for-elementor' );
+		return __( 'De Breadcrumb', 'dethemekit-for-elementor' );
 	}
 
 	/**
@@ -97,7 +97,7 @@ class De_Breadcrumb extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'dethemekit-addons-for-elementor', 'de_breadcrumb_script' ];
+		return [ 'dethemekit-for-elementor', 'de_breadcrumb_script' ];
 	}
 
 	private function get_available_menus() {
@@ -166,23 +166,23 @@ class De_Breadcrumb extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Detheme Kit Breadcrumb', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Detheme Kit Breadcrumb', 'dethemekit-for-elementor' ),
 			]
 		);
 
     $this->add_control(
 			'breadcrumb_source',
 			[
-				'label' => esc_html__( 'Breadcrumb Source', 'dethemekit-addons-for-elementor' ),
+				'label' => esc_html__( 'Breadcrumb Source', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'none' => esc_html__( 'None', 'dethemekit-addons-for-elementor' ),
-					'menu' => esc_html__( 'Menu Structure', 'dethemekit-addons-for-elementor' ),
-					'page' => esc_html__( 'Parent/Child Pages', 'dethemekit-addons-for-elementor' ),
+					'none' => esc_html__( 'None', 'dethemekit-for-elementor' ),
+					'menu' => esc_html__( 'Menu Structure', 'dethemekit-for-elementor' ),
+					'page' => esc_html__( 'Parent/Child Pages', 'dethemekit-for-elementor' ),
 				],
 				'default' => 'none',
 			]
@@ -194,7 +194,7 @@ class De_Breadcrumb extends Widget_Base {
 			$this->add_control(
 				'source_menu',
 				[
-					'label' => __( 'Source Menu', 'dethemekit-addons-for-elementor' ),
+					'label' => __( 'Source Menu', 'dethemekit-for-elementor' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => $menus,
 					'default' => array_keys( $menus )[0],
@@ -202,7 +202,7 @@ class De_Breadcrumb extends Widget_Base {
 					'separator' => 'after',
 					'description' => sprintf( 
 						/* translators: 1: menu url. */
-						esc_html__( 'Go to the <a href="%1$s" target="_blank">Menus screen</a> to manage your menus.', 'dethemekit-addons-for-elementor' ), admin_url( 'nav-menus.php' ) ),
+						esc_html__( 'Go to the <a href="%1$s" target="_blank">Menus screen</a> to manage your menus.', 'dethemekit-for-elementor' ), admin_url( 'nav-menus.php' ) ),
           'condition' => [ 'breadcrumb_source' => 'menu' ],
         ]
 			);
@@ -211,9 +211,9 @@ class De_Breadcrumb extends Widget_Base {
 				'source_menu',
 				[
 					'type' => Controls_Manager::RAW_HTML,
-					'raw' => '<strong>' . __( 'There are no menus in your site.', 'dethemekit-addons-for-elementor' ) . '</strong><br>' . sprintf( 
+					'raw' => '<strong>' . __( 'There are no menus in your site.', 'dethemekit-for-elementor' ) . '</strong><br>' . sprintf( 
 						/* translators: 1: menu url. */
-						esc_html__( 'Go to the <a href="%1$s" target="_blank">Menus screen</a> to create one.', 'dethemekit-addons-for-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
+						esc_html__( 'Go to the <a href="%1$s" target="_blank">Menus screen</a> to create one.', 'dethemekit-for-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
 					'separator' => 'after',
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
           'condition' => [ 'breadcrumb_source' => 'menu' ],
@@ -226,7 +226,7 @@ class De_Breadcrumb extends Widget_Base {
     $repeater->add_control(
       'breadcrumb_menu_slug',
       [
-        'label' => __( 'Slug', 'dethemekit-addons-for-elementor' ),
+        'label' => __( 'Slug', 'dethemekit-for-elementor' ),
         'type' => Controls_Manager::TEXT,
         'default' => '',
         // 'condition' => [ 'breadcrumb_source' => 'hidden' ],
@@ -236,7 +236,7 @@ class De_Breadcrumb extends Widget_Base {
     $repeater->add_control(
       'breadcrumb_content',
       [
-        'label' => __( 'Content', 'dethemekit-addons-for-elementor' ),
+        'label' => __( 'Content', 'dethemekit-for-elementor' ),
         'type' => Controls_Manager::TEXT,
         'default' => '',
         // 'condition' => [ 'breadcrumb_source' => 'hidden' ],
@@ -247,7 +247,7 @@ class De_Breadcrumb extends Widget_Base {
 
     $b_defaults = [];
 
-	$breadcrumb_html_header = '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+	$breadcrumb_html_header = '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
 	$breadcrumb_html_footer = '';
 
     foreach ( $breadcrumb_menus as $b_menu ) {
@@ -263,7 +263,7 @@ class De_Breadcrumb extends Widget_Base {
     $this->add_control(
 			'list7',
 			[
-				'label' => __( 'Repeater List', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Repeater List', 'dethemekit-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
         'default' => $b_defaults,
@@ -276,7 +276,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_control(
 			'selected_icon',
 			[
-				'label' => __( 'Separator Icon', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Separator Icon', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -289,7 +289,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_responsive_control(
 			'size',
 			[
-				'label' => __( 'Separator Size', 'elementor' ),
+				'label' => __( 'Separator Size', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -307,7 +307,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_responsive_control(
 			'separator_margin',
 			[
-				'label' => __( 'Separator Margin', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Separator Margin', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'default' => [
@@ -319,7 +319,7 @@ class De_Breadcrumb extends Widget_Base {
 					'isLinked' => false
 				],
 				'selectors' => [
-					'{{WRAPPER}} .breadcrumbs i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .breadcrumbs svg' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -327,7 +327,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_responsive_control(
 			'separator_padding',
 			[
-				'label' => __( 'Separator Padding', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Separator Padding', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'default' => [
@@ -339,7 +339,7 @@ class De_Breadcrumb extends Widget_Base {
 					'isLinked' => false
 				],
 				'selectors' => [
-					'{{WRAPPER}} .breadcrumbs i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .breadcrumbs svg' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -347,19 +347,19 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Alignment', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'flex-start' => [
-						'title' => __( 'Left', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Left', 'dethemekit-for-elementor' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Center', 'dethemekit-for-elementor' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'flex-end' => [
-						'title' => __( 'Right', 'dethemekit-addons-for-elementor' ),
+						'title' => __( 'Right', 'dethemekit-for-elementor' ),
 						'icon' => 'eicon-text-align-right',
 					]
 				],
@@ -375,7 +375,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => __( 'Font', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Font', 'dethemekit-for-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -383,7 +383,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_control(
 			'breadcrumb_color',
 			[
-				'label' => __( 'Text Color', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#000000',
 				'global' => [
@@ -398,7 +398,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_control(
 			'breadcrumb_link_color',
 			[
-				'label' => __( 'Link Color', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Link Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#000000',
 				'global' => [
@@ -413,7 +413,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_control(
 			'breadcrumb_link_color_on_hover',
 			[
-				'label' => __( 'Link Color on hover', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Link Color on hover', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#000000',
 				'global' => [
@@ -428,7 +428,7 @@ class De_Breadcrumb extends Widget_Base {
 		$this->add_control(
 			'breadcrumb_icon_color',
 			[
-				'label' => __( 'Separator Icon Color', 'dethemekit-addons-for-elementor' ),
+				'label' => __( 'Separator Icon Color', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#000000',
 				'global' => [
@@ -503,7 +503,7 @@ class De_Breadcrumb extends Widget_Base {
   function get_content_by_default() {
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
     
     if (is_singular('page')) {
       echo '<i aria-hidden="true" class="{{{ settings.selected_icon.value }}}" />';
@@ -533,7 +533,7 @@ class De_Breadcrumb extends Widget_Base {
 
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
     
     if (is_singular('page')) {
       // $menu_items = wp_get_nav_menu_items('breadcrumb-1');
@@ -588,7 +588,7 @@ class De_Breadcrumb extends Widget_Base {
   function get_content_by_page() {
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
     
     if (is_singular('page')) {
       $post_ids = array();
@@ -647,7 +647,7 @@ class De_Breadcrumb extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
 		if (is_category() || is_single()) {
       Icons_Manager::render_icon( $settings['selected_icon'], [ 'aria-hidden' => 'true' ] );
 			$categories = get_the_category_list(' &bull; ');
@@ -675,7 +675,7 @@ class De_Breadcrumb extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
 
     if (is_singular('page')) {
       $menu_items = wp_get_nav_menu_items($settings['source_menu']);
@@ -763,7 +763,7 @@ class De_Breadcrumb extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		// echo '<div class="container">';
 		// echo '<div class="uf-breadcrumbs">';
-		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-addons-for-elementor') . '</a>';
+		echo '<a href="'.home_url().'" rel="nofollow">' . esc_html__('Home','dethemekit-for-elementor') . '</a>';
 
     if (is_singular('page')) {
       $post_ids = array();

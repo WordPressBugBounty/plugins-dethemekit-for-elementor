@@ -16,11 +16,11 @@ if ( ! class_exists( 'DethemeKit_Structure_Section' ) ) {
 		}
 
 		public function get_single_label() {
-			return __( 'Section', 'dethemekit-addons-for-elementor' );
+			return __( 'Section', 'dethemekit-for-elementor' );
 		}
 
 		public function get_plural_label() {
-			return __( 'Sections', 'dethemekit-addons-for-elementor' );
+			return __( 'Sections', 'dethemekit-for-elementor' );
 		}
 
 		public function get_sources() {

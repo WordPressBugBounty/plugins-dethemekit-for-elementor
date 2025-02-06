@@ -29,7 +29,7 @@ class Maps {
         add_submenu_page(
             'dethemekit-addons',
             '',
-            __('Google Maps', 'dethemekit-addons-for-elementor'),
+            __('Google Maps', 'dethemekit-for-elementor'),
             'manage_options',
             'dethemekit-addons-maps',
             [ $this, 'pa_maps_page' ]
@@ -72,7 +72,7 @@ class Maps {
                   <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
                  <h3 class="pa-title-sub"><?php echo sprintf( 
                     /* translators: 1: plugin name, 2: author. */
-                    esc_html__('Thank you for using %1$s. This plugin has been developed by %1$s and we hope you enjoy using it.','dethemekit-addons-for-elementor'), Helper_Functions::name(), Helper_Functions::author()); ?></h3>
+                    esc_html__('Thank you for using %1$s. This plugin has been developed by %1$s and we hope you enjoy using it.','dethemekit-for-elementor'), Helper_Functions::name(), Helper_Functions::author()); ?></h3>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo()) : ?>
                     <div class="pa-title-right">
@@ -86,12 +86,12 @@ class Maps {
                     <table class="pa-maps-table">
                        <tr>
                           <p class="pa-maps-api-notice">
-                             <?php echo esc_html( Helper_Functions::get_prefix() ) . __(' Maps Element requires Google API key to be entered below. If you don’t have one, click ', 'dethemekit-addons-for-elementor'); ?><a href="https://dethemekitaddons.com/docs/getting-your-api-key-for-google-reviews/" target="_blank"><?php echo __('here', 'dethemekit-addons-for-elementor'); ?></a><?php echo __(' to get your  key.', 'dethemekit-addons-for-elementor'); ?>
+                             <?php echo esc_html( Helper_Functions::get_prefix() ) . __(' Maps Element requires Google API key to be entered below. If you don’t have one, click ', 'dethemekit-for-elementor'); ?><a href="https://dethemekitaddons.com/docs/getting-your-api-key-for-google-reviews/" target="_blank"><?php echo __('here', 'dethemekit-for-elementor'); ?></a><?php echo __(' to get your  key.', 'dethemekit-for-elementor'); ?>
                           </p>
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-title"><?php echo __('Google Maps API Key:', 'dethemekit-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-title"><?php echo __('Google Maps API Key:', 'dethemekit-for-elementor'); ?></h4>
                           </td>
                           <td>
                               <input name="dethemekit-map-api" id="dethemekit-map-api" type="text" placeholder="API Key" value="<?php echo esc_attr( $settings['dethemekit-map-api'] ); ?>">
@@ -99,11 +99,11 @@ class Maps {
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Google Maps Localization Language:', 'dethemekit-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Google Maps Localization Language:', 'dethemekit-for-elementor'); ?></h4>
                           </td>
                           <td>
                               <select name="dethemekit-map-locale" id="dethemekit-map-locale" class="placeholder placeholder-active">
-                                    <option value=""><?php _e( 'Default', 'dethemekit-addons-for-elementor' ); ?></option>
+                                    <option value=""><?php _e( 'Default', 'dethemekit-for-elementor' ); ?></option>
                                 <?php foreach ( $locales as $key => $value ) { ?>
                                     <?php
                                     $selected = '';
@@ -118,25 +118,25 @@ class Maps {
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Load Maps API JS File:','dethemekit-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Load Maps API JS File:','dethemekit-for-elementor'); ?></h4>
                           </td>
                           <td>
-                              <input name="dethemekit-map-disable-api" id="dethemekit-map-disable-api" type="checkbox" <?php checked(1, $settings['dethemekit-map-disable-api'], true) ?>><span><?php echo __('This will load API JS file if it\'s not loaded by another theme or plugin', 'dethemekit-addons-for-elementor'); ?></span>
+                              <input name="dethemekit-map-disable-api" id="dethemekit-map-disable-api" type="checkbox" <?php checked(1, $settings['dethemekit-map-disable-api'], true) ?>><span><?php echo __('This will load API JS file if it\'s not loaded by another theme or plugin', 'dethemekit-for-elementor'); ?></span>
                           </td>
                        </tr>
                        <tr>
                           <td>
-                             <h4 class="pa-api-disable-title"><?php echo __('Load Markers Clustering JS File:','dethemekit-addons-for-elementor'); ?></h4>
+                             <h4 class="pa-api-disable-title"><?php echo __('Load Markers Clustering JS File:','dethemekit-for-elementor'); ?></h4>
                           </td>
                           <td>
-                              <input name="dethemekit-map-cluster" id="dethemekit-map-cluster" type="checkbox" <?php checked(1, $settings['dethemekit-map-cluster'], true) ?>><span><?php echo __('This will load the JS file for markers clusters', 'dethemekit-addons-for-elementor'); ?></span>
+                              <input name="dethemekit-map-cluster" id="dethemekit-map-cluster" type="checkbox" <?php checked(1, $settings['dethemekit-map-cluster'], true) ?>><span><?php echo __('This will load the JS file for markers clusters', 'dethemekit-for-elementor'); ?></span>
                           </td>
                        </tr>
                     </table>
-                    <input type="submit" value="<?php echo __('Save Settings', 'dethemekit-addons-for-elementor'); ?>" class="button pa-btn pa-save-button">
+                    <input type="submit" value="<?php echo __('Save Settings', 'dethemekit-for-elementor'); ?>" class="button pa-btn pa-save-button">
                     <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
                         <div>
-                                <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-addons-for-elementor'); ?></a></p>
+                                <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-for-elementor'); ?></a></p>
                         </div>
                     <?php endif; ?>
                  </div>

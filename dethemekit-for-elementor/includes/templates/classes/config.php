@@ -58,7 +58,7 @@ if( ! class_exists('DethemeKit_Templates_Core_Config') ) {
         public function __construct() {
             
             $this->config = array(
-                'dethemekit_temps'     => __('DethemeKit Templates', 'dethemekit-addons-for-elementor'),
+                'dethemekit_temps'     => __('DethemeKit Templates', 'dethemekit-for-elementor'),
                 'key'               => $this->get_license_key(),
                 'status'            => $this->get_license_status(),
                 'license_page'      => $this->get_license_page(),
@@ -170,9 +170,9 @@ if( ! class_exists('DethemeKit_Templates_Core_Config') ) {
         public function get_pro_message() {
             
             if( defined ('DETHEMEKIT_PRO_ADDONS_VERSION') ) {
-                return __('Activate License', 'dethemekit-addons-for-elementor');
+                return __('Activate License', 'dethemekit-for-elementor');
             } else {
-                return __('Get Pro', 'dethemekit-addons-for-elementor');
+                return __('Get Pro', 'dethemekit-for-elementor');
             }
             
         }

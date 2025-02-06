@@ -68,7 +68,7 @@ class De_Scroll_Animation_Controls{
 		$elems->start_controls_section(
 			'de_scroll_animation_section',
 			[
-				'label' => __( 'De Scroll Animation', 'detheme-kit' ),
+				'label' => __( 'De Scroll Animation', 'dethemekit-for-elementor' ),
 				'tab' => Controls_Manager::TAB_ADVANCED,
 			]
 		);
@@ -76,7 +76,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_animation',
 			[
-				'label' => esc_html__( 'De Scroll Animation', 'detheme-kit' ),
+				'label' => esc_html__( 'De Scroll Animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
 				'prefix_class' => 'de_scroll_animation_',
@@ -86,7 +86,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_animation_preview',
 			[
-				'label' => esc_html__( 'Run Animation on Preview', 'detheme-kit' ),
+				'label' => esc_html__( 'Run Animation on Preview', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 				'prefix_class' => 'de_scroll_animation_preview_',
@@ -97,7 +97,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_translateX_popover_toggle',
 			[
-				'label' => esc_html__( '- Translate X', 'detheme-kit' ),
+				'label' => esc_html__( '- Translate X', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::POPOVER_TOGGLE,
 				'return_value' => 'checked',
 				'default' => 'unchecked',
@@ -111,7 +111,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_translateX_distance',
 			[
-				'label' => esc_html__( 'Distance (px)', 'detheme-kit' ),
+				'label' => esc_html__( 'Distance (px)', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_translateX_distance_',
 				'default' => '500',
@@ -124,7 +124,7 @@ class De_Scroll_Animation_Controls{
         $elems->add_control(
 			'de_scroll_translateY_popover_toggle',
 			[
-				'label' => esc_html__( '- Translate Y', 'detheme-kit' ),
+				'label' => esc_html__( '- Translate Y', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::POPOVER_TOGGLE,
 				'return_value' => 'checked',
 				'default' => 'unchecked',
@@ -138,7 +138,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_translateY_distance',
 			[
-				'label' => esc_html__( 'Distance (px)', 'detheme-kit' ),
+				'label' => esc_html__( 'Distance (px)', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_translateY_distance_',
 				'default' => '500',
@@ -151,7 +151,7 @@ class De_Scroll_Animation_Controls{
         $elems->add_control(
 			'de_scroll_rotate_popover_toggle',
 			[
-				'label' => esc_html__( '- Rotate', 'detheme-kit' ),
+				'label' => esc_html__( '- Rotate', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::POPOVER_TOGGLE,
 				'return_value' => 'checked',
 				'default' => 'unchecked',
@@ -165,7 +165,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_rotate_distance',
 			[
-				'label' => esc_html__( 'Degree', 'detheme-kit' ),
+				'label' => esc_html__( 'Degree', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_rotate_distance_',
 				'default' => '90',
@@ -178,7 +178,7 @@ class De_Scroll_Animation_Controls{
         $elems->add_control(
 			'de_scroll_scale_popover_toggle',
 			[
-				'label' => esc_html__( '- Scale', 'detheme-kit' ),
+				'label' => esc_html__( '- Scale', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::POPOVER_TOGGLE,
 				'return_value' => 'checked',
 				'default' => 'unchecked',
@@ -192,7 +192,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_scale_distance',
 			[
-				'label' => esc_html__( 'Scale', 'detheme-kit' ),
+				'label' => esc_html__( 'Scale', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_scale_distance_',
 				'default' => '1.5',
@@ -205,7 +205,7 @@ class De_Scroll_Animation_Controls{
         $elems->add_control(
 			'de_scroll_skew_popover_toggle',
 			[
-				'label' => esc_html__( '- Skew', 'detheme-kit' ),
+				'label' => esc_html__( '- Skew', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::POPOVER_TOGGLE,
 				'return_value' => 'checked',
 				'default' => 'unchecked',
@@ -219,7 +219,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_skew_distance',
 			[
-				'label' => esc_html__( 'Degree', 'detheme-kit' ),
+				'label' => esc_html__( 'Degree', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_skew_distance_',
 				'default' => '180',
@@ -232,8 +232,8 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_start_animate',
 			[
-				'label' => '<strong>'.esc_html__( 'Start Animate (%)', 'detheme-kit' ).'</strong>',
-				'description' => esc_html__( 'The percentage of the visible element part in viewport to start the element\'s animation', 'detheme-kit' ),
+				'label' => '<strong>'.esc_html__( 'Start Animate (%)', 'dethemekit-for-elementor' ).'</strong>',
+				'description' => esc_html__( 'The percentage of the visible element part in viewport to start the element\'s animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_start_animate_',
 				'default' => 0,
@@ -245,8 +245,8 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_finish_animate',
 			[
-				'label' => '<strong>'.esc_html__( 'Finish Animate (%)', 'detheme-kit' ).'</strong>',
-				'description' => esc_html__( 'The percentage of the visible element part in viewport to finish the element\'s animation', 'detheme-kit' ),
+				'label' => '<strong>'.esc_html__( 'Finish Animate (%)', 'dethemekit-for-elementor' ).'</strong>',
+				'description' => esc_html__( 'The percentage of the visible element part in viewport to finish the element\'s animation', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'de_scroll_finish_animate_',
 				'default' => 100,
@@ -258,7 +258,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_animation_on_desktop',
 			[
-				'label' => esc_html__( 'Run Animation on Desktop', 'detheme-kit' ),
+				'label' => esc_html__( 'Run Animation on Desktop', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 				'prefix_class' => 'de_scroll_animation_on_desktop_',
@@ -269,7 +269,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_animation_on_tablet',
 			[
-				'label' => esc_html__( 'Run Animation on Tablet', 'detheme-kit' ),
+				'label' => esc_html__( 'Run Animation on Tablet', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
 				'prefix_class' => 'de_scroll_animation_on_tablet_',
@@ -280,7 +280,7 @@ class De_Scroll_Animation_Controls{
 		$elems->add_control(
 			'de_scroll_animation_on_mobile',
 			[
-				'label' => esc_html__( 'Run Animation on Mobile', 'detheme-kit' ),
+				'label' => esc_html__( 'Run Animation on Mobile', 'dethemekit-for-elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'no',
 				'prefix_class' => 'de_scroll_animation_on_mobile_',

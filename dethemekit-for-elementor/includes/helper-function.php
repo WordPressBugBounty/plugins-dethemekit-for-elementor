@@ -59,7 +59,7 @@ function dethemekit_get_post_types( $args = [] ) {
  */
 function dethemekit_post_name( $post_type = 'post' ){
     $options = array();
-    $options['0'] = __('Select','dethemekit');
+    $options['0'] = __('Select','dethemekit-for-elementor');
     $perpage = dethemekit_get_option( 'loadproductlimit', 'dethemekit_others_tabs', '20' );
     $all_post = array( 'posts_per_page' => $perpage, 'post_type'=> $post_type );
     $post_terms = get_posts( $all_post );
@@ -82,9 +82,9 @@ function dethemekit_elementor_template() {
     }
     $types = array();
     if ( empty( $templates ) ) {
-        $template_lists = [ '0' => __( 'Do not Saved Templates.', 'dethemekit' ) ];
+        $template_lists = [ '0' => __( 'Do not Saved Templates.', 'dethemekit-for-elementor' ) ];
     } else {
-        $template_lists = [ '0' => __( 'Select Template', 'dethemekit' ) ];
+        $template_lists = [ '0' => __( 'Select Template', 'dethemekit-for-elementor' ) ];
         foreach ( $templates as $template ) {
             $template_lists[ $template['template_id'] ] = $template['title'] . ' (' . $template['type'] . ')';
         }
@@ -136,15 +136,15 @@ function dethemekit_get_last_product_id(){
  */
 function dethemekit_html_tag_lists() {
     $html_tag_list = [
-        'h1'   => __( 'H1', 'dethemekit' ),
-        'h2'   => __( 'H2', 'dethemekit' ),
-        'h3'   => __( 'H3', 'dethemekit' ),
-        'h4'   => __( 'H4', 'dethemekit' ),
-        'h5'   => __( 'H5', 'dethemekit' ),
-        'h6'   => __( 'H6', 'dethemekit' ),
-        'p'    => __( 'p', 'dethemekit' ),
-        'div'  => __( 'div', 'dethemekit' ),
-        'span' => __( 'span', 'dethemekit' ),
+        'h1'   => __( 'H1', 'dethemekit-for-elementor' ),
+        'h2'   => __( 'H2', 'dethemekit-for-elementor' ),
+        'h3'   => __( 'H3', 'dethemekit-for-elementor' ),
+        'h4'   => __( 'H4', 'dethemekit-for-elementor' ),
+        'h5'   => __( 'H5', 'dethemekit-for-elementor' ),
+        'h6'   => __( 'H6', 'dethemekit-for-elementor' ),
+        'p'    => __( 'p', 'dethemekit-for-elementor' ),
+        'div'  => __( 'div', 'dethemekit-for-elementor' ),
+        'span' => __( 'span', 'dethemekit-for-elementor' ),
     ];
     return $html_tag_list;
 }
@@ -226,11 +226,11 @@ if( class_exists('WooCommerce') ){
                 }else{ echo ' '; }
 
             }else{
-                echo '<span class="ht-product-label ht-product-label-right">'.esc_html__( 'Sale!', 'dethemekit' ).'</span>';
+                echo '<span class="ht-product-label ht-product-label-right">'.esc_html__( 'Sale!', 'dethemekit-for-elementor' ).'</span>';
             }
         }else{
             $out_of_stock = get_post_meta( get_the_ID(), '_stock_status', true );
-            $out_of_stock_text = apply_filters( 'dethemekit_shop_out_of_stock_text', __( 'Out of stock', 'dethemekit' ) );
+            $out_of_stock_text = apply_filters( 'dethemekit_shop_out_of_stock_text', __( 'Out of stock', 'dethemekit-for-elementor' ) );
             if ( 'outofstock' === $out_of_stock ) {
                 echo '<span class="ht-stockout ht-product-label ht-product-label-right">'.esc_html( $out_of_stock_text ).'</span>';
             }
@@ -259,12 +259,12 @@ if( class_exists('WooCommerce') ){
                 <select name="orderby" class="orderby">
                     <?php
                         $catalog_orderby = apply_filters( 'woocommerce_catalog_orderby', array(
-                            'menu_order' => __( 'Default sorting', 'dethemekit' ),
-                            'popularity' => __( 'Sort by popularity', 'dethemekit' ),
-                            'rating'     => __( 'Sort by average rating', 'dethemekit' ),
-                            'date'       => __( 'Sort by latest', 'dethemekit' ),
-                            'price'      => __( 'Sort by price: low to high', 'dethemekit' ),
-                            'price-desc' => __( 'Sort by price: high to low', 'dethemekit' ),
+                            'menu_order' => __( 'Default sorting', 'dethemekit-for-elementor' ),
+                            'popularity' => __( 'Sort by popularity', 'dethemekit-for-elementor' ),
+                            'rating'     => __( 'Sort by average rating', 'dethemekit-for-elementor' ),
+                            'date'       => __( 'Sort by latest', 'dethemekit-for-elementor' ),
+                            'price'      => __( 'Sort by price: low to high', 'dethemekit-for-elementor' ),
+                            'price-desc' => __( 'Sort by price: high to low', 'dethemekit-for-elementor' ),
                         ) );
                         foreach ( $catalog_orderby as $id => $name ){
                             echo '<option value="' . esc_attr( $id ) . '" ' . selected( $getorderby, $id, false ) . '>' . esc_attr( $name ) . '</option>';
@@ -409,7 +409,7 @@ if( class_exists('WooCommerce') ){
 
             $total_stock = get_post_meta( $product_id, 'dethemekit_total_stock_quantity', true );
 
-            if ( ! $total_stock ) { echo '<div class="stock-management-progressbar">'.__('Do not set stock amount for progress bar','dethemekit-pro').'</div>'; return; }
+            if ( ! $total_stock ) { echo '<div class="stock-management-progressbar">'.__('Do not set stock amount for progress bar','dethemekit-for-elementor').'</div>'; return; }
 
             $current_stock = round( get_post_meta( $product_id, '_stock', true ) );
 
@@ -422,12 +422,12 @@ if( class_exists('WooCommerce') ){
                         echo '<div class="wltotal-sold">' . $order_text . '<span>' . esc_html( $total_sold ) . '</span></div>';
                         echo '<div class="wlcurrent-stock">' . $available_text . '<span>' . esc_html( $current_stock ) . '</span></div>';
                     echo '</div>';
-                    echo '<div class="wlprogress-area" title="' . __( 'Sold', 'dethemekit-pro' ) . ' ' . esc_attr( $percentage ) . '%">';
+                    echo '<div class="wlprogress-area" title="' . __( 'Sold', 'dethemekit-for-elementor' ) . ' ' . esc_attr( $percentage ) . '%">';
                         echo '<div class="wlprogress-bar"style="width:' . esc_attr( $percentage ) . '%;"></div>';
                     echo '</div>';
                 echo '</div>';
             }else{
-                echo '<div class="stock-management-progressbar">'.__('Do not set stock amount for progress bar','dethemekit-pro').'</div>';
+                echo '<div class="stock-management-progressbar">'.__('Do not set stock amount for progress bar','dethemekit-for-elementor').'</div>';
             }
 
         }
@@ -452,7 +452,7 @@ function dethemekit_compare_button( $buttonstyle = 1 ){
     if( $buttonstyle == 1 ){
         echo do_shortcode('[yith_compare_button]');
     }else{
-        echo '<a title="'. esc_attr__('Add to Compare', 'dethemekit') .'" href="'. esc_url( $comp_link ) .'" class="dethemekit-compare compare" data-product_id="'. esc_attr( $product_id ) .'" rel="nofollow">'.esc_html__( 'Compare', 'dethemekit' ).'</a>';
+        echo '<a title="'. esc_attr__('Add to Compare', 'dethemekit-for-elementor') .'" href="'. esc_url( $comp_link ) .'" class="dethemekit-compare compare" data-product_id="'. esc_attr( $product_id ) .'" rel="nofollow">'.esc_html__( 'Compare', 'dethemekit-for-elementor' ).'</a>';
     }
 
 }

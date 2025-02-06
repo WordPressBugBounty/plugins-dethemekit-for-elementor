@@ -17,7 +17,7 @@ class Config_Data {
         add_submenu_page(
             'dethemekit-addons',
             '',
-            __( 'System Info','dethemekit-addons-for-elementor' ),
+            __( 'System Info','dethemekit-for-elementor' ),
             'manage_options',
             'dethemekit-addons-sys',
             [$this, 'pa_sys_info_page']
@@ -33,7 +33,7 @@ class Config_Data {
                 <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
                 <h3 class="pa-title-sub"><?php echo sprintf( 
                     /* translators: 1: plugin name, 2: author. */
-                    esc_html__( 'Thank you for using %1$s. This plugin has been developed by %2$s and we hope you enjoy using it.','dethemekit-addons-for-elementor' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
+                    esc_html__( 'Thank you for using %1$s. This plugin has been developed by %2$s and we hope you enjoy using it.','dethemekit-for-elementor' ), Helper_Functions::name(), Helper_Functions::author() ); ?></h3>
             </div>
             <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -44,7 +44,7 @@ class Config_Data {
         <div class="pa-settings-tabs pa-sys-info-tab">
             <div id="pa-system" class="pa-settings-tab">
                 <div class="pa-row">                
-                    <h3 class="pa-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','dethemekit-addons-for-elementor');?></h3>
+                    <h3 class="pa-sys-info-title"><?php echo __('System setup information useful for debugging purposes.','dethemekit-for-elementor');?></h3>
                     <div class="pa-system-info-container">
                         <?php
                         require_once ( DETHEMEKIT_ADDONS_PATH . 'admin/includes/dep/info.php');
@@ -55,7 +55,7 @@ class Config_Data {
             </div>
             <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
                 <div>
-                    <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-addons-for-elementor'); ?></a></p>
+                    <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-for-elementor'); ?></a></p>
                 </div>
             <?php endif; ?>
         </div>

@@ -38,7 +38,7 @@ class DethemekitSettingsPage
       $this->options = get_option( 'dethemekit_option' );
         ?>
         <div class="wrap">
-            <h1><?php echo esc_html__( 'DethemeKit Settings', 'dethemekit-addons-for-elementor' ); ?></h1>
+            <h1><?php echo esc_html__( 'DethemeKit Settings', 'dethemekit-for-elementor' ); ?></h1>
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
@@ -140,7 +140,7 @@ class DethemekitSettingsPage
      */
     public function print_section_info()
     {
-        echo esc_html__( 'Select the extensions to be activated', 'dethemekit-addons-for-elementor' );
+        echo esc_html__( 'Select the extensions to be activated', 'dethemekit-for-elementor' );
     }
 
     /** 
@@ -152,7 +152,7 @@ class DethemekitSettingsPage
         $option_value = $this->options['de_scroll_animation'];
       }
 
-      printf('<input id="de_scroll_animation" name="dethemekit_option[de_scroll_animation]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-addons-for-elementor' ) );
+      printf('<input id="de_scroll_animation" name="dethemekit_option[de_scroll_animation]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-for-elementor' ) );
     }
 
     /** 
@@ -164,7 +164,7 @@ class DethemekitSettingsPage
         $option_value = $this->options['de_reveal_animation'];
       }
 
-      printf('<input id="de_reveal_animation" name="dethemekit_option[de_reveal_animation]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-addons-for-elementor' ) );
+      printf('<input id="de_reveal_animation" name="dethemekit_option[de_reveal_animation]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-for-elementor' ) );
     }
 
     /** 
@@ -176,7 +176,7 @@ class DethemekitSettingsPage
         $option_value = $this->options['de_staggering'];
       }
 
-      printf('<input id="de_staggering" name="dethemekit_option[de_staggering]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-addons-for-elementor' ) );
+      printf('<input id="de_staggering" name="dethemekit_option[de_staggering]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-for-elementor' ) );
     }
 
     /** 
@@ -188,7 +188,7 @@ class DethemekitSettingsPage
         $option_value = $this->options['de_carousel'];
       }
 
-      printf('<input id="de_carousel" name="dethemekit_option[de_carousel]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-addons-for-elementor' ) );
+      printf('<input id="de_carousel" name="dethemekit_option[de_carousel]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-for-elementor' ) );
       printf('&nbsp;&nbsp;<a target="_blank" href="https://detheme.helpscoutdocs.com/article/368-how-to-use-decarousel">How to Use De Carousel ?</a>');
     }
 
@@ -201,7 +201,7 @@ class DethemekitSettingsPage
         $option_value = $this->options['de_gallery'];
       }
 
-      printf('<input id="de_gallery" name="dethemekit_option[de_gallery]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-addons-for-elementor' ) );
+      printf('<input id="de_gallery" name="dethemekit_option[de_gallery]" type="checkbox" value="1" %s /> %s',checked( '1', esc_attr( $option_value ), false ), esc_html__( 'Enabled', 'dethemekit-for-elementor' ) );
     }
 
 }

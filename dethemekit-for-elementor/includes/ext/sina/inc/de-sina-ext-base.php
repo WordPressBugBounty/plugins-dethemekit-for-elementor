@@ -27,6 +27,6 @@ abstract class De_Sina_Extension_Base{
 	 * @since 1.0.0
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'detheme-kit', false, DETHEMEKIT_ADDONS_DIRNAME.'/languages' );
+		load_plugin_textdomain( 'dethemekit-for-elementor', false, DETHEMEKIT_ADDONS_DIRNAME.'/languages' );
 	}
 }

@@ -29,7 +29,7 @@ class DeLoop extends Single {
 	}
 
 	public static function get_title() {
-		return __( 'De Loop', 'detheme-kit' );
+		return __( 'De Loop', 'dethemekit-for-elementor' );
 	}
 
 /*
@@ -49,10 +49,10 @@ Let's be undependable from Preview As options
 
 		return [
 			'single' => [
-				'label' => __( 'Single', 'elementor-pro' ),
+				'label' => __( 'Single', 'dethemekit-for-elementor' ),
 				'options' => $post_types_options,
 			],
-			'page/404' => __( '404', 'elementor-pro' ),
+			'page/404' => __( '404', 'dethemekit-for-elementor' ),
 		];
 	}
   

@@ -14,7 +14,7 @@ class Plugin_Info {
                 add_submenu_page(
                 'dethemekit-addons',
                 '',
-                __('About','dethemekit-addons-for-elementor'),
+                __('About','dethemekit-for-elementor'),
                 'manage_options',
                 'dethemekit-addons-about',
                 [ $this, 'pa_about_page' ]
@@ -39,7 +39,7 @@ class Plugin_Info {
                  <h1 class="pa-title-main"><?php echo Helper_Functions::name(); ?></h1>
                  <h3 class="pa-title-sub"><?php echo sprintf(
                   /* translators: 1: plugin name, 2: author. */
-                  esc_html__('Thank you for using %1$s. This plugin has been developed by %2$s and we hope you enjoy using it.','dethemekit-addons-for-elementor'), Helper_Functions::name(),Helper_Functions::author()); ?></h3>
+                  esc_html__('Thank you for using %1$s. This plugin has been developed by %2$s and we hope you enjoy using it.','dethemekit-for-elementor'), Helper_Functions::name(),Helper_Functions::author()); ?></h3>
               </div>
               <?php if( ! Helper_Functions::is_hide_logo() ) : ?>
                 <div class="pa-title-right">
@@ -56,10 +56,10 @@ class Plugin_Info {
                              <i class="dashicons dashicons-info abt-icon-style"></i>
                           </div>
                           <div class="pa-text-container">
-                             <h4><?php echo __('What is DethemeKit Addons?', 'dethemekit-addons-for-elementor'); ?></h4>
-                             <p><?php echo __('DethemeKit Addons for Elementor extends Elementor Page Builder capabilities with many fully customizable widgets and addons that help you to build impressive websites with no coding required.', 'dethemekit-addons-for-elementor'); ?></p>
+                             <h4><?php echo __('What is DethemeKit Addons?', 'dethemekit-for-elementor'); ?></h4>
+                             <p><?php echo __('DethemeKit Addons for Elementor extends Elementor Page Builder capabilities with many fully customizable widgets and addons that help you to build impressive websites with no coding required.', 'dethemekit-for-elementor'); ?></p>
                              <?php if( ! defined('DETHEMEKIT_PRO_ADDONS_VERSION') ) : ?>
-                                <p><?php echo __('Get more widgets and addons with ', 'dethemekit-addons-for-elementor'); ?><strong><?php echo __('DethemeKit Addons Pro', 'dethemekit-addons-for-elementor'); ?></strong> <a href="<?php echo esc_url( $url ); ?>" target="_blank" ><?php echo __('Click Here', 'dethemekit-addons-for-elementor'); ?></a><?php echo __(' to know more.', 'dethemekit-addons-for-elementor'); ?></p>
+                                <p><?php echo __('Get more widgets and addons with ', 'dethemekit-for-elementor'); ?><strong><?php echo __('DethemeKit Addons Pro', 'dethemekit-for-elementor'); ?></strong> <a href="<?php echo esc_url( $url ); ?>" target="_blank" ><?php echo __('Click Here', 'dethemekit-for-elementor'); ?></a><?php echo __(' to know more.', 'dethemekit-for-elementor'); ?></p>
                              <?php endif; ?>
                           </div>
                        </div>
@@ -70,15 +70,15 @@ class Plugin_Info {
                              <i class="dashicons dashicons-universal-access-alt abt-icon-style"></i>
                           </div>
                           <div class="pa-text-container">
-                             <h4><?php echo __('Docs and Support', 'dethemekit-addons-for-elementor'); ?></h4>
-                             <p><?php echo __('It’s highly recommended to check out documentation and FAQ before using this plugin. ', 'dethemekit-addons-for-elementor'); ?><a target="_blank" href="<?php echo esc_url( $support_url ); ?>"><?php echo __('Click Here', 'dethemekit-addons-for-elementor'); ?></a><?php echo __(' for more details. You can also join our ', 'dethemekit-addons-for-elementor'); ?><a href="https://www.facebook.com/groups/DethemeKitAddons" target="_blank"><?php echo __('Facebook Group', 'dethemekit-addons-for-elementor'); ?></a><?php echo __(' and Our ', 'dethemekit-addons-for-elementor'); ?><a href="https://my.leap13.com/forums/" target="_blank"><?php echo __('Community Forums', 'dethemekit-addons-for-elementor'); ?></a></p>
+                             <h4><?php echo __('Docs and Support', 'dethemekit-for-elementor'); ?></h4>
+                             <p><?php echo __('It’s highly recommended to check out documentation and FAQ before using this plugin. ', 'dethemekit-for-elementor'); ?><a target="_blank" href="<?php echo esc_url( $support_url ); ?>"><?php echo __('Click Here', 'dethemekit-for-elementor'); ?></a><?php echo __(' for more details. You can also join our ', 'dethemekit-for-elementor'); ?><a href="https://www.facebook.com/groups/DethemeKitAddons" target="_blank"><?php echo __('Facebook Group', 'dethemekit-for-elementor'); ?></a><?php echo __(' and Our ', 'dethemekit-for-elementor'); ?><a href="https://my.leap13.com/forums/" target="_blank"><?php echo __('Community Forums', 'dethemekit-for-elementor'); ?></a></p>
                           </div>
                        </div>
                     </div>
                  </div>
                 <?php if( ! Helper_Functions::is_hide_rate() ) : ?>
                     <div>
-                        <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-addons-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-addons-for-elementor'); ?></a></p>
+                        <p><?php echo __('Did you like DethemeKit Addons for Elementor Plugin? Please ', 'dethemekit-for-elementor'); ?><a href="https://wordpress.org/support/plugin/dethemekit-addons-for-elementor/reviews/#new-post" target="_blank"><?php echo __('Click Here to Rate it ★★★★★', 'dethemekit-for-elementor'); ?></a></p>
                     </div>
                 <?php endif; ?>
               </div>

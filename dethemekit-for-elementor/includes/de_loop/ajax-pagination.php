@@ -57,16 +57,16 @@ class dtk_Ajax_Load {
       $element->add_control(
         'pagination_type',
         [
-          'label' => __( 'Pagination', 'detheme-kit' ),
+          'label' => __( 'Pagination', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::SELECT,
           'default' => '',
           'options' => [
-            '' => __( 'None', 'elementor-pro' ),
-            'numbers' => __( 'Numbers', 'elementor-pro' ),
-            'loadmore' => __( 'Load More (Detheme Kit)', 'detheme-kit' ),
-            // 'lazyload' => __( 'Infinite Load (Custom Skin Pro)', 'detheme-kit' ),
-            'prev_next' => __( 'Previous/Next', 'elementor-pro' ),
-            'numbers_and_prev_next' => __( 'Numbers', 'elementor-pro' ) . ' + ' . __( 'Previous/Next', 'elementor-pro' ),
+            '' => __( 'None', 'dethemekit-for-elementor' ),
+            'numbers' => __( 'Numbers', 'dethemekit-for-elementor' ),
+            'loadmore' => __( 'Load More (Detheme Kit)', 'dethemekit-for-elementor' ),
+            // 'lazyload' => __( 'Infinite Load (Custom Skin Pro)', 'dethemekit-for-elementor' ),
+            'prev_next' => __( 'Previous/Next', 'dethemekit-for-elementor' ),
+            'numbers_and_prev_next' => __( 'Numbers', 'dethemekit-for-elementor' ) . ' + ' . __( 'Previous/Next', 'dethemekit-for-elementor' ),
           ],
         ]
       );
@@ -74,7 +74,7 @@ class dtk_Ajax_Load {
       $element->add_control(
           'de_lazyload_title',
           [
-            'label' => __( 'Infinite Load', 'detheme-kit' ),
+            'label' => __( 'Infinite Load', 'dethemekit-for-elementor' ),
             'type' => \Elementor\Controls_Manager::HEADING,
             'separator' => 'before',
             'condition' => [
@@ -86,7 +86,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_lazyload_animation',
         [
-          'label' => __( 'Loading Animation', 'detheme-kit' ),
+          'label' => __( 'Loading Animation', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::SELECT,
           'default' => 'default',
           'options' => dtk_Loading_Animation::get_lazy_load_animations_list(),
@@ -98,7 +98,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_lazyload_color',
         [
-          'label' => __( 'Animation Color', 'detheme-kit' ),
+          'label' => __( 'Animation Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'selectors' => [
             '{{WRAPPER}} .ecs-lazyload .ecs-ll-brcolor' => 'border-color: {{VALUE}};',
@@ -113,7 +113,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_lazyload_spacing',
         [
-          'label' => __( 'Animation Spacing', 'detheme-kit' ),
+          'label' => __( 'Animation Spacing', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::SLIDER,
           'range' => [
             'px' => [
@@ -135,7 +135,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_lazyload_size',
         [
-          'label' => __( 'Animation Size', 'detheme-kit' ),
+          'label' => __( 'Animation Size', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::SLIDER,
           'range' => [
             'px' => [
@@ -157,7 +157,7 @@ class dtk_Ajax_Load {
       $element->add_control(
           'de_loadmore_title',
           [
-            'label' => __( 'Load More Button', 'detheme-kit' ),
+            'label' => __( 'Load More Button', 'dethemekit-for-elementor' ),
             'type' => \Elementor\Controls_Manager::HEADING,
             'separator' => 'before',
             'condition' => [
@@ -169,10 +169,10 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_text',
         [
-          'label' => __( 'Text', 'detheme-kit' ),
+          'label' => __( 'Text', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::TEXT,
-          'default' => __( 'Load More', 'elementor' ),
-          'placeholder' => __( 'Load More', 'elementor' ),
+          'default' => __( 'Load More', 'dethemekit-for-elementor' ),
+          'placeholder' => __( 'Load More', 'dethemekit-for-elementor' ),
           'condition' => [
             'pagination_type' => 'loadmore',
           ],
@@ -182,10 +182,10 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_loading_text',
         [
-          'label' => __( 'Loading Text', 'detheme-kit' ),
+          'label' => __( 'Loading Text', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::TEXT,
-          'default' => __( 'Loading...', 'elementor' ),
-          'placeholder' => __( 'Loading...', 'elementor' ),
+          'default' => __( 'Loading...', 'dethemekit-for-elementor' ),
+          'placeholder' => __( 'Loading...', 'dethemekit-for-elementor' ),
           'condition' => [
             'pagination_type' => 'loadmore',
           ],
@@ -195,7 +195,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_spacing',
         [
-          'label' => __( 'Button Spacing', 'detheme-kit' ),
+          'label' => __( 'Button Spacing', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::SLIDER,
           'range' => [
             'px' => [
@@ -226,7 +226,7 @@ class dtk_Ajax_Load {
     	$element->start_controls_section(
         'de_loadmore_section_style',
         [
-          'label' => __( 'Load More Button', 'detheme-kit' ),
+          'label' => __( 'Load More Button', 'dethemekit-for-elementor' ),
           'tab' => \Elementor\Controls_Manager::TAB_STYLE,
           'condition' => [
             'pagination_type' => 'loadmore',
@@ -258,14 +258,14 @@ class dtk_Ajax_Load {
       $element->start_controls_tab(
         'de_loadmore_tab_button_normal',
         [
-          'label' => __( 'Normal', 'detheme-kit' ),
+          'label' => __( 'Normal', 'dethemekit-for-elementor' ),
         ]
       );
 
       $element->add_control(
         'de_loadmore_button_text_color',
         [
-          'label' => __( 'Text Color', 'detheme-kit' ),
+          'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'default' => '',
           'selectors' => [
@@ -277,7 +277,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_background_color',
         [
-          'label' => __( 'Background Color', 'detheme-kit' ),
+          'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'global'    => [
             'default' => Global_Colors::COLOR_ACCENT,
@@ -293,14 +293,14 @@ class dtk_Ajax_Load {
       $element->start_controls_tab(
         'de_loadmore_tab_button_hover',
         [
-          'label' => __( 'Hover', 'detheme-kit' ),
+          'label' => __( 'Hover', 'dethemekit-for-elementor' ),
         ]
       );
 
       $element->add_control(
         'de_loadmore_hover_color',
         [
-          'label' => __( 'Text Color', 'detheme-kit' ),
+          'label' => __( 'Text Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'selectors' => [
             '{{WRAPPER}} .ecs-load-more-button .elementor-button:hover, {{WRAPPER}} .ecs-load-more-button .elementor-button:focus' => 'color: {{VALUE}};',
@@ -312,7 +312,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_button_background_hover_color',
         [
-          'label' => __( 'Background Color', 'detheme-kit' ),
+          'label' => __( 'Background Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'selectors' => [
             '{{WRAPPER}} .ecs-load-more-button .elementor-button:hover, {{WRAPPER}} .elementor-button:focus' => 'background-color: {{VALUE}};',
@@ -323,7 +323,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_button_hover_border_color',
         [
-          'label' => __( 'Border Color', 'detheme-kit' ),
+          'label' => __( 'Border Color', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::COLOR,
           'condition' => [
             'border_border!' => '',
@@ -337,7 +337,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_hover_animation',
         [
-          'label' => __( 'Hover Animation', 'detheme-kit' ),
+          'label' => __( 'Hover Animation', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
         ]
       );
@@ -358,7 +358,7 @@ class dtk_Ajax_Load {
       $element->add_control(
         'de_loadmore_border_radius',
         [
-          'label' => __( 'Border Radius', 'detheme-kit' ),
+          'label' => __( 'Border Radius', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::DIMENSIONS,
           'size_units' => [ 'px', '%' ],
           'selectors' => [
@@ -378,7 +378,7 @@ class dtk_Ajax_Load {
       $element->add_responsive_control(
         'de_loadmore_text_padding',
         [
-          'label' => __( 'Padding', 'detheme-kit' ),
+          'label' => __( 'Padding', 'dethemekit-for-elementor' ),
           'type' => \Elementor\Controls_Manager::DIMENSIONS,
           'size_units' => [ 'px', 'em', '%' ],
           'selectors' => [
@@ -487,19 +487,19 @@ class dtk_Loading_Animation {
   private static function animations(){ 
     return [
       'default'=>[
-        'label' => __( 'Default', 'detheme-kit' ),
+        'label' => __( 'Default', 'dethemekit-for-elementor' ),
         'html' => '<div class="lds-ellipsis ecs-lazy-load-animation"><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div></div>',
       ],
       'progress_bar'=>[
-        'label' => __( 'Progress Bar', 'detheme-kit' ),
+        'label' => __( 'Progress Bar', 'dethemekit-for-elementor' ),
         'html' => '<div class="barload-wrapper  ecs-lazy-load-animation"><div class="barload-border ecs-ll-brcolor"><div class="barload-whitespace"><div class="barload-line ecs-ll-bgcolor"></div></div></div></div>',
       ],
       'running_dots'=>[
-        'label' => __( 'Running Dots', 'detheme-kit' ),
+        'label' => __( 'Running Dots', 'dethemekit-for-elementor' ),
         'html' => '<div class="ballsload-container ecs-lazy-load-animation"><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div><div class="ecs-ll-bgcolor"></div></div>',
       ],
       'ball_slide'=>[
-        'label' => __( 'Ball Slide', 'detheme-kit' ),
+        'label' => __( 'Ball Slide', 'dethemekit-for-elementor' ),
         'html' => '<div id="movingBallG" class="ecs-lazy-load-animation"><div class="movingBallLineG  ecs-ll-bgcolor"></div><div id="movingBallG_1" class="movingBallG ecs-ll-bgcolor"></div></div>',
       ],
 

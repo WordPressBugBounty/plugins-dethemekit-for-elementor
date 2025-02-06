@@ -13,7 +13,7 @@ class Papro_Actions {
         add_submenu_page(
             'dethemekit-addons',
             '',
-            '<span class="dashicons dashicons-star-filled" style="font-size: 17px"></span> ' . __( 'Get PRO Widgets & Addons', 'dethemekit-addons-for-elementor' ),
+            '<span class="dashicons dashicons-star-filled" style="font-size: 17px"></span> ' . __( 'Get PRO Widgets & Addons', 'dethemekit-for-elementor' ),
             'manage_options',
             'dethemekit-addons-pro',
             [ $this, 'handle_custom_redirects' ]
@@ -46,7 +46,7 @@ class Papro_Actions {
         global $submenu;
         
         if( isset($submenu['dethemekit-addons'] ) ) {
-            $submenu['dethemekit-addons'][0][0] = __( 'Settings', 'dethemekit-addons-for-elementor' );
+            $submenu['dethemekit-addons'][0][0] = __( 'Settings', 'dethemekit-for-elementor' );
         }
     }
 

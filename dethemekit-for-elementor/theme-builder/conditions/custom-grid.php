@@ -26,11 +26,11 @@ class dtk_Custom_Grid_Conditions  extends ElementorPro\Modules\ThemeBuilder\Cond
 	}
 
 	public function get_label() {
-		return __( 'De Grid', 'detheme-kit' );
+		return __( 'De Grid', 'dethemekit-for-elementor' );
 	}
 
 	public function get_all_label() {
-		return __( 'No Conditions', 'detheme-kit' );
+		return __( 'No Conditions', 'dethemekit-for-elementor' );
 	}
 
 	public function register_sub_conditions() {

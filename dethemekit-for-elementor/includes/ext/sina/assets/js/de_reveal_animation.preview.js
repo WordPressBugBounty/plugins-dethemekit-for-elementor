@@ -855,7 +855,7 @@ class DeRevealAnimationHandlerClass extends elementorModules.frontend.handlers.B
 
               if (do_animation) {
                 if (is_stagger) {
-                  $target = ".de_reveal_animation_yes.elementor-element-" + $id + " > .elementor-container > .elementor-row > .elementor-column"                        
+                  $target = ".de_reveal_animation_yes.elementor-element-" + $id + " > .elementor-container > .elementor-column"                        
                 } else {
                   if (is_section) {
                     $target = ".de_reveal_animation_yes.elementor-section.elementor-element-" + $id
@@ -883,7 +883,7 @@ class DeRevealAnimationHandlerClass extends elementorModules.frontend.handlers.B
                 elementSelector = document.querySelector($target)
               } else {
                 if (is_stagger) {
-                  $target = ".de_reveal_animation_no.elementor-element-" + $id + " > .elementor-container > .elementor-row > .elementor-column"                        
+                  $target = ".de_reveal_animation_no.elementor-element-" + $id + " > .elementor-container > .elementor-column"                        
                 } else {
                   if (is_section) {
                     $target = ".de_reveal_animation_no.elementor-section.elementor-element-" + $id
@@ -1072,7 +1072,7 @@ function do_preview_default_animation() {
       elementSelector = document.querySelector($target)
     } else {
       if (is_stagger) {
-        $target = ".de_reveal_animation_no.elementor-element-" + $id + " > .elementor-container > .elementor-row > .elementor-column"                        
+        $target = ".de_reveal_animation_no.elementor-element-" + $id + " > .elementor-container > .elementor-column"                        
       } else {
         if (is_section) {
           $target = ".de_reveal_animation_no.elementor-section.elementor-element-" + $id

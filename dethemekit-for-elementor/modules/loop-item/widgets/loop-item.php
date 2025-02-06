@@ -30,7 +30,7 @@ class Dtk_Custom_Loop_Item_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'De Loop Item', 'detheme-kit' );
+		return __( 'De Loop Item', 'dethemekit-for-elementor' );
 	}
 
 	/**
@@ -70,12 +70,12 @@ class Dtk_Custom_Loop_Item_Widget extends \Elementor\Widget_Base {
 	 * @since 0.1
 	 * @access protected
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'detheme-kit' ),
+				'label' => __( 'Content', 'dethemekit-for-elementor' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -83,9 +83,9 @@ class Dtk_Custom_Loop_Item_Widget extends \Elementor\Widget_Base {
     $this->add_control(
 			'important_note',
 			[
-				'label' => __( 'Loop Item Place Holder', 'detheme-kit' ),
+				'label' => __( 'Loop Item Place Holder', 'dethemekit-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::RAW_HTML,
-				'raw' => __( 'Place this widget where the Loop Item you want to show.', 'detheme-kit' ),
+				'raw' => __( 'Place this widget where the Loop Item you want to show.', 'dethemekit-for-elementor' ),
 				'content_classes' => 'your-class',
         'selector'=>'{{wrapper}} .ecs-loop-preview'
 			]

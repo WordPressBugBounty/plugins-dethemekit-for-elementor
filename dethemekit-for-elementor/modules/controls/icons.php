@@ -21,7 +21,7 @@ class Icons{
 	public function __add_font( $font){
         $font_new['dticon'] = [
 			'name' => 'dticon',
-			'label' => __( 'DethemeKit - Icons', 'dethemekit' ),
+			'label' => __( 'DethemeKit - Icons', 'dethemekit-for-elementor' ),
 			'url' => self::get_url() . 'assets/css/dticon.css',
 			'prefix' => 'dticon-',
 			'displayPrefix' => 'dticon',

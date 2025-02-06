@@ -31,7 +31,7 @@ class De_Post_Comments extends Widget_Base {
 
 		return sprintf(
 			/* translators: %s: Post type singular name (e.g. Post or Page) */
-			__( '%s Comments', 'press-elements' ),
+			__( '%s Comments', 'dethemekit-for-elementor' ),
 			$post_type_object->labels->singular_name
 		);
 	}
@@ -44,7 +44,7 @@ class De_Post_Comments extends Widget_Base {
 		return [ 'dethemekit-elements' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$post_type_object = get_post_type_object( get_post_type() );
 
@@ -53,7 +53,7 @@ class De_Post_Comments extends Widget_Base {
 			[
 				'label' => sprintf(
 					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Comments', 'press-elements' ),
+					__( '%s Comments', 'dethemekit-for-elementor' ),
 					$post_type_object->labels->singular_name
 				),
 			]
@@ -63,9 +63,9 @@ class De_Post_Comments extends Widget_Base {
 			'info',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'press-elements' ) .
+				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'dethemekit-for-elementor' ) .
 						'<br><br>' .
-						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'press-elements' ),
+						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'dethemekit-for-elementor' ),
 				'content_classes' => 'elementor-descriptor',
 			]
 		);
