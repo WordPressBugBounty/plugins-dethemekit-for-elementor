@@ -20,8 +20,8 @@
 				stickyInstanceOptions = {
 					topSpacing: 50,
 					bottomSpacing: 50,
-					containerSelector: '.elementor-container',
-					innerWrapperSelector: '.elementor-column-wrap'
+					containerSelector: '.e-con-inner',
+					innerWrapperSelector: '.e-con-inner > div'
 				};
 
                 if ( editMode ) {

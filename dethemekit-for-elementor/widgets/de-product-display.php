@@ -2397,10 +2397,10 @@ class De_Product_Display extends Widget_Base {
         // Countdown Custom Label
         if( $settings['show_countdown'] == 'yes' ){
             $data_customlavel = [];
-            $data_customlavel['daytxt'] = ! empty( $settings['customlabel_days'] ) ? $settings['customlabel_days'] : 'Days';
-            $data_customlavel['hourtxt'] = ! empty( $settings['customlabel_hours'] ) ? $settings['customlabel_hours'] : 'Hours';
-            $data_customlavel['minutestxt'] = ! empty( $settings['customlabel_minutes'] ) ? $settings['customlabel_minutes'] : 'Min';
-            $data_customlavel['secondstxt'] = ! empty( $settings['customlabel_seconds'] ) ? $settings['customlabel_seconds'] : 'Sec';
+            $data_customlavel['daytxt'] = ! empty( $settings['customlabel_days'] ) ? esc_attr( $settings['customlabel_days'] ) : esc_attr__( 'Days' , 'dethemekit-for-elementor' );
+            $data_customlavel['hourtxt'] = ! empty( $settings['customlabel_hours'] ) ? esc_attr( $settings['customlabel_hours'] ): esc_attr__( 'Hours' , 'dethemekit-for-elementor' );
+            $data_customlavel['minutestxt'] = ! empty( $settings['customlabel_minutes'] ) ? esc_attr( $settings['customlabel_minutes'] ): esc_attr__( 'Min' , 'dethemekit-for-elementor' );
+            $data_customlavel['secondstxt'] = ! empty( $settings['customlabel_seconds'] ) ? esc_attr( $settings['customlabel_seconds'] ): esc_attr__( 'Sec' , 'dethemekit-for-elementor' );
         }
 
         // Slider Options
@@ -2607,7 +2607,7 @@ class De_Product_Display extends Widget_Base {
                                                     ): 
                                                 ?>
                                                     <div class="ht-product-countdown-wrap">
-                                                        <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo wp_json_encode( $data_customlavel ) ?>'></div>
+                                                        <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo esc_attr( wp_json_encode( $data_customlavel )) ?>'></div>
                                                     </div>
                                                 <?php endif; endif; ?>
 
@@ -2696,7 +2696,7 @@ class De_Product_Display extends Widget_Base {
                                                         ):
                                                 ?>
                                                     <div class="ht-product-countdown-wrap">
-                                                        <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo wp_json_encode( $data_customlavel ) ?>'></div>
+                                                        <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo esc_attr( wp_json_encode( $data_customlavel ) ) ?>'></div>
                                                     </div>
                                                 <?php endif; endif; ?>
                                             </div>
@@ -2797,7 +2797,7 @@ class De_Product_Display extends Widget_Base {
                                             ): 
                                         ?>
                                             <div class="ht-product-countdown-wrap">
-                                                <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo wp_json_encode( $data_customlavel ) ?>'></div>
+                                                <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo esc_attr( wp_json_encode( $data_customlavel ) ) ?>'></div>
                                             </div>
                                         <?php endif; endif; ?>
 
@@ -2884,7 +2884,7 @@ class De_Product_Display extends Widget_Base {
                                                 ):
                                         ?>
                                             <div class="ht-product-countdown-wrap">
-                                                <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo wp_json_encode( $data_customlavel ) ?>'></div>
+                                                <div class="ht-product-countdown" data-countdown="<?php echo esc_attr( $offer_end_date ); ?>" data-customlavel='<?php echo esc_attr( wp_json_encode( $data_customlavel ) ) ?>'></div>
                                             </div>
                                         <?php endif; endif; ?>
                                     </div>

@@ -144,9 +144,9 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'translate',
 				],
 				'selectors' => [
-					'(desktop){{WRAPPER}} .elementor-widget-container' => 'transform: translate({{sina_transform_effects_translateX.SIZE || 0}}px, {{sina_transform_effects_translateY.SIZE || 0}}px);',
-					'(tablet){{WRAPPER}} .elementor-widget-container' => 'transform: translate({{sina_transform_effects_translateX_tablet.SIZE || 0}}px, {{sina_transform_effects_translateY_tablet.SIZE || 0}}px);',
-					'(mobile){{WRAPPER}} .elementor-widget-container' => 'transform: translate({{sina_transform_effects_translateX_mobile.SIZE || 0}}px, {{sina_transform_effects_translateY_mobile.SIZE || 0}}px);',
+					'(desktop){{WRAPPER}}' => 'transform: translate({{sina_transform_effects_translateX.SIZE || 0}}px, {{sina_transform_effects_translateY.SIZE || 0}}px);',
+					'(tablet){{WRAPPER}}' => 'transform: translate({{sina_transform_effects_translateX_tablet.SIZE || 0}}px, {{sina_transform_effects_translateY_tablet.SIZE || 0}}px);',
+					'(mobile){{WRAPPER}}' => 'transform: translate({{sina_transform_effects_translateX_mobile.SIZE || 0}}px, {{sina_transform_effects_translateY_mobile.SIZE || 0}}px);',
 				],
 			]
 		);
@@ -169,7 +169,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: scaleX({{SIZE}});',
+					'{{WRAPPER}}' => 'transform: scaleX({{SIZE}});',
 				],
 			]
 		);
@@ -192,7 +192,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: scaleY({{SIZE}});',
+					'{{WRAPPER}}' => 'transform: scaleY({{SIZE}});',
 				],
 			]
 		);
@@ -215,7 +215,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleZ',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: scale({{SIZE}});',
+					'{{WRAPPER}}' => 'transform: scale({{SIZE}});',
 				],
 			]
 		);
@@ -238,7 +238,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: rotateX({{SIZE}}deg);',
+					'{{WRAPPER}}' => 'transform: rotateX({{SIZE}}deg);',
 				],
 			]
 		);
@@ -261,7 +261,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: rotateY({{SIZE}}deg);',
+					'{{WRAPPER}}' => 'transform: rotateY({{SIZE}}deg);',
 				],
 			]
 		);
@@ -284,7 +284,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateZ',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: rotateZ({{SIZE}}deg);',
+					'{{WRAPPER}}' => 'transform: rotateZ({{SIZE}}deg);',
 				],
 			]
 		);
@@ -307,7 +307,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'skewX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: skewX({{SIZE}}deg);',
+					'{{WRAPPER}}' => 'transform: skewX({{SIZE}}deg);',
 				],
 			]
 		);
@@ -330,7 +330,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'skewY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transform: skewY({{SIZE}}deg);',
+					'{{WRAPPER}}' => 'transform: skewY({{SIZE}}deg);',
 				],
 			]
 		);
@@ -338,7 +338,7 @@ class De_Sina_Ext_Controls{
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name' => 'sina_transform_effects_filters',
-				'selector' => '{{WRAPPER}} .elementor-widget-container',
+				'selector' => '{{WRAPPER}}',
 			]
 		);
 
@@ -388,9 +388,9 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'translate',
 				],
 				'selectors' => [
-					'(desktop){{WRAPPER}} .elementor-widget-container:hover' => 'transform: translate({{sina_transform_effects_translateX_hover.SIZE || 0}}px, {{sina_transform_effects_translateY_hover.SIZE || 0}}px);',
-					'(tablet){{WRAPPER}} .elementor-widget-container:hover' => 'transform: translate({{sina_transform_effects_translateX_hover_tablet.SIZE || 0}}px, {{sina_transform_effects_translateY_hover_tablet.SIZE || 0}}px);',
-					'(mobile){{WRAPPER}} .elementor-widget-container:hover' => 'transform: translate({{sina_transform_effects_translateX_hover_mobile.SIZE || 0}}px, {{sina_transform_effects_translateY_hover_mobile.SIZE || 0}}px);',
+					'(desktop){{WRAPPER}}:hover' => 'transform: translate({{sina_transform_effects_translateX_hover.SIZE || 0}}px, {{sina_transform_effects_translateY_hover.SIZE || 0}}px);',
+					'(tablet){{WRAPPER}}:hover' => 'transform: translate({{sina_transform_effects_translateX_hover_tablet.SIZE || 0}}px, {{sina_transform_effects_translateY_hover_tablet.SIZE || 0}}px);',
+					'(mobile){{WRAPPER}}:hover' => 'transform: translate({{sina_transform_effects_translateX_hover_mobile.SIZE || 0}}px, {{sina_transform_effects_translateY_hover_mobile.SIZE || 0}}px);',
 				],
 			]
 		);
@@ -413,7 +413,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: scaleX({{SIZE}});',
+					'{{WRAPPER}}:hover' => 'transform: scaleX({{SIZE}});',
 				],
 			]
 		);
@@ -436,7 +436,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: scaleY({{SIZE}});',
+					'{{WRAPPER}}:hover' => 'transform: scaleY({{SIZE}});',
 				],
 			]
 		);
@@ -459,7 +459,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'scaleZ',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: scale({{SIZE}});',
+					'{{WRAPPER}}:hover' => 'transform: scale({{SIZE}});',
 				],
 			]
 		);
@@ -482,7 +482,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: rotateX({{SIZE}}deg);',
+					'{{WRAPPER}}:hover' => 'transform: rotateX({{SIZE}}deg);',
 				],
 			]
 		);
@@ -505,7 +505,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: rotateY({{SIZE}}deg);',
+					'{{WRAPPER}}:hover' => 'transform: rotateY({{SIZE}}deg);',
 				],
 			]
 		);
@@ -528,7 +528,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'rotateZ',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: rotateZ({{SIZE}}deg);',
+					'{{WRAPPER}}:hover' => 'transform: rotateZ({{SIZE}}deg);',
 				],
 			]
 		);
@@ -551,7 +551,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'skewX',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: skewX({{SIZE}}deg);',
+					'{{WRAPPER}}:hover' => 'transform: skewX({{SIZE}}deg);',
 				],
 			]
 		);
@@ -574,7 +574,7 @@ class De_Sina_Ext_Controls{
 					'sina_transform_effects' => 'skewY',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container:hover' => 'transform: skewY({{SIZE}}deg);',
+					'{{WRAPPER}}:hover' => 'transform: skewY({{SIZE}}deg);',
 				],
 			]
 		);
@@ -582,7 +582,7 @@ class De_Sina_Ext_Controls{
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name' => 'sina_transform_effects_filters_hover',
-				'selector' => '{{WRAPPER}} .elementor-widget-container:hover',
+				'selector' => '{{WRAPPER}}:hover',
 			]
 		);
 		$elems->add_control(
@@ -601,7 +601,7 @@ class De_Sina_Ext_Controls{
 					'size' => '400',
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-widget-container' => 'transition: all {{SIZE}}ms;',
+					'{{WRAPPER}}' => 'transition: all {{SIZE}}ms;',
 				],
 			]
 		);

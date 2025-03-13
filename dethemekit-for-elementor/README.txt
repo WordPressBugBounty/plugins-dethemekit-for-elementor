@@ -2,8 +2,8 @@
 Contributors: deTheme
 Requires at least: WordPress 5.2
 Tested up to: WordPress 6.7
-Version: 2.1.9
-Stable tag: 2.1.9
+Version: 2.1.10
+Stable tag: 2.1.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: detheme, dethemekit, elementor
@@ -169,6 +169,11 @@ GNU General Public License for more details.
     License URL: https://github.com/ionic-team/ionicons/blob/master/LICENSE
 
 == Changelog ==
+
+= 2.1.10 =
+* Fix: Fixed vulnerable to Stored Cross-Site Scripting via the plugin's De Product Display widget issue reported by Webbernaut on Wordfence
+* Fix: Replace class .elementor-column-wrap
+* Fix: Remove class .elementor-widget-container
 
 = 2.1.9 =
 * Fix: Fixed vulnerable to Stored Cross-Site Scripting via the plugin's De Gallery widget issue reported by zer0gh0st on Wordfence

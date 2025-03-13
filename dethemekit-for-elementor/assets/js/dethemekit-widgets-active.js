@@ -97,6 +97,14 @@
         productImageThumbnailsSlider( $(".ht-product-image-slider") );
     }
 
+    function esc_html(text) {
+        return text.replace(/&/g, '&amp;')
+                   .replace(/</g, '&lt;')
+                   .replace(/>/g, '&gt;')
+                   .replace(/"/g, '&quot;')
+                   .replace(/'/g, '&#039;');
+    }
+
     var WidgetThumbnaisImagesHandler = function thumbnailsimagescontroller(){
         dethemekit_tabs( $(".ht-product-cus-tab-links"), '.ht-product-cus-tab-pane' );
         dethemekit_tabs( $(".ht-tab-menus"), '.ht-tab-pane' );
@@ -107,7 +115,7 @@
             var $this = $(this), finalDate = $(this).data('countdown');
             var customlavel = $(this).data('customlavel');
             $this.countdown(finalDate, function(event) {
-                $this.html(event.strftime('<div class="cd-single"><div class="cd-single-inner"><h3>%D</h3><p>'+customlavel.daytxt+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%H</h3><p>'+customlavel.hourtxt+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%M</h3><p>'+customlavel.minutestxt+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%S</h3><p>'+customlavel.secondstxt+'</p></div></div>'));
+                $this.html(event.strftime('<div class="cd-single"><div class="cd-single-inner"><h3>%D</h3><p>'+esc_html(customlavel.daytxt)+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%H</h3><p>'+esc_html(customlavel.hourtxt)+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%M</h3><p>'+esc_html(customlavel.minutestxt)+'</p></div></div><div class="cd-single"><div class="cd-single-inner"><h3>%S</h3><p>'+esc_html(customlavel.secondstxt)+'</p></div></div>'));
             });
         });
 
